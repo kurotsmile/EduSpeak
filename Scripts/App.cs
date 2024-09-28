@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class App : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Carrot.Carrot carrot;
+
     void Start()
+    {
+        this.carrot.Load_Carrot();
+    }
+
+    
+    void Update()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void btn_show_setting()
     {
-        
+        this.carrot.Create_Setting();
     }
 }
