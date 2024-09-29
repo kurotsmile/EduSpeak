@@ -14,6 +14,7 @@ public class App : MonoBehaviour
     public GameObject panel_main;
     public GameObject panel_view;
     public GameObject panel_vocabulary;
+    public GameObject panel_setting;
     public Transform area_all_lesson;
     public Transform area_all_vocabulary;
 
@@ -27,6 +28,7 @@ public class App : MonoBehaviour
     {
         this.panel_view.SetActive(false);
         this.panel_vocabulary.SetActive(false);
+        this.panel_setting.SetActive(false);
 
         TextAsset jsonFile = Resources.Load<TextAsset>("data");
         this.Clear_all_item(area_all_lesson);
@@ -97,5 +99,17 @@ public class App : MonoBehaviour
         this.panel_view.SetActive(true);
         this.panel_vocabulary.SetActive(false);
         this.play_sound();
+    }
+
+    public void show_setting()
+    {
+        this.play_sound();
+        this.panel_setting.SetActive(true);
+    }
+
+    public void close_setting()
+    {
+        this.play_sound();
+        this.panel_setting.SetActive(false);
     }
 }
