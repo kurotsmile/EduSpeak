@@ -4,11 +4,24 @@ using UnityEngine;
 
 public class App : MonoBehaviour
 {
-    public Carrot.Carrot carrot;
+
+    public GameObject panel_main;
+    public GameObject lesson_item_prefab;
+
+    [Header("UI")]
+    public Transform area_all_lesson;
 
     void Start()
     {
-        this.carrot.Load_Carrot();
+        this.Clear_all_titem(area_all_lesson);
+        for(int i = 0; i < 36; i++)
+        {
+            GameObject objLesson = Instantiate(this.lesson_item_prefab);
+            objLesson.transform.SetParent(this.area_all_lesson);
+            objLesson.transform.localScale = new Vector3(1, 1, 1);
+
+            objLesson.GetComponent<Menu_Item>().txt.text= "Lesson week "+(i+1);
+        }
     }
 
     
@@ -19,6 +32,14 @@ public class App : MonoBehaviour
 
     public void btn_show_setting()
     {
-        this.carrot.Create_Setting();
+
+    }
+
+    public void Clear_all_titem(Transform tr)
+    {
+        foreach(Transform t in tr)
+        {
+            Destroy(t.gameObject);
+        }
     }
 }
