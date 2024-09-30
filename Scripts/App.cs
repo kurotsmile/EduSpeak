@@ -23,6 +23,8 @@ public class App : MonoBehaviour
 
     [Header("vocabulary")]
     public Text txt_vocabulary_title;
+    public GameObject panel_vocabulary_true;
+    public GameObject panel_vocabulary_false;
 
     [Header("Sound")]
     public AudioSource[] sound;
@@ -33,6 +35,8 @@ public class App : MonoBehaviour
     {
         this.panel_view.SetActive(false);
         this.panel_vocabulary.SetActive(false);
+        this.panel_vocabulary_true.SetActive(false);
+        this.panel_vocabulary_false.SetActive(false);
         this.panel_setting.SetActive(false);
 
         TextAsset jsonFile = Resources.Load<TextAsset>("data");
@@ -127,5 +131,19 @@ public class App : MonoBehaviour
     public void btn_On_play_audio()
     {
         this.texttospeech.StartSpeak(this.s_vocabulary);
+    }
+
+    public void show_vocabulary_result(bool is_true)
+    {
+        if (is_true)
+            this.panel_vocabulary_true.SetActive(true);
+        else
+            this.panel_vocabulary_false.SetActive(true);
+    }
+
+    public void close_vocabulary_result()
+    {
+        this.panel_vocabulary_true.SetActive(false);
+        this.panel_vocabulary_false.SetActive(false);
     }
 }
