@@ -25,13 +25,22 @@ public class App : MonoBehaviour
     [Header("vocabulary")]
     public Text txt_lesson_title;
     public Text txt_vocabulary_title;
+    public Text txt_vocabulary_translate;
     public GameObject panel_vocabulary_true;
     public GameObject panel_vocabulary_false;
+
+    [Header("Setting")]
+    public Image[] checkBox_setting_img;
 
     [Header("Sound")]
     public AudioSource[] sound;
 
+    [Header("Asset")]
+    public Sprite sp_checkbox_true;
+    public Sprite sp_checkbox_false;
+
     private string s_vocabulary;
+    private bool[] list_setting_val=null;
 
     void Start()
     {
@@ -42,6 +51,23 @@ public class App : MonoBehaviour
         this.panel_vocabulary_true.SetActive(false);
         this.panel_vocabulary_false.SetActive(false);
         this.panel_setting.SetActive(false);
+
+        this.list_setting_val = new bool[this.checkBox_setting_img.Length];
+
+        for(int i = 0; i < this.checkBox_setting_img.Length; i++)
+        {
+            if (PlayerPrefs.GetInt("setting_item_"+i, 0) == 1)
+            {
+                this.list_setting_val[i] = true;
+                this.checkBox_setting_img[i].sprite = this.sp_checkbox_true;
+            }
+            else
+            {
+                this.list_setting_val[i] = false;
+                this.checkBox_setting_img[i].sprite = this.sp_checkbox_false;
+            }
+                
+        }
 
         TextAsset jsonFile = Resources.Load<TextAsset>("data");
         this.Clear_all_item(area_all_lesson);
@@ -76,9 +102,21 @@ public class App : MonoBehaviour
         this.txt_lesson_title.text = data["name"].ToString();
         this.Clear_all_item(this.area_all_vocabulary);
         IList list_txt = (IList) data["text"];
+        IList list_vi = null;
+        if(data["vi"]!=null) list_vi = (IList)data["vi"];
         for (int i = 0; i < list_txt.Count; i++)
         {
             var s_Vocabulary = list_txt[i].ToString();
+            var s_Translate ="";
+
+            if (this.list_setting_val[2])
+            {
+                if (list_vi != null)
+                {
+                    if (list_vi[i] != null) s_Translate = list_vi[i].ToString();
+                }
+            }
+            
             GameObject objVocabulary = Instantiate(this.Vocabulary_item_prefab);
             objVocabulary.transform.SetParent(this.area_all_vocabulary);
             objVocabulary.transform.localScale = new Vector3(1, 1, 1);
@@ -90,6 +128,7 @@ public class App : MonoBehaviour
                 this.panel_vocabulary.SetActive(true);
                 this.txt_vocabulary_title.text = s_Vocabulary;
                 this.s_vocabulary = s_Vocabulary;
+                this.txt_vocabulary_translate.text = s_Translate;
             };
         }
         this.play_sound();
@@ -113,7 +152,7 @@ public class App : MonoBehaviour
 
     public void play_sound(int index = 0)
     {
-        this.sound[index].Play();
+        if (list_setting_val[0]) this.sound[index].Play();
     }
 
     public void Back_List_Lesson()
@@ -148,14 +187,42 @@ public class App : MonoBehaviour
     public void show_vocabulary_result(bool is_true)
     {
         if (is_true)
+        {
             this.panel_vocabulary_true.SetActive(true);
+        }
         else
+        {
+            this.play_Vibrate();
             this.panel_vocabulary_false.SetActive(true);
+        }
+            
     }
 
     public void close_vocabulary_result()
     {
         this.panel_vocabulary_true.SetActive(false);
         this.panel_vocabulary_false.SetActive(false);
+    }
+
+    public void On_click_item_setting(int index)
+    {
+        if (this.list_setting_val[index]) {
+            this.checkBox_setting_img[index].sprite = this.sp_checkbox_false;
+            this.list_setting_val[index] = false;
+            PlayerPrefs.SetInt("setting_item_"+index,0);
+        }
+        else
+        {
+            this.checkBox_setting_img[index].sprite = this.sp_checkbox_true;
+            this.list_setting_val[index] = true;
+            if (index == 1) this.play_Vibrate();
+            PlayerPrefs.SetInt("setting_item_" + index, 1);
+        }
+        this.play_sound();
+    }
+
+    public void play_Vibrate()
+    {
+        if (this.list_setting_val[1]) Handheld.Vibrate();
     }
 }
