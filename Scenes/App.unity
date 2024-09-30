@@ -770,9 +770,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1738116256}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 280.4, y: -137.6}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -137.6}
   m_SizeDelta: {x: 183.70001, y: 39.36}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &204482752
@@ -1160,7 +1160,6 @@ GameObject:
   m_Component:
   - component: {fileID: 324034489}
   - component: {fileID: 324034490}
-  - component: {fileID: 324034491}
   - component: {fileID: 324034492}
   m_Layer: 0
   m_Name: App
@@ -1199,7 +1198,7 @@ MonoBehaviour:
   lesson_item_prefab: {fileID: 2724335490753976248, guid: d4c4ddd05d9a4c84fb3e76efcfc20ec5, type: 3}
   Vocabulary_item_prefab: {fileID: 2152118017074298727, guid: 627ac5b7341be164399e76368c626cb3, type: 3}
   texttospeech: {fileID: 324034492}
-  speechToText: {fileID: 324034491}
+  speechToText: {fileID: 1157337630}
   panel_home: {fileID: 1738116255}
   panel_main: {fileID: 1047000435}
   panel_view: {fileID: 509736234}
@@ -1221,19 +1220,6 @@ MonoBehaviour:
   sound_voice: {fileID: 1895363535}
   sp_checkbox_true: {fileID: 21300000, guid: dbe31e74b8c06f246a53fc22caa68d56, type: 3}
   sp_checkbox_false: {fileID: 21300000, guid: df376dc1835d1cb4381a2fed12af8b61, type: 3}
---- !u!114 &324034491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 324034488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddcd45b9401ae41438f106f2bd528032, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isShowPopupAndroid: 1
 --- !u!114 &324034492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3240,6 +3226,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1104868127}
   m_CullTransparentMesh: 1
+--- !u!1 &1157337628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1157337629}
+  - component: {fileID: 1157337630}
+  m_Layer: 0
+  m_Name: stt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1157337629
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157337628}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 237.74771, y: 489.567, z: -2.3566062}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1157337630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157337628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddcd45b9401ae41438f106f2bd528032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isShowPopupAndroid: 1
 --- !u!1 &1224975280
 GameObject:
   m_ObjectHideFlags: 0
@@ -5346,7 +5377,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1849285236
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7361,3 +7392,4 @@ SceneRoots:
   - {fileID: 367954616}
   - {fileID: 2009369675}
   - {fileID: 1058282751}
+  - {fileID: 1157337629}

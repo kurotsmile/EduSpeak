@@ -89,7 +89,10 @@ public class App : MonoBehaviour
                 };
             }
         }
-        
+
+        SpeechToText.Instance.Setting("en-US");
+        SpeechToText.Instance.onResultCallback = this.On_Check_voice;
+        this.speechToText.onResultCallback = this.On_Check_voice;
     }
 
     public void btn_on_start()
@@ -177,7 +180,8 @@ public class App : MonoBehaviour
 
     public void btn_On_voice_recognition()
     {
-        this.speechToText.StartRecording();
+        this.speechToText.onResultCallback = this.On_Check_voice;
+        SpeechToText.Instance.StartRecording("Start speaking!");
     }
 
     public void btn_On_play_audio()
@@ -233,5 +237,14 @@ public class App : MonoBehaviour
     public void play_Vibrate()
     {
         if (this.list_setting_val[1]) Handheld.Vibrate();
+    }
+
+    public void On_Check_voice(string s_data)
+    {
+        this.txt_vocabulary_translate.text = s_data;
+        if (s_data.Trim().ToLower() == this.s_vocabulary.Trim().ToLower())
+            this.show_vocabulary_result(true);
+        else
+            this.show_vocabulary_result(false);
     }
 }
