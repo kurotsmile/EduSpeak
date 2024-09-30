@@ -34,6 +34,7 @@ public class App : MonoBehaviour
 
     [Header("Sound")]
     public AudioSource[] sound;
+    public AudioSource sound_voice;
 
     [Header("Asset")]
     public Sprite sp_checkbox_true;
@@ -181,7 +182,16 @@ public class App : MonoBehaviour
 
     public void btn_On_play_audio()
     {
-        this.texttospeech.StartSpeak(this.s_vocabulary);
+        AudioClip clip = Resources.Load<AudioClip>("voice/"+s_vocabulary);
+        if (clip != null)
+        {
+            this.sound_voice.clip=clip;
+            this.sound_voice.Play();
+        }
+        else
+        {
+            this.texttospeech.StartSpeak(this.s_vocabulary);
+        }
     }
 
     public void show_vocabulary_result(bool is_true)
@@ -195,7 +205,6 @@ public class App : MonoBehaviour
             this.play_Vibrate();
             this.panel_vocabulary_false.SetActive(true);
         }
-            
     }
 
     public void close_vocabulary_result()
