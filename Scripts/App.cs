@@ -14,6 +14,7 @@ public class App : MonoBehaviour
     public SpeechToText speechToText;
 
     [Header("UI")]
+    public GameObject panel_home;
     public GameObject panel_main;
     public GameObject panel_view;
     public GameObject panel_vocabulary;
@@ -22,6 +23,7 @@ public class App : MonoBehaviour
     public Transform area_all_vocabulary;
 
     [Header("vocabulary")]
+    public Text txt_lesson_title;
     public Text txt_vocabulary_title;
     public GameObject panel_vocabulary_true;
     public GameObject panel_vocabulary_false;
@@ -33,6 +35,8 @@ public class App : MonoBehaviour
 
     void Start()
     {
+        this.panel_home.SetActive(true);
+        this.panel_main.SetActive(false);
         this.panel_view.SetActive(false);
         this.panel_vocabulary.SetActive(false);
         this.panel_vocabulary_true.SetActive(false);
@@ -61,8 +65,15 @@ public class App : MonoBehaviour
         
     }
 
+    public void btn_on_start()
+    {
+        this.play_sound();
+        this.panel_main.SetActive(true);
+    }
+
     public void On_Show_view(IDictionary data)
     {
+        this.txt_lesson_title.text = data["name"].ToString();
         this.Clear_all_item(this.area_all_vocabulary);
         IList list_txt = (IList) data["text"];
         for (int i = 0; i < list_txt.Count; i++)
@@ -95,6 +106,7 @@ public class App : MonoBehaviour
 
     public void Back_home()
     {
+        this.panel_main.SetActive(false);
         this.panel_view.SetActive(false);
         this.play_sound();
     }
