@@ -1,6 +1,7 @@
 using Carrot;
 using System.Collections;
 using System.Collections.Generic;
+using TextSpeech;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,8 @@ public class App : MonoBehaviour
     [Header("Object Main")]
     public GameObject lesson_item_prefab;
     public GameObject Vocabulary_item_prefab;
+    public TextToSpeech texttospeech;
+    public SpeechToText speechToText;
 
     [Header("UI")]
     public GameObject panel_main;
@@ -23,6 +26,8 @@ public class App : MonoBehaviour
 
     [Header("Sound")]
     public AudioSource[] sound;
+
+    private string s_vocabulary;
 
     void Start()
     {
@@ -69,6 +74,7 @@ public class App : MonoBehaviour
                 this.play_sound();
                 this.panel_vocabulary.SetActive(true);
                 this.txt_vocabulary_title.text = s_Vocabulary;
+                this.s_vocabulary = s_Vocabulary;
             };
         }
         this.play_sound();
@@ -111,5 +117,15 @@ public class App : MonoBehaviour
     {
         this.play_sound();
         this.panel_setting.SetActive(false);
+    }
+
+    public void btn_On_voice_recognition()
+    {
+        this.speechToText.StartRecording();
+    }
+
+    public void btn_On_play_audio()
+    {
+        this.texttospeech.StartSpeak(this.s_vocabulary);
     }
 }
