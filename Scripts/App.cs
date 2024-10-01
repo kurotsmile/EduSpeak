@@ -1,6 +1,5 @@
 using Carrot;
 using System.Collections;
-using System.Collections.Generic;
 using TextSpeech;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,6 +20,9 @@ public class App : MonoBehaviour
     public GameObject panel_setting;
     public Transform area_all_lesson;
     public Transform area_all_vocabulary;
+    public Text txt_total_vocabulary;
+    public Text txt_total_lesson;
+    public Text txt_total_voice;
 
     [Header("vocabulary")]
     public Text txt_lesson_title;
