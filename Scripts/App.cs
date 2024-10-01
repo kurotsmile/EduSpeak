@@ -13,6 +13,7 @@ public class App : MonoBehaviour
     public SpeechToText speechToText;
 
     [Header("UI")]
+    public Color32 color_a;
     public GameObject panel_home;
     public GameObject panel_main;
     public GameObject panel_view;
@@ -76,20 +77,30 @@ public class App : MonoBehaviour
         this.Clear_all_item(area_all_lesson);
         if (jsonFile != null)
         {
+            int count_vocabulary = 0;
             IList list_data = (IList)Json.Deserialize(jsonFile.text);
             for (int i = 0; i < list_data.Count; i++)
             {
                 IDictionary dataLesson = (IDictionary) list_data[i];
+                IList list_txt = (IList)dataLesson["text"];
                 GameObject objLesson = Instantiate(this.lesson_item_prefab);
                 objLesson.transform.SetParent(this.area_all_lesson);
                 objLesson.transform.localScale = new Vector3(1, 1, 1);
+                if (i % 2 == 0)
+                    objLesson.GetComponent<Image>().color = this.color_a;
+                else
+                    objLesson.GetComponent<Image>().color = Color.white;
 
                 objLesson.GetComponent<Menu_Item>().txt.text = dataLesson["name"].ToString();
                 objLesson.GetComponent<Menu_Item>().act = () =>
                 {
                     this.On_Show_view(dataLesson);
                 };
+                count_vocabulary += list_txt.Count;
             }
+            this.txt_total_lesson.text = list_data.Count + "\nLesson";
+            this.txt_total_vocabulary.text = count_vocabulary + "\nVocabulary";
+            this.txt_total_voice.text = count_vocabulary + "\nReading test";
         }
 
         SpeechToText.Instance.Setting("en-US");
