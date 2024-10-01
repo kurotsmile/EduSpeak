@@ -22,6 +22,7 @@ public class App : MonoBehaviour
     public Transform area_all_lesson;
     public Transform area_all_vocabulary;
     public Text txt_total_vocabulary;
+    public Text txt_total_vocabulary_index;
     public Text txt_total_lesson;
     public Text txt_total_voice;
 
@@ -70,8 +71,8 @@ public class App : MonoBehaviour
                 this.list_setting_val[i] = false;
                 this.checkBox_setting_img[i].sprite = this.sp_checkbox_false;
             }
-                
         }
+        this.On_check_val_setting();
 
         TextAsset jsonFile = Resources.Load<TextAsset>("data");
         this.Clear_all_item(area_all_lesson);
@@ -118,27 +119,27 @@ public class App : MonoBehaviour
     {
         this.txt_lesson_title.text = data["name"].ToString();
         this.Clear_all_item(this.area_all_vocabulary);
-        IList list_txt = (IList) data["text"];
+        IList list_txt = (IList)data["text"];
         IList list_vi = null;
-        if(data["vi"]!=null) list_vi = (IList)data["vi"];
+        if (data["vi"] != null) list_vi = (IList)data["vi"];
         for (int i = 0; i < list_txt.Count; i++)
         {
             var s_Vocabulary = list_txt[i].ToString();
-            var s_Translate ="";
+            var s_Translate = "";
+            var index = i;
 
-            if (this.list_setting_val[2])
+
+            if (list_vi != null)
             {
-                if (list_vi != null)
-                {
-                    if (list_vi[i] != null) s_Translate = list_vi[i].ToString();
-                }
+                if (list_vi[i] != null) s_Translate = list_vi[i].ToString();
             }
-            
+
+
             GameObject objVocabulary = Instantiate(this.Vocabulary_item_prefab);
             objVocabulary.transform.SetParent(this.area_all_vocabulary);
             objVocabulary.transform.localScale = new Vector3(1, 1, 1);
 
-            objVocabulary.GetComponent<Menu_Item>().txt.text = (i+1).ToString();
+            objVocabulary.GetComponent<Menu_Item>().txt.text = (i + 1).ToString();
             objVocabulary.GetComponent<Menu_Item>().act = () =>
             {
                 this.play_sound();
@@ -146,6 +147,7 @@ public class App : MonoBehaviour
                 this.txt_vocabulary_title.text = s_Vocabulary;
                 this.s_vocabulary = s_Vocabulary;
                 this.txt_vocabulary_translate.text = s_Translate;
+                this.txt_total_vocabulary_index.text = "#" + (index + 1).ToString();
             };
         }
         this.play_sound();
@@ -245,6 +247,15 @@ public class App : MonoBehaviour
             PlayerPrefs.SetInt("setting_item_" + index, 1);
         }
         this.play_sound();
+        this.On_check_val_setting();
+    }
+
+    private void On_check_val_setting()
+    {
+        if (this.list_setting_val[2])
+            this.txt_vocabulary_translate.gameObject.SetActive(true);
+        else
+            this.txt_vocabulary_translate.gameObject.SetActive(false);
     }
 
     public void play_Vibrate()

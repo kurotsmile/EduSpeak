@@ -1210,6 +1210,7 @@ MonoBehaviour:
   area_all_lesson: {fileID: 1324481633}
   area_all_vocabulary: {fileID: 703476107}
   txt_total_vocabulary: {fileID: 1260749133}
+  txt_total_vocabulary_index: {fileID: 1278427239}
   txt_total_lesson: {fileID: 1341076955}
   txt_total_voice: {fileID: 1197925693}
   txt_lesson_title: {fileID: 1243786840}
