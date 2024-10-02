@@ -11,13 +11,13 @@ public class App : MonoBehaviour
     public GameObject Vocabulary_item_prefab;
     public TextToSpeech texttospeech;
     public SpeechToText speechToText;
+    public Vocabulary v;
 
     [Header("UI")]
     public Color32 color_a;
     public GameObject panel_home;
     public GameObject panel_main;
     public GameObject panel_view;
-    public GameObject panel_vocabulary;
     public GameObject panel_setting;
     public Transform area_all_lesson;
     public Transform area_all_vocabulary;
@@ -28,7 +28,6 @@ public class App : MonoBehaviour
 
     [Header("vocabulary")]
     public Text txt_lesson_title;
-    public Text txt_vocabulary_title;
     public Text txt_vocabulary_translate;
     public GameObject panel_vocabulary_true;
     public GameObject panel_vocabulary_false;
@@ -52,7 +51,7 @@ public class App : MonoBehaviour
         this.panel_home.SetActive(true);
         this.panel_main.SetActive(false);
         this.panel_view.SetActive(false);
-        this.panel_vocabulary.SetActive(false);
+        this.v.On_Load();
         this.panel_vocabulary_true.SetActive(false);
         this.panel_vocabulary_false.SetActive(false);
         this.panel_setting.SetActive(false);
@@ -143,8 +142,7 @@ public class App : MonoBehaviour
             objVocabulary.GetComponent<Menu_Item>().act = () =>
             {
                 this.play_sound();
-                this.panel_vocabulary.SetActive(true);
-                this.txt_vocabulary_title.text = s_Vocabulary;
+                this.v.On_Show(s_Vocabulary);
                 this.s_vocabulary = s_Vocabulary;
                 this.txt_vocabulary_translate.text = s_Translate;
                 this.txt_total_vocabulary_index.text = "#" + (index + 1).ToString();
@@ -177,7 +175,7 @@ public class App : MonoBehaviour
     public void Back_List_Lesson()
     {
         this.panel_view.SetActive(true);
-        this.panel_vocabulary.SetActive(false);
+        this.v.Close();
         this.play_sound();
     }
 
@@ -197,20 +195,6 @@ public class App : MonoBehaviour
     {
         this.speechToText.onResultCallback = this.On_Check_voice;
         SpeechToText.Instance.StartRecording("Start speaking!");
-    }
-
-    public void btn_On_play_audio()
-    {
-        AudioClip clip = Resources.Load<AudioClip>("voice/"+s_vocabulary);
-        if (clip != null)
-        {
-            this.sound_voice.clip=clip;
-            this.sound_voice.Play();
-        }
-        else
-        {
-            this.texttospeech.StartSpeak(this.s_vocabulary);
-        }
     }
 
     public void show_vocabulary_result(bool is_true)
