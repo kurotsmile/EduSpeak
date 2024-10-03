@@ -10,7 +10,6 @@ public class App : MonoBehaviour
     public GameObject lesson_item_prefab;
     public GameObject Vocabulary_item_prefab;
     public TextToSpeech texttospeech;
-    public SpeechToText speechToText;
     public Vocabulary v;
 
     [Header("UI")]
@@ -29,8 +28,6 @@ public class App : MonoBehaviour
     [Header("vocabulary")]
     public Text txt_lesson_title;
     public Text txt_vocabulary_translate;
-    public GameObject panel_vocabulary_true;
-    public GameObject panel_vocabulary_false;
 
     [Header("Setting")]
     public Image[] checkBox_setting_img;
@@ -52,8 +49,6 @@ public class App : MonoBehaviour
         this.panel_main.SetActive(false);
         this.panel_view.SetActive(false);
         this.v.On_Load();
-        this.panel_vocabulary_true.SetActive(false);
-        this.panel_vocabulary_false.SetActive(false);
         this.panel_setting.SetActive(false);
 
         this.list_setting_val = new bool[this.checkBox_setting_img.Length];
@@ -103,9 +98,6 @@ public class App : MonoBehaviour
             this.txt_total_voice.text = count_vocabulary + "\nReading test";
         }
 
-        SpeechToText.Instance.Setting("en-US");
-        SpeechToText.Instance.onResultCallback = this.On_Check_voice;
-        this.speechToText.onResultCallback = this.On_Check_voice;
     }
 
     public void btn_on_start()
@@ -191,31 +183,6 @@ public class App : MonoBehaviour
         this.panel_setting.SetActive(false);
     }
 
-    public void btn_On_voice_recognition()
-    {
-        this.speechToText.onResultCallback = this.On_Check_voice;
-        SpeechToText.Instance.StartRecording("Start speaking!");
-    }
-
-    public void show_vocabulary_result(bool is_true)
-    {
-        if (is_true)
-        {
-            this.panel_vocabulary_true.SetActive(true);
-        }
-        else
-        {
-            this.play_Vibrate();
-            this.panel_vocabulary_false.SetActive(true);
-        }
-    }
-
-    public void close_vocabulary_result()
-    {
-        this.panel_vocabulary_true.SetActive(false);
-        this.panel_vocabulary_false.SetActive(false);
-    }
-
     public void On_click_item_setting(int index)
     {
         if (this.list_setting_val[index]) {
@@ -247,12 +214,4 @@ public class App : MonoBehaviour
         if (this.list_setting_val[1]) Handheld.Vibrate();
     }
 
-    public void On_Check_voice(string s_data)
-    {
-        this.txt_vocabulary_translate.text = s_data;
-        if (s_data.Trim().ToLower() == this.s_vocabulary.Trim().ToLower())
-            this.show_vocabulary_result(true);
-        else
-            this.show_vocabulary_result(false);
-    }
 }
