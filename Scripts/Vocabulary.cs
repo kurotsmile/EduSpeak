@@ -24,8 +24,6 @@ public class Vocabulary : MonoBehaviour
     private AudioClip recordedClip;
     private AudioClip speechClip;
 
-    private bool isRecording = false;
-    private string microphoneName;
 
     public void On_Load()
     {
@@ -33,14 +31,6 @@ public class Vocabulary : MonoBehaviour
         this.panel_Recording.SetActive(false);
         this.panel_vocabulary_true.SetActive(false);
         this.panel_vocabulary_false.SetActive(false);
-        if (Microphone.devices.Length > 0)
-        {
-            microphoneName = Microphone.devices[0];
-        }
-        else
-        {
-            this.txt_Status.text="No microphone detected!";
-        }
     }
 
     public void On_Show(string s_Vocabulary)
@@ -48,7 +38,8 @@ public class Vocabulary : MonoBehaviour
         this.s_vocabulary= s_Vocabulary;
         this.txt_Vocabulary.text = s_Vocabulary;
         this.panel_vocabulary.SetActive(true);
-
+        SpeechRecognizer.StopIfRecording();
+        this.panel_Recording.SetActive(false);
         this.speechClip = Resources.Load<AudioClip>("voice/" + s_Vocabulary);
     }
 
