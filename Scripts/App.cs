@@ -1,4 +1,5 @@
 using Carrot;
+using KKSpeech;
 using System.Collections;
 using TextSpeech;
 using UnityEngine;
@@ -97,7 +98,7 @@ public class App : MonoBehaviour
             this.txt_total_vocabulary.text = count_vocabulary + "\nVocabulary";
             this.txt_total_voice.text = count_vocabulary + "\nReading test";
         }
-
+        SpeechRecognizer.SetDetectionLanguage("en-US");
     }
 
     public void btn_on_start()
