@@ -21,7 +21,6 @@ public class Vocabulary : MonoBehaviour
     [Header("Audio")]
     public AudioSource audioSource_Recording;
     public AudioSource audioSource_Speech;
-    private AudioClip recordedClip;
     private AudioClip speechClip;
 
 
@@ -33,14 +32,14 @@ public class Vocabulary : MonoBehaviour
         this.panel_vocabulary_false.SetActive(false);
     }
 
-    public void On_Show(string s_Vocabulary)
+    public void On_Show(string s_Vocabulary,string s_file_audio)
     {
         this.s_vocabulary= s_Vocabulary;
         this.txt_Vocabulary.text = s_Vocabulary;
         this.panel_vocabulary.SetActive(true);
         SpeechRecognizer.StopIfRecording();
         this.panel_Recording.SetActive(false);
-        this.speechClip = Resources.Load<AudioClip>("voice/" + s_Vocabulary);
+        this.speechClip = Resources.Load<AudioClip>("voice/" + s_file_audio);
     }
 
     public void Close()

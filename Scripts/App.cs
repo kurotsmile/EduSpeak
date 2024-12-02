@@ -112,6 +112,7 @@ public class App : MonoBehaviour
         this.txt_lesson_title.text = data["name"].ToString();
         this.Clear_all_item(this.area_all_vocabulary);
         IList list_txt = (IList)data["text"];
+        IList list_file = (IList)data["label"];
         IList list_vi = null;
         if (data["vi"] != null) list_vi = (IList)data["vi"];
         for (int i = 0; i < list_txt.Count; i++)
@@ -135,7 +136,7 @@ public class App : MonoBehaviour
             objVocabulary.GetComponent<Menu_Item>().act = () =>
             {
                 this.play_sound();
-                this.v.On_Show(s_Vocabulary);
+                this.v.On_Show(s_Vocabulary,list_file[index].ToString());
                 this.s_vocabulary = s_Vocabulary;
                 this.txt_vocabulary_translate.text = s_Translate;
                 this.txt_total_vocabulary_index.text = "#" + (index + 1).ToString();
