@@ -4,7 +4,7 @@
         "label":["6.1.1. Apartment", "6.1.1. Balcony", "6.1.1. Garage", "6.1.1. Gym", "6.1.1. Pool", "6.1.1. Yard"],
         "text":["Apartment","Balcony","Garage","Gym","Pool","Yard"],
         "vi": ["Căn hộ", "Ban công", "Nhà để xe", "Phòng gym", "Hồ bơi", "Sân vườn"],
-        "file": ["6.1.1. apartment.wav", "6.1.1. Balcony.wav", "6.1.1. Garage.wav", "6.1.1. gym.wav", "6.1.1. pool.wav", "6.1.1. yard.WAV"]
+        "file": ["6.1.1. apartment.WAV", "6.1.1. Balcony.WAV", "6.1.1. Garage.WAV", "6.1.1. gym.WAV", "6.1.1. pool.WAV", "6.1.1. yard.WAV"]
     },
     {
         "name":"Unit 2",
@@ -32,7 +32,7 @@
         "label":["5.1. Sales Assistant","5.1. Changing Room","5.1. Customer","5.1. Extra Large","5.1. Jeans","5.1. Large","5.1. Medium","5.1. Sweater","5.2. Dessert","5.2. Change","5.2. Check","5.2. Menu","5.2. Order","5.2. Tip","5.3. Beef","5.3. Fish Sauce","5.3. Fry","5.3. Grill","5.3. Herbs","5.3. Lamb","5.3. Noodles","5.3. Pork","5.3. Seafood"],
         "text":["Sales Assistant","Changing Room","Customer","Extra Large","Jeans","Large","Medium","Sweater","Dessert","Change","Check","Menu","Order","Tip","Beef","Fish Sauce","Fry","Grill","Herbs","Lamb","Noodles","Pork","Seafood"],
         "vi":["Trợ lý bán hàng","Phòng thay đồ","Khách hàng","Cỡ lớn nhất","Quần jeans","Lớn","Vừa","Áo len","Món tráng miệng","Tiền thừa","Hóa đơn","Thực đơn","Đặt hàng","Tiền tip","Thịt bò","Nước mắm","Chiên","Nướng","Rau thơm","Cừu","Mì","Thịt lợn","Hải sản"],
-        "file":["5.1 sales assistant.WAV","5.1 changing room.WAV","5.1 customer.WAV","5.1 extra large.WAV","5.1 jeans.WAV","5.1 large.WAV","5.1 medium.WAV","5.1 sweater.WAV","5.2 dessert.WAV","5.2 change.WAV","5.2 check.WAV","5.2 menu.WAV","5.2 order.WAV","5.2 tip.WAV","5.3 beef.WAV","5.3 fish sauce.WAV","5.3 fry.WAV","5.3 grill.WAV","5.3 herbs.WAV","5.3 lamb.WAV","5.3 noodles.WAV","5.3 pork.WAV","5.3 seafood.WAV"]
+        "file":["5.1 sales assistant.WAV","5.1. changing room.WAV","5.1. customer.WAV","5.1. extra large.WAV","5.1. jeans.WAV","5.1. large.WAV","5.1. medium.WAV","5.1. sweater.WAV","5.2 dessert.WAV","5.2. change.WAV","5.2. check.WAV","5.2. menu.WAV","5.2. order.WAV","5.2. tip.WAV","5.3. beef.WAV","5.3. fish sauce.WAV","5.3. fry.WAV","5.3. grill.WAV","5.3. herbs.WAV","5.3 lamb.WAV","5.3. noodles.WAV","5.3. pork.WAV","5.3. seafood.WAV"]
     },
     {
         "name":"Unit 6",

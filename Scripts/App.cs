@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class App : MonoBehaviour
 {
     [Header("Object Main")]
+    public int limit=10;
     public GameObject lesson_item_prefab;
     public GameObject Vocabulary_item_prefab;
     public TextToSpeech texttospeech;
@@ -77,6 +78,7 @@ public class App : MonoBehaviour
             IList list_data = (IList)Json.Deserialize(jsonFile.text);
             for (int i = 0; i < list_data.Count; i++)
             {
+                if(i>=limit) break;
                 IDictionary dataLesson = (IDictionary) list_data[i];
                 IList list_txt = (IList)dataLesson["text"];
                 GameObject objLesson = Instantiate(this.lesson_item_prefab);
@@ -112,7 +114,7 @@ public class App : MonoBehaviour
         this.txt_lesson_title.text = data["name"].ToString();
         this.Clear_all_item(this.area_all_vocabulary);
         IList list_txt = (IList)data["text"];
-        IList list_file = (IList)data["label"];
+        IList list_file = (IList)data["file"];
         IList list_vi = null;
         if (data["vi"] != null) list_vi = (IList)data["vi"];
         for (int i = 0; i < list_txt.Count; i++)

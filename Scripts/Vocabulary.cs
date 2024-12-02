@@ -39,7 +39,7 @@ public class Vocabulary : MonoBehaviour
         this.panel_vocabulary.SetActive(true);
         SpeechRecognizer.StopIfRecording();
         this.panel_Recording.SetActive(false);
-        this.speechClip = Resources.Load<AudioClip>("voice/" + s_file_audio);
+        this.speechClip = Resources.Load<AudioClip>("voice/" + s_file_audio.Replace(".WAV",""));
     }
 
     public void Close()
