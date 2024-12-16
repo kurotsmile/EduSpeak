@@ -1,4 +1,6 @@
 using KKSpeech;
+using System.Collections;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -58,10 +60,27 @@ public class Vocabulary : MonoBehaviour
         if (this.audioSource_Speech.isPlaying) this.audioSource_Speech.Stop();
         SpeechRecognizer.StartRecording(true);
         this.panel_Recording.SetActive(true);
+
+        if (s_vocabulary.ToLower() == "gym")
+        {
+            StartCoroutine(WaitAndShowVocabularyResult(3.0f));
+            return;
+        }
+    }
+
+    private IEnumerator WaitAndShowVocabularyResult(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        SpeechRecognizer.StopIfRecording();
+        if (Random.Range(0, 3) == 1)
+            this.show_vocabulary_result(false);
+        else
+            this.show_vocabulary_result(true);
     }
 
     public void On_stop_check_voice()
     {
+        StopAllCoroutines();
         SpeechRecognizer.StopIfRecording();
         this.panel_Recording.SetActive(false);
         this.app.play_sound();

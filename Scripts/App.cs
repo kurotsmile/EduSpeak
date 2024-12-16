@@ -107,8 +107,7 @@ public class App : MonoBehaviour
                         v_item.index_week = i;
                         v_item.index_v = this.list_v.Count;
                         v_item.index_v_in_week = k;
-                        v_item.s_Translate= list_vi[k].ToString();
-                        this.list_v.Add(v_item);
+                        this.list_v.Add(v_item); 
                     }
                 }
 
@@ -189,6 +188,7 @@ public class App : MonoBehaviour
                 v_item.index_week = int.Parse(data["index_week"].ToString());
                 v_item.index_v_in_week = index;
                 v_item.index_v = (v_item.index_week * 5) + v_item.index_v_in_week;
+                v_item.s_Translate = s_Translate;
                 this.index_v_view = v_item.index_v;
                 this.play_sound();
                 this.v.On_Show(v_item);
