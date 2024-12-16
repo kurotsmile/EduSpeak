@@ -1,6 +1,4 @@
 using KKSpeech;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,6 +12,9 @@ public class Vocabulary : MonoBehaviour
     [Header("Obj Vocabulary")]
     public Text txt_Vocabulary;
     public Text txt_Status;
+    public Text txt_vocabulary_index;
+    public Text txt_vocabulary_translate;
+
     public GameObject panel_vocabulary;
     public GameObject panel_vocabulary_true;
     public GameObject panel_vocabulary_false;
@@ -32,14 +33,18 @@ public class Vocabulary : MonoBehaviour
         this.panel_vocabulary_false.SetActive(false);
     }
 
-    public void On_Show(string s_Vocabulary,string s_file_audio)
+    public void On_Show(V_item v)
     {
-        this.s_vocabulary= s_Vocabulary;
-        this.txt_Vocabulary.text = s_Vocabulary;
+        this.txt_Status.text = "";
+        if (this.audioSource_Speech.isPlaying) this.audioSource_Speech.Stop();
+        this.s_vocabulary = v.s_key;
+        this.txt_Vocabulary.text = v.s_key;
+        this.txt_vocabulary_index.text = "Week " + (v.index_week + 1)+" #"+(v.index_v_in_week+1);
+        this.txt_vocabulary_translate.text = v.s_Translate;
         this.panel_vocabulary.SetActive(true);
         SpeechRecognizer.StopIfRecording();
         this.panel_Recording.SetActive(false);
-        this.speechClip = Resources.Load<AudioClip>("voice/" + s_file_audio.Replace(".WAV",""));
+        this.speechClip = Resources.Load<AudioClip>("voice/" + v.s_file.Replace(".WAV", ""));
     }
 
     public void Close()
@@ -49,6 +54,9 @@ public class Vocabulary : MonoBehaviour
 
     public void On_start_check_voice()
     {
+        this.txt_Status.text = "Listening...";
+        if (this.audioSource_Speech.isPlaying) this.audioSource_Speech.Stop();
+        SpeechRecognizer.StartRecording(true);
         this.panel_Recording.SetActive(true);
     }
 
@@ -87,4 +95,32 @@ public class Vocabulary : MonoBehaviour
         this.panel_vocabulary_false.SetActive(false);
         this.panel_Recording.SetActive(false);
     }
+
+    #region voice
+    public void OnAuthorizationStatusFetched(AuthorizationStatus status)
+    {
+        switch (status)
+        {
+            case AuthorizationStatus.Authorized:
+                break;
+            default:
+                txt_Status.text = "Cannot use Speech Recognition, authorization status is " + status;
+                break;
+        }
+    }
+
+    public void OnFinalResult(string result)
+    {
+        if (result.Trim().ToLower() == s_vocabulary.ToLower())
+            this.show_vocabulary_result(true);
+        else
+            this.show_vocabulary_result(false);
+    }
+
+    public void OnEndOfSpeech(string serror)
+    {
+        this.txt_Status.text = "";
+        this.panel_Recording.SetActive(false);
+    }
+    #endregion
 }

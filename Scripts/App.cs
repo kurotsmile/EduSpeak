@@ -1,14 +1,24 @@
 using Carrot;
 using KKSpeech;
 using System.Collections;
+using System.Collections.Generic;
 using TextSpeech;
 using UnityEngine;
 using UnityEngine.UI;
 
+public class  V_item
+{
+    public string s_key;
+    public string s_file;
+    public string s_Translate;
+    public int index_v = 0;
+    public int index_v_in_week = 0;
+    public int index_week = 0;
+}
+
 public class App : MonoBehaviour
 {
     [Header("Object Main")]
-    public int limit=10;
     public GameObject lesson_item_prefab;
     public GameObject Vocabulary_item_prefab;
     public TextToSpeech texttospeech;
@@ -23,13 +33,11 @@ public class App : MonoBehaviour
     public Transform area_all_lesson;
     public Transform area_all_vocabulary;
     public Text txt_total_vocabulary;
-    public Text txt_total_vocabulary_index;
     public Text txt_total_lesson;
     public Text txt_total_voice;
 
     [Header("vocabulary")]
     public Text txt_lesson_title;
-    public Text txt_vocabulary_translate;
 
     [Header("Setting")]
     public Image[] checkBox_setting_img;
@@ -44,6 +52,8 @@ public class App : MonoBehaviour
 
     private string s_vocabulary;
     private bool[] list_setting_val=null;
+    private IList<V_item> list_v = null;
+    private int index_v_view = 0;
 
     void Start()
     {
@@ -57,7 +67,7 @@ public class App : MonoBehaviour
 
         for(int i = 0; i < this.checkBox_setting_img.Length; i++)
         {
-            if (PlayerPrefs.GetInt("setting_item_"+i, 0) == 1)
+            if (PlayerPrefs.GetInt("setting_item_"+i,1) == 1)
             {
                 this.list_setting_val[i] = true;
                 this.checkBox_setting_img[i].sprite = this.sp_checkbox_true;
@@ -71,6 +81,8 @@ public class App : MonoBehaviour
         this.On_check_val_setting();
 
         TextAsset jsonFile = Resources.Load<TextAsset>("data");
+        this.list_v=new List<V_item>();
+
         this.Clear_all_item(area_all_lesson);
         if (jsonFile != null)
         {
@@ -78,9 +90,28 @@ public class App : MonoBehaviour
             IList list_data = (IList)Json.Deserialize(jsonFile.text);
             for (int i = 0; i < list_data.Count; i++)
             {
-                if(i>=limit) break;
-                IDictionary dataLesson = (IDictionary) list_data[i];
-                IList list_txt = (IList)dataLesson["text"];
+                IDictionary dataLesson = (IDictionary)list_data[i];
+                dataLesson["index_week"] = i;
+                if (dataLesson["text"] != null)
+                {
+                    IList list_txt = (IList)dataLesson["text"];
+                    IList list_vi = (IList)dataLesson["vi"];
+                    IList list_file = (IList)dataLesson["file"];
+                    count_vocabulary += list_txt.Count;
+                    for(int k=0;k < list_txt.Count; k++)
+                    {
+                        V_item v_item = new V_item();
+                        v_item.s_key = list_txt[k].ToString();
+                        v_item.s_Translate = list_vi[k].ToString();
+                        v_item.s_file= list_file[k].ToString();
+                        v_item.index_week = i;
+                        v_item.index_v = this.list_v.Count;
+                        v_item.index_v_in_week = k;
+                        v_item.s_Translate= list_vi[k].ToString();
+                        this.list_v.Add(v_item);
+                    }
+                }
+
                 GameObject objLesson = Instantiate(this.lesson_item_prefab);
                 objLesson.transform.SetParent(this.area_all_lesson);
                 objLesson.transform.localScale = new Vector3(1, 1, 1);
@@ -94,11 +125,27 @@ public class App : MonoBehaviour
                 {
                     this.On_Show_view(dataLesson);
                 };
-                count_vocabulary += list_txt.Count;
             }
-            this.txt_total_lesson.text = list_data.Count + "\nLesson";
+            this.txt_total_lesson.text = list_data.Count + "\nWeek";
             this.txt_total_vocabulary.text = count_vocabulary + "\nVocabulary";
             this.txt_total_voice.text = count_vocabulary + "\nReading test";
+        }
+
+        if (SpeechRecognizer.ExistsOnDevice())
+        {
+            SpeechRecognizerListener listener = FindAnyObjectByType<SpeechRecognizerListener>();
+            listener.onAuthorizationStatusFetched.AddListener(v.OnAuthorizationStatusFetched);
+            //listener.onAvailabilityChanged.AddListener(OnAvailabilityChange);
+            //listener.onErrorDuringRecording.AddListener(OnError);
+            //listener.onErrorOnStartRecording.AddListener(OnError);
+            listener.onFinalResults.AddListener(v.OnFinalResult);
+            //listener.onPartialResults.AddListener(OnPartialResult);
+            //listener.onEndOfSpeech.AddListener(OnEndOfSpeech);
+            SpeechRecognizer.RequestAccess();
+        }
+        else
+        {
+            v.txt_Status.text = "Sorry, but this device doesn't support speech recognition";
         }
         SpeechRecognizer.SetDetectionLanguage("en-US");
     }
@@ -123,25 +170,29 @@ public class App : MonoBehaviour
             var s_Translate = "";
             var index = i;
 
-
             if (list_vi != null)
             {
                 if (list_vi[i] != null) s_Translate = list_vi[i].ToString();
             }
 
-
             GameObject objVocabulary = Instantiate(this.Vocabulary_item_prefab);
             objVocabulary.transform.SetParent(this.area_all_vocabulary);
             objVocabulary.transform.localScale = new Vector3(1, 1, 1);
 
-            objVocabulary.GetComponent<Menu_Item>().txt.text = (i + 1).ToString();
+            objVocabulary.GetComponent<Menu_Item>().txt.text = "Vocabulary "+(i + 1).ToString();
+            if (i % 2 == 0) objVocabulary.GetComponent<Image>().color = this.color_a;
             objVocabulary.GetComponent<Menu_Item>().act = () =>
             {
+                V_item v_item = new ();
+                v_item.s_key= s_Vocabulary;
+                v_item.s_file = list_file[index].ToString();
+                v_item.index_week = int.Parse(data["index_week"].ToString());
+                v_item.index_v_in_week = index;
+                v_item.index_v = (v_item.index_week * 5) + v_item.index_v_in_week;
+                this.index_v_view = v_item.index_v;
                 this.play_sound();
-                this.v.On_Show(s_Vocabulary,list_file[index].ToString());
+                this.v.On_Show(v_item);
                 this.s_vocabulary = s_Vocabulary;
-                this.txt_vocabulary_translate.text = s_Translate;
-                this.txt_total_vocabulary_index.text = "#" + (index + 1).ToString();
             };
         }
         this.play_sound();
@@ -208,14 +259,30 @@ public class App : MonoBehaviour
     private void On_check_val_setting()
     {
         if (this.list_setting_val[2])
-            this.txt_vocabulary_translate.gameObject.SetActive(true);
+            this.v.txt_vocabulary_translate.gameObject.SetActive(true);
         else
-            this.txt_vocabulary_translate.gameObject.SetActive(false);
+            this.v.txt_vocabulary_translate.gameObject.SetActive(false);
     }
 
     public void play_Vibrate()
     {
         if (this.list_setting_val[1]) Handheld.Vibrate();
+    }
+
+    public void btn_next_v()
+    {
+        this.play_sound();
+        this.index_v_view++;
+        if(this.index_v_view>=this.list_v.Count) this.index_v_view = 0;
+        this.v.On_Show(this.list_v[this.index_v_view]);
+    }
+
+    public void btn_prev_v()
+    {
+        this.play_sound();
+        this.index_v_view--;
+        if(this.index_v_view<0) this.index_v_view=this.list_v.Count-1;
+        this.v.On_Show(this.list_v[this.index_v_view]);
     }
 
 }
