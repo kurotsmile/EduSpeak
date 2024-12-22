@@ -1,0 +1,137 @@
+[
+    {
+        "name":"Week 1",
+        "text":["Apartment","Balcony","Garage","Gym","Pool","Yard"],
+        "vi": ["Căn hộ", "Ban công", "Nhà để xe", "Phòng gym", "Hồ bơi", "Sân vườn"],
+        "file": ["6.1.1. apartment.WAV", "6.1.1. Balcony.WAV", "6.1.1. Garage.WAV", "6.1.1. gym.WAV", "6.1.1. pool.WAV", "6.1.1. yard.WAV"]
+    },
+    {
+        "name":"Week 2",
+        "text":["Geography","Literature","Music","I.T.","Physics","P.E."],
+        "vi":["Địa lý","Văn học","Âm nhạc","Information Technology - Công nghệ thông tin","Vật lý","Physical Education - Thể dục"],
+        "file":["6.1. geography.WAV","6.1. Literature.WAV","6.1. Music.WAV","6.1.I.T.WAV","6.1.Physics.WAV","6.1.P.E.WAV"]
+    },
+    {
+        "name":"Week 3",
+        "text":["Biology","Act","Arts and crafts","Drama club","Indoor activity","Outdoor activity"],
+        "vi":["Sinh học","Diễn xuất","Nghệ thuật và thủ công","Câu lạc bộ kịch","Hoạt động trong nhà","Hoạt động ngoài trời"],
+        "file":["6.2.1.biology.WAV","6.2.3.act.WAV","6.2.arts and crafts.WAV","6.2.drama club.WAV","6.2.indoor activity.WAV","6.2.outdoor activity.WAV"]
+    },
+    {
+        "name":"Week 4",
+        "text":["Blond","Glasses","Long","Red","Short","Slim"],
+        "vi":["Tóc vàng", "Kính", "Dài", "Đỏ", "Ngắn", "Mảnh khảnh"],
+        "file":["6.3.1. blond.WAV","6.3.1. glasses.WAV","6.3.1. long.WAV","6.3.1. red.WAV","6.3.1. short.WAV","6.3.1.slim.WAV"]
+    },
+    {
+        "name":"Week 5",
+        "text":["A barbecue","Cake","Movie","Party","Go shopping","Go swimming"],
+        "vi":["Tiệc nướng", "Bánh", "Phim", "Tiệc tùng", "Đi mua sắm", "Đi bơi"],
+        "file":["6.3.2. a barbecue.WAV","6.3.2. a cake.WAV","6.3.2. a movie.WAV","6.3.2. a party.WAV","6.3.2. go shopping.WAV","6.3.2. go swimming.WAV"]
+    },
+    {
+        "name":"Week 6",
+        "text":["Go to the beach","Go to the mall","Make a pizza","Play badminton","Play video games","Watch TV"],
+        "vi":["Đi biển", "Đi trung tâm thương mại", "Làm pizza", "Chơi cầu lông", "Chơi trò chơi điện tử", "Xem TV"],
+        "file":["6.3.2. go to the beach.WAV","6.3.2. go to the mall.WAV","6.3.2. make a pizza.WAV","6.3.2. play badminton.WAV","6.3.2. play video games.WAV","6.3.2. watch tv.WAV"]
+    },
+    {
+        "name":"Week 7",
+        "text":["Selfish","Friendly","Funny","Helpful","Kind","Lazy"],
+        "vi":["Ích kỷ", "Thân thiện", "Vui vẻ", "Hữu ích", "Tử tế", "Lười biếng"],
+        "file":["6.3.3 selfish.WAV","6.3.3. friendly.WAV","6.3.3. funny.WAV","6.3.3. helpful.WAV","6.3.3. kind.WAV","6.3.3. lazy.WAV"]
+    },
+    {
+        "name":"Week 8",
+        "text":["Fashion show","Food stand","Music performance","Puppet show","Talent show","Tug of war"],
+        "vi":["Trình diễn thời trang", "Gian hàng ẩm thực", "Biểu diễn âm nhạc", "Chương trình múa rối", "Chương trình tài năng", "Kéo co"],
+        "file":["4.2. fashion show.WAV","4.2. food stand.WAV","4.2. music performance.WAV","4.2. puppet show.WAV","4.2. talent show.WAV","4.2. tug of war.WAV"]
+    },
+    {
+        "name":"Week 9",
+        "text":["Buy fruit or flowers","Decorate a house or tree","Rat traditional food","Fireworks","Fet lucky money, candy, or gifts","Play games or music"],
+        "vi":["Mua trái cây hoặc hoa", "Trang trí nhà cửa hoặc cây cối", "Món ăn truyền thống của chuột", "Pháo hoa", "Nhận tiền may mắn, kẹo hoặc quà tặng", "Chơi trò chơi hoặc âm nhạc"],
+        "file":["4.3. buy fruit or flowers.WAV","4.3. decorate a house or tree.WAV","4.3. eat traditional food.WAV","4.3. fireworks.WAV","4.3. get lucky money,candy,or gifts.WAV","4.3. play games or music.WAV"]
+    },
+    {
+        "name":"Week 10"
+    },
+    {
+        "name":"Week 11"
+    },
+    {
+        "name":"Week 12"
+    },
+    {
+        "name":"Week 13"
+    },
+    {
+        "name":"Week 14"
+    },
+    {
+        "name":"Week 15"
+    },
+    {
+        "name":"Week 16"
+    },
+    {
+        "name":"Week 17"
+    },
+    {
+        "name":"Week 18"
+    },
+    {
+        "name":"Week 19"
+    },
+    {
+        "name":"Week 20"
+    },
+    {
+        "name":"Week 21"
+    },
+    {
+        "name":"Week 22"
+    },
+    {
+        "name":"Week 23"
+    },
+    {
+        "name":"Week 24"
+    },
+    {
+        "name":"Week 25"
+    },
+    {
+        "name":"Week 26"
+    },
+    {
+        "name":"Week 27"
+    },
+    {
+        "name":"Week 28"
+    },
+    {
+        "name":"Week 29"
+    },
+    {
+        "name":"Week 30"
+    },
+    {
+        "name":"Week 31"
+    },
+    {
+        "name":"Week 32"
+    },
+    {
+        "name":"Week 33"
+    },
+    {
+        "name":"Week 34"
+    },
+    {
+        "name":"Week 35"
+    },
+    {
+        "name":"Week 36"
+    }
+]
