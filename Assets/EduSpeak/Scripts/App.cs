@@ -18,6 +18,9 @@ public class  V_item
 
 public class App : MonoBehaviour
 {
+    [Header("Config")]
+    public bool is_sell = true;
+
     [Header("Object Main")]
     public GameObject lesson_item_prefab;
     public GameObject Vocabulary_item_prefab;
@@ -25,6 +28,7 @@ public class App : MonoBehaviour
     public Vocabulary v;
 
     [Header("UI")]
+    public Image img_app_title;
     public Color32 color_a;
     public GameObject panel_home;
     public GameObject panel_main;
@@ -49,6 +53,8 @@ public class App : MonoBehaviour
     [Header("Asset")]
     public Sprite sp_checkbox_true;
     public Sprite sp_checkbox_false;
+    public Sprite sp_app_title_sell;
+    public Sprite sp_app_title_public;
 
     private string s_vocabulary;
     private bool[] list_setting_val=null;
@@ -62,6 +68,11 @@ public class App : MonoBehaviour
         this.panel_view.SetActive(false);
         this.v.On_Load();
         this.panel_setting.SetActive(false);
+
+        if (this.is_sell)
+            this.img_app_title.sprite = this.sp_app_title_sell;
+        else
+            this.img_app_title.sprite = this.sp_app_title_public;
 
         this.list_setting_val = new bool[this.checkBox_setting_img.Length];
 
@@ -109,6 +120,10 @@ public class App : MonoBehaviour
                         v_item.index_v_in_week = k;
                         this.list_v.Add(v_item); 
                     }
+                }
+                else
+                {
+                    break;
                 }
 
                 GameObject objLesson = Instantiate(this.lesson_item_prefab);

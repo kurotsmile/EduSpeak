@@ -18,3 +18,5 @@ bin/
 .vscode/
 
 # Ignore the JetBrains Rider files
+/.utmp
+/.vs
