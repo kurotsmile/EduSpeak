@@ -25,8 +25,6 @@ public class App : MonoBehaviour
     public Carrot.Carrot carrot;
     public Carrot_ads_manage ads;
     public GameObject box_item_prefab;
-    public GameObject lesson_item_prefab;
-    public GameObject Vocabulary_item_prefab;
     public TextToSpeech texttospeech;
     public List_vocabulary list_vocabulary;
     public Vocabulary v;
@@ -46,9 +44,6 @@ public class App : MonoBehaviour
     public Text txt_total_voice;
     public Image[] img_menu;
     public Text[] txt_menu;
-
-    [Header("vocabulary")]
-    public Text txt_lesson_title;
 
     [Header("Sound")]
     public AudioSource[] sound;
@@ -209,48 +204,6 @@ public class App : MonoBehaviour
             this.u.Show();
         else
             this.l.Show();
-    }
-
-    public void On_Show_view(IDictionary data)
-    {
-        if (this.is_sell == false) this.ads.On_show_interstitial();
-        this.txt_lesson_title.text = data["name"].ToString();
-        //this.carrot.clear_contain(this.area_all_vocabulary);
-        IList list_txt = (IList)data["text"];
-        IList list_file = (IList)data["file"];
-        IList list_vi = null;
-        if (data["vi"] != null) list_vi = (IList)data["vi"];
-        for (int i = 0; i < list_txt.Count; i++)
-        {
-            var s_Vocabulary = list_txt[i].ToString();
-            var s_Translate = "";
-            var index = i;
-
-            if (list_vi != null)
-            {
-                if (list_vi[i] != null) s_Translate = list_vi[i].ToString();
-            }
-
-            GameObject objVocabulary = Instantiate(this.Vocabulary_item_prefab);
-            objVocabulary.transform.localScale = new Vector3(1, 1, 1);
-
-            objVocabulary.GetComponent<Menu_Item>().txt.text = "Vocabulary " + (i + 1).ToString();
-            if (i % 2 == 0) objVocabulary.GetComponent<Image>().color = this.color_a;
-            objVocabulary.GetComponent<Menu_Item>().act = () =>
-            {
-                V_item v_item = new();
-                v_item.s_key = s_Vocabulary;
-                v_item.s_file = list_file[index].ToString();
-                v_item.index_week = int.Parse(data["index_week"].ToString());
-                v_item.index_v_in_week = index;
-                v_item.index_v = (v_item.index_week * 5) + v_item.index_v_in_week;
-                v_item.s_Translate = s_Translate;
-                this.index_v_view = v_item.index_v;
-                this.play_sound();
-                this.v.On_Show(v_item);
-            };
-        }
-        this.play_sound();
     }
 
     public void play_sound(int index = 0)

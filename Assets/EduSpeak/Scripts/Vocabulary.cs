@@ -41,7 +41,7 @@ public class Vocabulary : MonoBehaviour
         if (this.audioSource_Speech.isPlaying) this.audioSource_Speech.Stop();
         this.s_vocabulary = v.s_key;
         this.txt_Vocabulary.text = v.s_key;
-        this.txt_vocabulary_index.text = "Week " + (v.index_week + 1)+" #"+(v.index_v_in_week+1);
+        this.txt_vocabulary_index.text = "Week " + (this.app.u.index_unit + 1)+" #"+(app.list_vocabulary.index_v_view+1);
         this.txt_vocabulary_translate.text = v.s_Translate;
         this.panel_vocabulary.SetActive(true);
         SpeechRecognizer.StopIfRecording();
@@ -89,8 +89,12 @@ public class Vocabulary : MonoBehaviour
 
     public void btn_On_play_voice()
     {
-        this.audioSource_Speech.clip = this.speechClip;
-        this.audioSource_Speech.Play();
+        if(this.app.is_sell){
+            this.audioSource_Speech.clip = this.speechClip;
+            this.audioSource_Speech.Play();
+        }else{
+            this.app.texttospeech.StartSpeak(this.s_vocabulary);
+        }
     }
 
     public void show_vocabulary_result(bool is_true)
