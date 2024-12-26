@@ -68,7 +68,6 @@
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_camera.cs" />
     <Compile Include="Assets\EduSpeak\Scripts\SpeechToText.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Box_Item.cs" />
-    <Compile Include="Assets\HelloWorld\Assets\Scripts\AppOpenAdController.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Box_Btn_Item.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Loading.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Box_Btn_Panel.cs" />
@@ -77,19 +76,16 @@
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_tool.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Camera.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_list_app.cs" />
-    <Compile Include="Assets\HelloWorld\Assets\Scripts\RewardedInterstitialAdController.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_shop.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_lang.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_HSBColor.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Msg.cs" />
-    <Compile Include="Assets\HelloWorld\Assets\Scripts\GoogleMobileAdsController.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_location.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_User_Login.cs" />
     <Compile Include="Assets\EduSpeak\Scripts\Menu_Item.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Gamepad.cs" />
     <Compile Include="Assets\EduSpeak\Scripts\App.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Photoshop.cs" />
-    <Compile Include="Assets\HelloWorld\Assets\Scripts\Utility\StatusText.cs" />
     <Compile Include="Assets\EduSpeak\Scripts\Favourite.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Input.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Share.cs" />
@@ -107,16 +103,10 @@
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot.cs" />
     <Compile Include="Assets\EduSpeak\Scripts\TextToSpeech.cs" />
     <Compile Include="Assets\EduSpeak\Scripts\Vocabulary.cs" />
-    <Compile Include="Assets\HelloWorld\Assets\Scripts\RewardedAdController.cs" />
-    <Compile Include="Assets\HelloWorld\Assets\Scripts\NativeOverlayAdController.cs" />
     <Compile Include="Assets\Scripts\UnityPurchasing\generated\GooglePlayTangle.cs" />
     <Compile Include="Assets\EduSpeak\Scripts\Units.cs" />
-    <Compile Include="Assets\HelloWorld\Assets\Scripts\InterstitialAdController.cs" />
     <Compile Include="Assets\Carrot-Ads\Carrot_Window_Ads.cs" />
-    <Compile Include="Assets\HelloWorld\Assets\Scripts\BannerViewController.cs" />
-    <Compile Include="Assets\HelloWorld\Assets\Scripts\Utility\SceneMenuButton.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Rate.cs" />
-    <Compile Include="Assets\HelloWorld\Assets\Scripts\GoogleMobileAdsConsentController.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Box.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Box_Item_group.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_lang_show.cs" />
@@ -124,8 +114,6 @@
     <Compile Include="Assets\KKSpeechRecognizer\SpeechRecognizer.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Server.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_UI.cs" />
-    <Compile Include="Assets\HelloWorld\Assets\Scripts\Utility\FpsText.cs" />
-    <Compile Include="Assets\HelloWorld\Assets\Scripts\Utility\SceneMenuList.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Theme.cs" />
   </ItemGroup>
   <ItemGroup>
