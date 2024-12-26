@@ -37,6 +37,7 @@ public class Vocabulary : MonoBehaviour
 
     public void On_Show(V_item v)
     {
+        if(this.app.is_sell==false) this.app.ads.On_show_interstitial();
         this.txt_Status.text = "";
         if (this.audioSource_Speech.isPlaying) this.audioSource_Speech.Stop();
         this.s_vocabulary = v.s_key;

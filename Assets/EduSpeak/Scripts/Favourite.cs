@@ -9,6 +9,7 @@ public class Favourite : MonoBehaviour
     public GameObject panel_favourite;
 
     public void Show(){
+        this.app.Check_ui_menu(4);
         this.panel_favourite.SetActive(true);
     }
 

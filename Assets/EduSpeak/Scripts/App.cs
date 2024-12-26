@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class V_item
 {
     public string s_key;
-    public string s_file="";
+    public string s_file = "";
     public string s_Translate;
     public int index_v = 0;
     public int index_v_in_week = 0;
@@ -40,6 +40,7 @@ public class App : MonoBehaviour
     public Color32 color_menu_active;
     public GameObject panel_home;
     public Text txt_total_vocabulary;
+    public Text txt_total_level;
     public Text txt_total_lesson;
     public Text txt_total_voice;
     public Image[] img_menu;
@@ -72,67 +73,43 @@ public class App : MonoBehaviour
         this.panel_home.SetActive(true);
         this.v.On_Load();
 
+        TextAsset jsonFile;
         if (this.is_sell)
         {
+            jsonFile = Resources.Load<TextAsset>("data");
             this.img_app_title.sprite = this.sp_app_title_sell;
             this.img_logo_company.SetActive(true);
         }
         else
         {
+            jsonFile = Resources.Load<TextAsset>("data_en");
             this.img_app_title.sprite = this.sp_app_title_public;
             this.img_logo_company.SetActive(false);
         }
 
-        if (this.is_sell)
+        if (jsonFile != null)
         {
-            TextAsset jsonFile = Resources.Load<TextAsset>("data");
-            this.list_v = new List<V_item>();
-
-            if (jsonFile != null)
+            int count_vocabulary = 0;
+            int count_unit = 0;
+            this.list_data = (IList)Json.Deserialize(jsonFile.text);
+            for (int i = 0; i < list_data.Count; i++)
             {
-                int count_vocabulary = 0;
-                this.list_data = (IList)Json.Deserialize(jsonFile.text);
-                for (int i = 0; i < list_data.Count; i++)
+                IDictionary dataLevel = (IDictionary)list_data[i];
+                IList list_unit = (IList)dataLevel["units"];
+                count_unit += list_unit.Count;
+                for (int k = 0; k < list_unit.Count; k++)
                 {
-                    IDictionary dataLesson = (IDictionary)list_data[i];
-                    dataLesson["index_week"] = i;
-                    if (dataLesson["text"] != null)
-                    {
-                        IList list_txt = (IList)dataLesson["text"];
-                        IList list_vi = (IList)dataLesson["vi"];
-                        IList list_file = (IList)dataLesson["file"];
-                        count_vocabulary += list_txt.Count;
-                        for (int k = 0; k < list_txt.Count; k++)
-                        {
-                            V_item v_item = new V_item();
-                            v_item.s_key = list_txt[k].ToString();
-                            v_item.s_Translate = list_vi[k].ToString();
-                            v_item.s_file = list_file[k].ToString();
-                            v_item.index_week = i;
-                            v_item.index_v = this.list_v.Count;
-                            v_item.index_v_in_week = k;
-                            this.list_v.Add(v_item);
-                        }
-                    }
-                    else
-                    {
-                        break;
+                    IDictionary dataUnit = (IDictionary)list_unit[k];
+                    if(dataUnit["text"]!=null){
+                        IList list_vocabulary = (IList)dataUnit["text"];
+                        count_vocabulary += list_vocabulary.Count;
                     }
                 }
-                this.txt_total_lesson.text = list_data.Count + "\nWeek";
-                this.txt_total_vocabulary.text = count_vocabulary + "\nVocabulary";
-                this.txt_total_voice.text = count_vocabulary + "\nReading test";
             }
-        }else{
-            TextAsset jsonFile = Resources.Load<TextAsset>("data_en");
-            if (jsonFile != null)
-            {
-                int count_vocabulary = 0;
-                this.list_data = (IList)Json.Deserialize(jsonFile.text);
-                for(int i=0;i<this.list_data.Count;i++){
-                    IDictionary data = (IDictionary)this.list_data[i];
-                }
-            }
+            this.txt_total_level.text = list_data.Count + "\nLevel";
+            this.txt_total_lesson.text = count_unit + "\nUnit";
+            this.txt_total_vocabulary.text = count_vocabulary + "\nVocabulary";
+            this.txt_total_voice.text = count_vocabulary + "\nReading test";
         }
 
         if (SpeechRecognizer.ExistsOnDevice())
@@ -148,7 +125,7 @@ public class App : MonoBehaviour
         }
         SpeechRecognizer.SetDetectionLanguage("en-US");
 
-        this.Check_ui_menu();
+        this.Check_ui_menu(0);
     }
 
     private void On_check_exit_app()
@@ -163,15 +140,14 @@ public class App : MonoBehaviour
     public void Btn_sel_menu(int index)
     {
         this.index_menu_cur = index;
-        this.Check_ui_menu();
         this.Check_func_menu();
     }
 
-    public void Check_ui_menu()
+    public void Check_ui_menu(int index_show)
     {
         for (int i = 0; i < this.img_menu.Length; i++)
         {
-            if (i == this.index_menu_cur)
+            if (i == index_show)
             {
                 this.img_menu[i].color = this.color_menu_active;
                 this.txt_menu[i].color = this.color_menu_active;
@@ -200,7 +176,7 @@ public class App : MonoBehaviour
     public void btn_on_start()
     {
         this.play_sound();
-        if(this.is_sell)
+        if (this.is_sell)
             this.u.Show();
         else
             this.l.Show();
@@ -223,6 +199,8 @@ public class App : MonoBehaviour
         this.l.panel_level.SetActive(false);
         this.u.panel_units.SetActive(false);
         this.list_vocabulary.panel_list_vocabulary.SetActive(false);
+        this.index_menu_cur = 0;
+        this.Check_ui_menu(this.index_menu_cur);
     }
 
     public void Btn_heart()
@@ -256,5 +234,4 @@ public class App : MonoBehaviour
         if (this.index_v_view < 0) this.index_v_view = this.list_v.Count - 1;
         this.v.On_Show(this.list_v[this.index_v_view]);
     }
-
 }

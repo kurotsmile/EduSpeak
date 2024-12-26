@@ -14,6 +14,7 @@ public class Units : MonoBehaviour
     public int index_unit=0;
 
     public void Show(){
+        this.app.Check_ui_menu(2);
         this.panel_units.SetActive(true);
         this.app.carrot.clear_contain(this.tr_all_item);
         IDictionary data_level= (IDictionary)this.app.list_data[this.app.l.index_level];
@@ -29,7 +30,10 @@ public class Units : MonoBehaviour
 
             Carrot_Box_Item box_Item = obj.GetComponent<Carrot_Box_Item>();
             box_Item.set_title(data["name"].ToString());
-            box_Item.set_tip(data["tip"].ToString());
+            if(data["tip"]==null) 
+                box_Item.set_tip("Click to view vocabulary");
+            else
+                box_Item.set_tip(data["tip"].ToString());
             box_Item.set_icon_white(this.app.sp_unit);
             box_Item.check_type();
             box_Item.set_act(()=>{

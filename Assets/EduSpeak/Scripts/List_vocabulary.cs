@@ -15,6 +15,7 @@ public class List_vocabulary : MonoBehaviour
     public int index_v_view=0;
     public void Show()
     {
+        this.app.Check_ui_menu(2);
         this.panel_list_vocabulary.SetActive(true);
         this.app.carrot.clear_contain(this.tr_all_item);
         IDictionary data_level = (IDictionary)this.app.list_data[this.app.l.index_level];
