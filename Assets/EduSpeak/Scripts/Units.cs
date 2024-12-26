@@ -38,7 +38,7 @@ public class Units : MonoBehaviour
             });
         }
     }
-
+    
     public void On_Back(){
         if(this.app.is_sell){
             this.app.Btn_show_home();

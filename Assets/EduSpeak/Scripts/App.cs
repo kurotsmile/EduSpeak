@@ -32,6 +32,7 @@ public class App : MonoBehaviour
     public Vocabulary v;
     public Leves l;
     public Units u;
+    public Favourite f;
 
     [Header("UI")]
     public Image img_app_title;
@@ -151,6 +152,7 @@ public class App : MonoBehaviour
             v.txt_Status.text = "Sorry, but this device doesn't support speech recognition";
         }
         SpeechRecognizer.SetDetectionLanguage("en-US");
+
         this.Check_ui_menu();
     }
 
@@ -185,13 +187,19 @@ public class App : MonoBehaviour
                 this.txt_menu[i].color = this.color_menu_normal;
             }
         }
+        this.panel_home.SetActive(true);
+        this.l.panel_level.SetActive(false);
+        this.u.panel_units.SetActive(false);
+        this.list_vocabulary.panel_list_vocabulary.SetActive(false);
+        this.f.panel_favourite.SetActive(false);
     }
 
     public void Check_func_menu()
     {
         if (this.index_menu_cur == 0) this.Btn_show_home();
         if (this.index_menu_cur == 1) this.l.Show();
-        if (this.index_menu_cur == 2) this.btn_on_start();
+        if (this.index_menu_cur == 2) this.u.Show();
+        if (this.index_menu_cur == 3) this.f.Show();
     }
 
     public void btn_on_start()
@@ -242,12 +250,6 @@ public class App : MonoBehaviour
                 this.v.On_Show(v_item);
             };
         }
-        this.play_sound();
-    }
-
-    public void Back_home()
-    {
-        this.panel_home.SetActive(true);
         this.play_sound();
     }
 

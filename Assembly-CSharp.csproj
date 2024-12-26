@@ -90,6 +90,7 @@
     <Compile Include="Assets\EduSpeak\Scripts\App.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Photoshop.cs" />
     <Compile Include="Assets\HelloWorld\Assets\Scripts\Utility\StatusText.cs" />
+    <Compile Include="Assets\EduSpeak\Scripts\Favourite.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Input.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Share.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\CarrotJSON.cs" />
