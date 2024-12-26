@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Vocabulary : MonoBehaviour
 {
     [Header("Obj Main")]
-    public string s_vocabulary = "";
+    private string s_vocabulary = "";
     public App app;
     public GameObject panel_Recording;
 

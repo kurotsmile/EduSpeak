@@ -1,21 +1,26 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project ToolsVersion="Current">
   <!-- Generated file, do not modify, your changes will be overwritten (use AssetPostprocessor.OnGeneratedCSProject) -->
   <PropertyGroup>
-    <LangVersion>9.0</LangVersion>
+    <BaseIntermediateOutputPath>Temp\obj\$(Configuration)\$(MSBuildProjectName)</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)</IntermediateOutputPath>
   </PropertyGroup>
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+  <ItemGroup>
+    <ProjectCapability Include="Unity" />
+  </ItemGroup>
   <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <LangVersion>9.0</LangVersion>
+    <Configurations>Debug;Release</Configurations>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>10.0.20506</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{790B964E-40B1-958F-BE49-7629A6CA6FF2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -39,37 +44,102 @@
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
-    <NoConfig>true</NoConfig>
+    <NoStandardLibraries>true</NoStandardLibraries>
     <NoStdLib>true</NoStdLib>
-    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
-    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
-    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+    <NoConfig>true</NoConfig>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+    <MSBuildWarningsAsMessages>MSB3277</MSBuildWarningsAsMessages>
   </PropertyGroup>
   <PropertyGroup>
-    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.22</UnityProjectGeneratorVersion>
-    <UnityProjectGeneratorStyle>Legacy</UnityProjectGeneratorStyle>
+    <UnityProjectGeneratorStyle>SDK</UnityProjectGeneratorStyle>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>6000.0.30f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="J:\Visual Stuido 2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\trant\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.5\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="D:\Unity3d\Unity3dEditor\6000.0.30f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="D:\Unity3d\Unity3dEditor\6000.0.30f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="D:\Unity3d\Unity3dEditor\6000.0.30f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_camera.cs" />
     <Compile Include="Assets\EduSpeak\Scripts\SpeechToText.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Box_Item.cs" />
+    <Compile Include="Assets\HelloWorld\Assets\Scripts\AppOpenAdController.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Box_Btn_Item.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Loading.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Box_Btn_Panel.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_User.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Item_top_player.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_tool.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Camera.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_list_app.cs" />
+    <Compile Include="Assets\HelloWorld\Assets\Scripts\RewardedInterstitialAdController.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_shop.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_lang.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_HSBColor.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Msg.cs" />
+    <Compile Include="Assets\HelloWorld\Assets\Scripts\GoogleMobileAdsController.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_location.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_User_Login.cs" />
+    <Compile Include="Assets\EduSpeak\Scripts\Menu_Item.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Gamepad.cs" />
+    <Compile Include="Assets\EduSpeak\Scripts\App.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Photoshop.cs" />
+    <Compile Include="Assets\HelloWorld\Assets\Scripts\Utility\StatusText.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Input.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Share.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\CarrotJSON.cs" />
+    <Compile Include="Assets\EduSpeak\Scripts\Leves.cs" />
+    <Compile Include="Assets\Carrot-Ads\Carrot_ads.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_lost_internet.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_DeviceOrientationChange.cs" />
     <Compile Include="Assets\KKSpeechRecognizer\SpeechRecognizerListener.cs" />
     <Compile Include="Assets\KKSpeechRecognizer\Example\SpeechRecognitionLanguageDropdown.cs" />
-    <Compile Include="Assets\EduSpeak\Scripts\CarrotJSON.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Button_Item.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_game.cs" />
+    <Compile Include="Assets\Carrot-Ads\Carrot_Admob.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot.cs" />
     <Compile Include="Assets\EduSpeak\Scripts\TextToSpeech.cs" />
     <Compile Include="Assets\EduSpeak\Scripts\Vocabulary.cs" />
-    <Compile Include="Assets\EduSpeak\Scripts\Menu_Item.cs" />
+    <Compile Include="Assets\HelloWorld\Assets\Scripts\RewardedAdController.cs" />
+    <Compile Include="Assets\HelloWorld\Assets\Scripts\NativeOverlayAdController.cs" />
+    <Compile Include="Assets\Scripts\UnityPurchasing\generated\GooglePlayTangle.cs" />
+    <Compile Include="Assets\EduSpeak\Scripts\Units.cs" />
+    <Compile Include="Assets\HelloWorld\Assets\Scripts\InterstitialAdController.cs" />
+    <Compile Include="Assets\Carrot-Ads\Carrot_Window_Ads.cs" />
+    <Compile Include="Assets\HelloWorld\Assets\Scripts\BannerViewController.cs" />
+    <Compile Include="Assets\HelloWorld\Assets\Scripts\Utility\SceneMenuButton.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Rate.cs" />
+    <Compile Include="Assets\HelloWorld\Assets\Scripts\GoogleMobileAdsConsentController.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Box.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Box_Item_group.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_lang_show.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Exit.cs" />
+    <Compile Include="Assets\List_vocabulary.cs" />
     <Compile Include="Assets\KKSpeechRecognizer\SpeechRecognizer.cs" />
-    <Compile Include="Assets\EduSpeak\Scripts\App.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Server.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_UI.cs" />
+    <Compile Include="Assets\HelloWorld\Assets\Scripts\Utility\FpsText.cs" />
+    <Compile Include="Assets\HelloWorld\Assets\Scripts\Utility\SceneMenuList.cs" />
+    <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Theme.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Common.dll" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Ump.iOS.dll" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.dll" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.iOS.dll" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Core.dll" />
+    <None Include="Assets\GoogleMobileAds\link.xml" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds_version-9.5.0_manifest.txt" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Ump.Unity.dll" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Ump.dll" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Unity.dll" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Android.dll" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Ump.Android.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -524,12 +594,40 @@
       <HintPath>D:\Unity3d\Unity3dEditor\6000.0.30f1\Editor\Data\Managed\UnityEngine\UnityEditor.XRModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="GoogleMobileAds.Common">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit\net40\unity-custom\nunit.framework.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="GoogleMobileAds">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Core">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Ump.Unity">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Ump.Unity.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Ump">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Ump.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Unity">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Unity.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json\Runtime\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Android.Types">
@@ -1028,20 +1126,12 @@
       <HintPath>D:\Unity3d\Unity3dEditor\6000.0.30f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Multiplayer.Center.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Multiplayer.Center.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Multiplayer.Center.Common">
       <HintPath>Library\ScriptAssemblies\Unity.Multiplayer.Center.Common.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
@@ -1052,52 +1142,51 @@
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Multiplayer.Center.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Multiplayer.Center.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.VisualScripting.State.csproj">
-      <Project>{C25A51DC-9147-61D3-F72F-B33C200B4704}</Project>
-      <Name>Unity.VisualScripting.State</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
-      <Project>{A81E091E-4C0C-4A4B-D731-816339637410}</Project>
-      <Name>Unity.VisualScripting.Shared.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj">
-      <Project>{B5E91DE6-61F4-DCFB-F8B9-984CEE2E0CB2}</Project>
-      <Name>Unity.VisualScripting.Core.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{6F46AFE0-ACAF-3164-B2E6-9E392D8D56B0}</Project>
-      <Name>Unity.VisualStudio.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj">
-      <Project>{4E6538AF-D797-484E-09CB-2804F3A12433}</Project>
-      <Name>Unity.VisualScripting.Flow.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
-      <Project>{D62100C9-3150-AF6D-60D2-36038F47332D}</Project>
-      <Name>Unity.VisualScripting.Flow</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Core.csproj">
-      <Project>{E24F4C13-9C53-3FDE-F63B-B5BC4FFC4978}</Project>
-      <Name>Unity.VisualScripting.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj">
-      <Project>{23B12D81-0AA8-8400-1EF3-476342AD733D}</Project>
-      <Name>Unity.VisualScripting.SettingsProvider.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj">
-      <Project>{99D2D093-9B60-FBA2-E3EC-EDA5691DDC5F}</Project>
-      <Name>Unity.VisualScripting.State.Editor</Name>
-    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Purchasing.SecurityStub.csproj" />
+    <ProjectReference Include="UnityEngine.Purchasing.Codeless.csproj" />
+    <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj" />
+    <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj" />
+    <ProjectReference Include="UnityEngine.Purchasing.csproj" />
+    <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj" />
+    <ProjectReference Include="UnityEngine.Purchasing.SecurityCore.csproj" />
+    <ProjectReference Include="Unity.Services.Core.Analytics.csproj" />
+    <ProjectReference Include="Purchasing.Common.csproj" />
+    <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj" />
+    <ProjectReference Include="Unity.Services.Authentication.csproj" />
+    <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj" />
+    <ProjectReference Include="GoogleMobileAds.Editor.csproj" />
+    <ProjectReference Include="UnityEditor.Purchasing.csproj" />
+    <ProjectReference Include="Unity.Services.Core.Components.csproj" />
+    <ProjectReference Include="Unity.VisualScripting.State.csproj" />
+    <ProjectReference Include="Unity.Services.Core.Environments.csproj" />
+    <ProjectReference Include="UnityEngine.Purchasing.Stores.csproj" />
+    <ProjectReference Include="Unity.Services.Core.csproj" />
+    <ProjectReference Include="Unity.Services.Authentication.PlayerAccounts.csproj" />
+    <ProjectReference Include="Unity.VisualStudio.Editor.csproj" />
+    <ProjectReference Include="Unity.VisualScripting.Flow.csproj" />
+    <ProjectReference Include="Unity.VisualScripting.Core.csproj" />
+    <ProjectReference Include="Unity.Services.Authentication.Editor.Shared.csproj" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+  <ItemGroup>
+    <ProjectCapability Remove="LaunchProfiles" />
+    <ProjectCapability Remove="SharedProjectReferences" />
+    <ProjectCapability Remove="ReferenceManagerSharedProjects" />
+    <ProjectCapability Remove="ProjectReferences" />
+    <ProjectCapability Remove="ReferenceManagerProjects" />
+    <ProjectCapability Remove="COMReferences" />
+    <ProjectCapability Remove="ReferenceManagerCOM" />
+    <ProjectCapability Remove="AssemblyReferences" />
+    <ProjectCapability Remove="ReferenceManagerAssemblies" />
+  </ItemGroup>
 </Project>

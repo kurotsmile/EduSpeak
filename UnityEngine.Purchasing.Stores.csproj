@@ -1,21 +1,26 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project ToolsVersion="Current">
   <!-- Generated file, do not modify, your changes will be overwritten (use AssetPostprocessor.OnGeneratedCSProject) -->
   <PropertyGroup>
-    <LangVersion>9.0</LangVersion>
+    <BaseIntermediateOutputPath>Temp\obj\$(Configuration)\$(MSBuildProjectName)</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)</IntermediateOutputPath>
   </PropertyGroup>
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+  <ItemGroup>
+    <ProjectCapability Include="Unity" />
+  </ItemGroup>
   <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <LangVersion>9.0</LangVersion>
+    <Configurations>Debug;Release</Configurations>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>10.0.20506</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{EB3DA169-2F56-F2E7-1E1E-C072478CED34}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>UnityEngine.Purchasing.Stores</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -39,23 +44,22 @@
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
-    <NoConfig>true</NoConfig>
+    <NoStandardLibraries>true</NoStandardLibraries>
     <NoStdLib>true</NoStdLib>
-    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
-    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
-    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+    <NoConfig>true</NoConfig>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+    <MSBuildWarningsAsMessages>MSB3277</MSBuildWarningsAsMessages>
   </PropertyGroup>
   <PropertyGroup>
-    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.22</UnityProjectGeneratorVersion>
-    <UnityProjectGeneratorStyle>Legacy</UnityProjectGeneratorStyle>
+    <UnityProjectGeneratorStyle>SDK</UnityProjectGeneratorStyle>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>6000.0.30f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="J:\Visual Stuido 2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\trant\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.5\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="D:\Unity3d\Unity3dEditor\6000.0.30f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="D:\Unity3d\Unity3dEditor\6000.0.30f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="D:\Unity3d\Unity3dEditor\6000.0.30f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
@@ -88,8 +92,8 @@
     <Compile Include="Library\PackageCache\com.unity.purchasing\Runtime\Stores\Android\GooglePlay\AAR\Models\GoogleBillingStrings.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing\Runtime\Stores\Util\IRetryPolicy.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing\Runtime\Stores\Android\GooglePlay\Models\GoogleProductMetadata.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing\Runtime\Stores\Android\GooglePlay\AAR\Interfaces\IGooglePlayStoreService.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing\Runtime\Stores\Android\GooglePlay\AAR\Listeners\GoogleAcknowledgePurchaseListener.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing\Runtime\Stores\Android\GooglePlay\AAR\Interfaces\IGooglePlayStoreService.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing\Runtime\Stores\FakeStore\DialogRequest.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing\Runtime\Stores\BaseStore\JSONStore.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing\Runtime\Stores\Android\JavaBridge.cs" />
@@ -197,8 +201,8 @@
     <Compile Include="Library\PackageCache\com.unity.purchasing\Runtime\Stores\BaseStore\INativeStoreProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing\Runtime\Stores\Android\GooglePlay\AAR\Models\GooglePurchaseStateEnum.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing\Runtime\Stores\Android\GooglePlay\AAR\GoogleCachedQuerySkuDetailsService.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing\Runtime\Stores\Android\GooglePlay\Models\GoogleBillingResponseCode.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing\Runtime\Stores\AppStore.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing\Runtime\Stores\Android\GooglePlay\Models\GoogleBillingResponseCode.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing\Runtime\Stores\Android\GooglePlay\GooglePlayStore.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing\Runtime\Stores\AppleAppStore\FakeAppleExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing\Runtime\Stores\AppleAppStore\IAppleConfiguration.cs" />
@@ -1185,58 +1189,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="UnityEngine.Purchasing.AppleCore.csproj">
-      <Project>{6AD9E829-FD3C-89B9-7C2F-75738580B045}</Project>
-      <Name>UnityEngine.Purchasing.AppleCore</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.AppleMacosStub.csproj">
-      <Project>{E0E541C6-43CB-1173-06EC-2F0E9F7FDF8A}</Project>
-      <Name>UnityEngine.Purchasing.AppleMacosStub</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.AppleStub.csproj">
-      <Project>{F5453D38-E925-EF3A-F70A-47BC6A35795A}</Project>
-      <Name>UnityEngine.Purchasing.AppleStub</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.csproj">
-      <Project>{5DD5E881-7306-5B70-7E2B-21A473EC2BDF}</Project>
-      <Name>UnityEngine.Purchasing</Name>
-    </ProjectReference>
-    <ProjectReference Include="Purchasing.Common.csproj">
-      <Project>{21920247-448F-87E1-C3FD-1D14911DA028}</Project>
-      <Name>Purchasing.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.SecurityCore.csproj">
-      <Project>{3D12C1D4-574A-A4BB-DC9B-F9E61E8F7714}</Project>
-      <Name>UnityEngine.Purchasing.SecurityCore</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.SecurityStub.csproj">
-      <Project>{3F277607-C271-3CDD-CA40-6E2643907FB2}</Project>
-      <Name>UnityEngine.Purchasing.SecurityStub</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.WinRTCore.csproj">
-      <Project>{8BA3997E-BA2D-1DF9-4C2B-6155D4C4721E}</Project>
-      <Name>UnityEngine.Purchasing.WinRTCore</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.WinRTStub.csproj">
-      <Project>{3814D805-83FD-157F-E465-B891CAD8B748}</Project>
-      <Name>UnityEngine.Purchasing.WinRTStub</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Services.Core.csproj">
-      <Project>{BF7FD046-ACEC-4383-6081-D44A4FD02650}</Project>
-      <Name>Unity.Services.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Services.Core.Internal.csproj">
-      <Project>{762FC517-A38D-5E45-8176-F6E03BA24D8C}</Project>
-      <Name>Unity.Services.Core.Internal</Name>
-    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Purchasing.AppleCore.csproj" />
+    <ProjectReference Include="UnityEngine.Purchasing.AppleMacosStub.csproj" />
+    <ProjectReference Include="UnityEngine.Purchasing.AppleStub.csproj" />
+    <ProjectReference Include="UnityEngine.Purchasing.csproj" />
+    <ProjectReference Include="Purchasing.Common.csproj" />
+    <ProjectReference Include="UnityEngine.Purchasing.SecurityCore.csproj" />
+    <ProjectReference Include="UnityEngine.Purchasing.SecurityStub.csproj" />
+    <ProjectReference Include="UnityEngine.Purchasing.WinRTCore.csproj" />
+    <ProjectReference Include="UnityEngine.Purchasing.WinRTStub.csproj" />
+    <ProjectReference Include="Unity.Services.Core.csproj" />
+    <ProjectReference Include="Unity.Services.Core.Internal.csproj" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+  <ItemGroup>
+    <ProjectCapability Remove="LaunchProfiles" />
+    <ProjectCapability Remove="SharedProjectReferences" />
+    <ProjectCapability Remove="ReferenceManagerSharedProjects" />
+    <ProjectCapability Remove="ProjectReferences" />
+    <ProjectCapability Remove="ReferenceManagerProjects" />
+    <ProjectCapability Remove="COMReferences" />
+    <ProjectCapability Remove="ReferenceManagerCOM" />
+    <ProjectCapability Remove="AssemblyReferences" />
+    <ProjectCapability Remove="ReferenceManagerAssemblies" />
+  </ItemGroup>
 </Project>

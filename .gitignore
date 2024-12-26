@@ -20,3 +20,8 @@ bin/
 # Ignore the JetBrains Rider files
 /.utmp
 /.vs
+/Assets/GoogleMobileAds
+/Assets/ExternalDependencyManager
+/Assets/HelloWorld
+/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib
+/Assets/Scripts/UnityPurchasing

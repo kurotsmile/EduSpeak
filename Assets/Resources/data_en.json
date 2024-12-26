@@ -1,0 +1,26 @@
+[
+    {
+        "name":"Level 1",
+        "tip":"Click on the word to hear the pronunciation.",
+        "units":[
+            {
+                "name":"Unit 1",
+                "tip":"My New School",
+                "text":["uniform","smart","pencil case","ruler","rubber","pen","pencil","sharpener","school bag","school","classroom","teacher","student","desk","chair","board","window","door","light","whiteboard","blackboard","map","clock","flag","book","notebook","exercise book","dictionary","computer","laptop","tablet","mobile phone","school uniform","tie","shirt","skirt","trousers","shoes","socks","jumper","jacket","coat","hat","gloves","scarf","boots","trainers","sandals","flip-flops","swimming costume","swimming trunks","towel","goggles","swimming cap","swimming pool","swimming","swim","swimwear","swimmer","swimming lesson","swimming club","swimming coach","swimming gala","swimming competition"],
+                "vi":["đồng phục","thông minh","hộp bút","thước kẻ","cục tẩy","bút","bút chì","gọt bút","cặp học sinh","trường học","lớp học","giáo viên","học sinh","bàn","ghế","bảng","cửa sổ","cửa","đèn","bảng trắng","bảng đen","bản đồ","đồng hồ","cờ","sách","sổ tay","vở","từ điển","máy tính","máy tính xách tay","máy tính bảng","điện thoại di động","đồng phục học sinh","cà vạt","áo sơ mi","váy","quần","giày","tất","áo len","áo khoác","áo choàng","mũ","găng tay","khăn quàng cổ","giày ủng","giày thể thao","sandal","dép lê","đồ bơi","quần áo bơi","khăn tắm","kính bơi","mũ bơi","hồ bơi","bơi","đi bơi","quần áo bơi","vận động viên bơi","bài học bơi","câu lạc bộ bơi","huấn luyện viên bơi","gala bơi","cuộc thi bơi"]
+            }
+        ]
+    },
+    {
+        "name":"Level 2",
+        "tip":"Click on the word to hear the pronunciation.",
+        "units":[
+            {
+                "name":"Unit 1",
+                "tip":"My Hobbies",
+                "text":["hair","glasses","long","red","short","slim","tall","thin","thick","wavy","curly","straight","blond","brown","black","grey","white","blue","green","yellow","orange","purple","pink","big","small","clean","dirty","fast","slow","hard","soft","heavy","light","hot","cold","loud","quiet","old","new","strong","weak","young","old","beautiful","ugly","expensive","cheap","good","bad","happy","sad","healthy","sick","hungry","thirsty","tired","angry","scared","surprised","excited","bored","nervous","proud","shy","brave","friendly","selfish","funny","helpful","kind","lazy","fashion show","food stand","music performance","puppet show","talent show","tug of war","buy fruit or flowers","decorate a house or tree","eat traditional food","fireworks","get lucky money, candy, or gifts","play games or music"],
+                "vi":["tóc","kính","dài","đỏ","ngắn","mảnh khảnh","cao","mảnh","dày","uốn","quăn","thẳng","vàng","nâu","đen","xám","trắng","xanh","xanh lá cây","vàng","cam","tím","hồng","lớn","nhỏ","sạch","bẩn","nhanh","chậm","cứng","mềm","nặng","nhẹ","nóng","lạnh","ồn ào","yên tĩnh","cũ","mới","mạnh","yếu","trẻ","già","đẹp","xấu","đắt","rẻ","tốt","xấu","vui","buồn","khỏe mạnh","ốm","đói","khát","mệt mỏi","tức giận","sợ hãi","ngạc nhiên","hào hứng","chán chường","lo lắng","tự hào","nhút nhát","dũng cảm","thân thiện","ích kỷ","vui vẻ","hữu ích","tử tế","lười biếng","trình diễn thời trang","gian hàng ẩm thực","biểu diễn âm nhạc","chương trình múa rối","chương trình tài năng","kéo co","mua trái cây hoặc hoa","trang trí nhà cửa hoặc cây cối","món ăn truyền thống của chuột","pháo hoa","nhận tiền"]
+            }
+        ]
+    }
+]
