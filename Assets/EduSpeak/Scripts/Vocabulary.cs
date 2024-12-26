@@ -152,4 +152,10 @@ public class Vocabulary : MonoBehaviour
         this.panel_vocabulary.SetActive(false);
         this.app.list_vocabulary.Show();
     }
+
+    public void On_add_favourite()
+    {
+        this.app.play_sound();
+        this.app.f.Add();
+    }
 }

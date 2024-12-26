@@ -16,4 +16,8 @@ public class Favourite : MonoBehaviour
         this.panel_favourite.SetActive(false);
         this.app.Btn_show_home();
     }
+
+    public void Add(){
+        this.app.carrot.Show_msg("Favourite","Add to favourite success!");
+    }
 }

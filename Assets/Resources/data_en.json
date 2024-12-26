@@ -8,29 +8,133 @@
                 "tip":"My New School",
                 "text":["uniform","smart","pencil case","compass","calculator","rubber","notebook","bicycle","library"],
                 "vi":["đồng phục","thông minh","hộp bút","compa","máy tính bỏ túi","cục tẩy","sổ tay","xe đạp","thư viện"]
-            },
-            {
+            },{
                 "name":"Unit 2",
                 "tip":"My Home",
                 "text":["kitchen","living room","bedroom","bathroom","fridge","sink","sofa","cupboard","bed","fan"],
                 "vi":["nhà bếp","phòng khách","phòng ngủ","phòng tắm","tủ lạnh","bồn rửa","ghế sofa","tủ","giường","quạt"]
-            },
-            {
+            },{
                 "name":"Unit 3",
                 "tip":"My Friends",
                 "text":["kind","funny","clever","friendly","hard-working","talkative","shy","confident","caring"],
                 "vi":["tốt bụng","hài hước","thông minh","thân thiện","chăm chỉ","nói nhiều","nhút nhát","tự tin","biết quan tâm"]
-            },
-            {
+            },{
                 "name":"Unit 4",
                 "tip":"My Neighborhood",
                 "text":["market","hospital","post office","stadium","park","museum","school","cinema","street","noisy"],
                 "vi":["chợ","bệnh viện","bưu điện","sân vận động","công viên","bảo tàng","trường học","rạp chiếu phim","đường phố","ồn ào"]
+            },{
+                "name":"Unit 5",
+                "tip":"Natural Wonders of the World",
+                "text":["island","desert","mountain","river","forest","lake","beach","waterfall","cave","valley"],
+                "vi":["hòn đảo","sa mạc","núi","sông","rừng","hồ","bãi biển","thác nước","hang động","thung lũng"]
+            },{
+                "name": "Unit 6",
+                "tip": "Our Tet Holiday",
+                "text": ["peach blossom", "apricot blossom", "kumquat tree", "lucky money", "family reunion", "firework", "traditional food", "sticky rice cake", "calendar", "decorate"],
+                "vi": ["hoa đào", "hoa mai", "cây quất", "tiền lì xì", "sum họp gia đình", "pháo hoa", "món ăn truyền thống", "bánh chưng", "lịch", "trang trí"]
+            },{
+                "name": "Unit 7",
+                "tip": "Television",
+                "text": ["cartoon", "news", "game show", "channel", "programme", "viewer", "remote control", "screen", "TV schedule", "broadcast"],
+                "vi": ["phim hoạt hình", "tin tức", "chương trình trò chơi", "kênh", "chương trình", "khán giả", "điều khiển từ xa", "màn hình", "lịch phát sóng", "phát sóng"]
+            },{
+                "name": "Unit 8",
+                "tip": "Sports and Games",
+                "text": ["football", "badminton", "volleyball", "basketball", "swimming", "cycling", "skiing", "surfing", "exercise", "practice"],
+                "vi": ["bóng đá", "cầu lông", "bóng chuyền", "bóng rổ", "bơi lội", "đạp xe", "trượt tuyết", "lướt sóng", "tập thể dục", "luyện tập"]
+            },{
+                "name": "Unit 9",
+                "tip": "Cities of the World",
+                "text": ["capital", "country", "landmark", "tower", "palace", "square", "population", "famous", "modern", "ancient"],
+                "vi": ["thủ đô", "quốc gia", "danh thắng", "tháp", "cung điện", "quảng trường", "dân số", "nổi tiếng", "hiện đại", "cổ kính"]
+            },{
+                "name": "Unit 10",
+                "tip": "Our Houses in the Future",
+                "text": ["skyscraper", "solar panel", "appliance", "robot", "high-tech", "automatic", "comfortable", "wireless", "environment-friendly", "space"],
+                "vi": ["nhà chọc trời", "tấm năng lượng mặt trời", "thiết bị", "người máy", "công nghệ cao", "tự động", "thoải mái", "không dây", "thân thiện môi trường", "không gian"]
+            },{
+                "name": "Unit 11",
+                "tip": "Our Greener World",
+                "text": ["environment", "pollution", "recycle", "rubbish", "reuse", "save energy", "forest fire", "plastic bag", "clean up", "protect"],
+                "vi": ["môi trường", "sự ô nhiễm", "tái chế", "rác thải", "tái sử dụng", "tiết kiệm năng lượng", "cháy rừng", "túi nhựa", "dọn dẹp", "bảo vệ"]
+            },{
+                "name": "Unit 12",
+                "tip": "Robots",
+                "text": ["robot", "machine", "helpful", "inventor", "do chores", "intelligent", "dangerous", "automatic", "space exploration", "future"],
+                "vi": ["robot", "máy móc", "hữu ích", "nhà phát minh", "làm việc nhà", "thông minh", "nguy hiểm", "tự động", "khám phá không gian", "tương lai"]
             }
         ]
     },
     {
         "name":"Level 2",
+        "tip":"Click on the word to hear the pronunciation.",
+        "units":[
+            {
+                "name":"Unit 1",
+                "tip":"My Hobbies",
+                "text":["hobby","gardening","collecting stamps","bird-watching","playing board games","arranging flowers","skating","carving","creative","unusual"],
+                "vi":["hobby","làm vườn","sưu tầm tem","ngắm chim","chơi trò chơi bàn cờ","cắm hoa","trượt băng","chạm khắc","sáng tạo","bất thường"]
+            },{
+                "name": "Unit 2",
+                "tip": "Health",
+                "text": ["health", "calories", "obesity", "sickness", "diet", "depression", "allergy", "symptom", "exercise", "avoid"],
+                "vi": ["sức khỏe", "calo", "béo phì", "bệnh tật", "chế độ ăn", "trầm cảm", "dị ứng", "triệu chứng", "tập thể dục", "tránh"]
+            },{
+                "name": "Unit 3",
+                "tip": "Community Service",
+                "text": ["volunteer", "community", "benefit", "environment", "donate", "charity", "shelter", "disabled people", "elderly people", "recycle"],
+                "vi": ["tình nguyện viên", "cộng đồng", "lợi ích", "môi trường", "quyên góp", "từ thiện", "nơi trú ẩn", "người khuyết tật", "người già", "tái chế"]
+            },{
+                "name": "Unit 4",
+                "tip": "Music and Arts",
+                "text": ["artist", "musician", "composer", "gallery", "opera", "instrument", "perform", "exhibition", "folk music", "portrait"],
+                "vi": ["nghệ sĩ", "nhạc sĩ", "nhà soạn nhạc", "phòng trưng bày", "nhạc kịch", "nhạc cụ", "biểu diễn", "triển lãm", "nhạc dân gian", "chân dung"]
+            },{
+                "name": "Unit 5",
+                "tip": "Vietnamese Food and Drink",
+                "text": ["cuisine", "spring rolls", "noodles", "pancake", "tofu", "soup", "ingredient", "recipe", "spicy", "delicious"],
+                "vi": ["ẩm thực", "nem rán/chả giò", "mì, bún", "bánh kếp", "đậu phụ", "súp", "nguyên liệu", "công thức", "cay", "ngon miệng"]
+            },{
+                "name": "Unit 6",
+                "tip": "The First University in Vietnam",
+                "text": ["university", "temple", "literature", "heritage", "emperor", "scholar", "architecture", "doctorate", "preservation", "recognition"],
+                "vi": ["đại học", "đền, miếu", "văn chương", "di sản", "hoàng đế", "học giả", "kiến trúc", "tiến sĩ", "sự bảo tồn", "sự công nhận"]
+            },{
+                "name": "Unit 7",
+                "tip": "Traffic",
+                "text": ["traffic", "vehicle", "zebra crossing", "pavement", "helmet", "road user", "obey", "accident", "public transport", "traffic jam"],
+                "vi": ["giao thông", "phương tiện", "vạch qua đường", "vỉa hè", "mũ bảo hiểm", "người tham gia giao thông", "tuân theo", "tai nạn", "phương tiện công cộng", "kẹt xe"]
+            },{
+                "name": "Unit 8",
+                "tip": "Films",
+                "text": ["film", "comedy", "action film", "documentary", "horror film", "science fiction", "director", "actor", "actress", "review"],
+                "vi": ["phim", "phim hài", "phim hành động", "phim tài liệu", "phim kinh dị", "khoa học viễn tưởng", "đạo diễn", "diễn viên nam", "diễn viên nữ", "bài đánh giá"]
+            },{
+                "name": "Unit 9",
+                "tip": "Festivals Around the World",
+                "text": ["festival", "parade", "celebrate", "fireworks", "carnival", "tradition", "thanksgiving", "religious", "cultural", "costume"],
+                "vi": ["lễ hội", "cuộc diễu hành", "tổ chức lễ kỷ niệm", "pháo hoa", "lễ hội hóa trang", "truyền thống", "lễ tạ ơn", "thuộc về tôn giáo", "thuộc về văn hóa", "trang phục"]
+            },{
+                "name": "Unit 10",
+                "tip": "Sources of Energy",
+                "text": ["energy", "solar power", "wind power", "fossil fuel", "electricity", "renewable", "non-renewable", "conserve", "alternative", "pollution"],
+                "vi": ["năng lượng", "năng lượng mặt trời", "năng lượng gió", "nhiên liệu hóa thạch", "điện", "tái tạo được", "không tái tạo được", "bảo tồn", "thay thế", "sự ô nhiễm"]
+            },{
+                "name": "Unit 11",
+                "tip": "Travelling in the Future",
+                "text": ["spaceship", "driverless car", "solar-powered", "high-speed train", "teleportation", "environmentally friendly", "modern", "convenient", "underwater", "airship"],
+                "vi": ["tàu vũ trụ", "xe không người lái", "chạy bằng năng lượng mặt trời", "tàu cao tốc", "dịch chuyển tức thời", "thân thiện với môi trường", "hiện đại", "tiện lợi", "dưới nước", "khí cầu"]
+            },{
+                "name": "Unit 12",
+                "tip": "An Overcrowded World",
+                "text": ["overcrowded", "population", "urban", "rural", "migration", "poverty", "slum", "disease", "overpopulation", "solution"],
+                "vi": ["đông đúc", "dân số", "đô thị", "nông thôn", "sự di cư", "nghèo đói", "khu ổ chuột", "bệnh tật", "bùng nổ dân số", "giải pháp"]
+            }                                                                            
+        ]
+    },
+    {
+        "name":"Level 3",
         "tip":"Click on the word to hear the pronunciation.",
         "units":[
             {
