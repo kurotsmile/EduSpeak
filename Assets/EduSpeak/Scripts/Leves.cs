@@ -1,6 +1,7 @@
 using System.Collections;
 using Carrot;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Leves : MonoBehaviour
 {
@@ -8,8 +9,8 @@ public class Leves : MonoBehaviour
     public int index_level=0;
 
     [Header("UI")]
-    public Transform tr_all_item;
     public GameObject panel_level;
+    public Transform tr_all_item;
 
     public void Show()
     {
@@ -22,7 +23,8 @@ public class Leves : MonoBehaviour
             GameObject obj = Instantiate(this.app.box_item_prefab);
             obj.transform.SetParent(this.tr_all_item);
             obj.transform.localScale = new Vector3(1, 1, 1);
-
+            if(i%2==0) obj.GetComponent<Image>().color=this.app.color_a;
+            
             Carrot_Box_Item box_Item = obj.GetComponent<Carrot_Box_Item>();
             box_Item.set_title(data["name"].ToString());
             box_Item.set_tip(data["tip"].ToString());
@@ -35,5 +37,9 @@ public class Leves : MonoBehaviour
                 this.app.Btn_sel_menu(2);
             });
         }
+    }
+
+    public void On_Back(){
+        this.app.Btn_show_home();
     }
 }

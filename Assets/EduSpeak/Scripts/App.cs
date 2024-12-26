@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class V_item
 {
     public string s_key;
-    public string s_file;
+    public string s_file="";
     public string s_Translate;
     public int index_v = 0;
     public int index_v_in_week = 0;
@@ -40,16 +40,11 @@ public class App : MonoBehaviour
     public Color32 color_menu_normal;
     public Color32 color_menu_active;
     public GameObject panel_home;
-    public GameObject panel_main;
-    public GameObject panel_view;
-    public Transform area_all_lesson;
-    public Transform area_all_vocabulary;
     public Text txt_total_vocabulary;
     public Text txt_total_lesson;
     public Text txt_total_voice;
     public Image[] img_menu;
     public Text[] txt_menu;
-    public GameObject[] panel_scene;
 
     [Header("vocabulary")]
     public Text txt_lesson_title;
@@ -64,6 +59,8 @@ public class App : MonoBehaviour
     public Sprite sp_app_title_sell;
     public Sprite sp_app_title_public;
     public Sprite sp_class;
+    public Sprite sp_unit;
+    public Sprite sp_vocabulary;
 
     private IList<V_item> list_v = null;
     private int index_v_view = 0;
@@ -77,8 +74,6 @@ public class App : MonoBehaviour
         if (this.is_sell == false) this.ads.On_Load();
 
         this.panel_home.SetActive(true);
-        this.panel_main.SetActive(false);
-        this.panel_view.SetActive(false);
         this.v.On_Load();
 
         if (this.is_sell)
@@ -97,7 +92,6 @@ public class App : MonoBehaviour
             TextAsset jsonFile = Resources.Load<TextAsset>("data");
             this.list_v = new List<V_item>();
 
-            this.carrot.clear_contain(area_all_lesson);
             if (jsonFile != null)
             {
                 int count_vocabulary = 0;
@@ -128,20 +122,6 @@ public class App : MonoBehaviour
                     {
                         break;
                     }
-
-                    GameObject objLesson = Instantiate(this.lesson_item_prefab);
-                    objLesson.transform.SetParent(this.area_all_lesson);
-                    objLesson.transform.localScale = new Vector3(1, 1, 1);
-                    if (i % 2 == 0)
-                        objLesson.GetComponent<Image>().color = this.color_a;
-                    else
-                        objLesson.GetComponent<Image>().color = Color.white;
-
-                    objLesson.GetComponent<Menu_Item>().txt.text = dataLesson["name"].ToString();
-                    objLesson.GetComponent<Menu_Item>().act = () =>
-                    {
-                        this.On_Show_view(dataLesson);
-                    };
                 }
                 this.txt_total_lesson.text = list_data.Count + "\nWeek";
                 this.txt_total_vocabulary.text = count_vocabulary + "\nVocabulary";
@@ -198,13 +178,11 @@ public class App : MonoBehaviour
             {
                 this.img_menu[i].color = this.color_menu_active;
                 this.txt_menu[i].color = this.color_menu_active;
-                if (this.panel_scene[i] != null) this.panel_scene[i].SetActive(true);
             }
             else
             {
                 this.img_menu[i].color = this.color_menu_normal;
                 this.txt_menu[i].color = this.color_menu_normal;
-                if (this.panel_scene[i] != null) this.panel_scene[i].SetActive(false);
             }
         }
     }
@@ -219,14 +197,17 @@ public class App : MonoBehaviour
     public void btn_on_start()
     {
         this.play_sound();
-        this.panel_main.SetActive(true);
+        if(this.is_sell)
+            this.u.Show();
+        else
+            this.l.Show();
     }
 
     public void On_Show_view(IDictionary data)
     {
         if (this.is_sell == false) this.ads.On_show_interstitial();
         this.txt_lesson_title.text = data["name"].ToString();
-        this.carrot.clear_contain(this.area_all_vocabulary);
+        //this.carrot.clear_contain(this.area_all_vocabulary);
         IList list_txt = (IList)data["text"];
         IList list_file = (IList)data["file"];
         IList list_vi = null;
@@ -243,7 +224,6 @@ public class App : MonoBehaviour
             }
 
             GameObject objVocabulary = Instantiate(this.Vocabulary_item_prefab);
-            objVocabulary.transform.SetParent(this.area_all_vocabulary);
             objVocabulary.transform.localScale = new Vector3(1, 1, 1);
 
             objVocabulary.GetComponent<Menu_Item>().txt.text = "Vocabulary " + (i + 1).ToString();
@@ -263,26 +243,17 @@ public class App : MonoBehaviour
             };
         }
         this.play_sound();
-        this.panel_view.SetActive(true);
     }
 
     public void Back_home()
     {
-        this.panel_main.SetActive(false);
-        this.panel_view.SetActive(false);
+        this.panel_home.SetActive(true);
         this.play_sound();
     }
 
     public void play_sound(int index = 0)
     {
         if (this.carrot.get_status_sound()) this.sound[index].Play();
-    }
-
-    public void Back_List_Lesson()
-    {
-        this.panel_view.SetActive(true);
-        this.v.Close();
-        this.play_sound();
     }
 
     public void show_setting()
@@ -294,7 +265,9 @@ public class App : MonoBehaviour
     {
         this.play_sound();
         this.panel_home.SetActive(true);
-        this.panel_main.SetActive(false);
+        this.l.panel_level.SetActive(false);
+        this.u.panel_units.SetActive(false);
+        this.list_vocabulary.panel_list_vocabulary.SetActive(false);
     }
 
     public void Btn_heart()

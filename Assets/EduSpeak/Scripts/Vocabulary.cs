@@ -46,7 +46,7 @@ public class Vocabulary : MonoBehaviour
         this.panel_vocabulary.SetActive(true);
         SpeechRecognizer.StopIfRecording();
         this.panel_Recording.SetActive(false);
-        this.speechClip = Resources.Load<AudioClip>("voice/" + v.s_file.Replace(".WAV", ""));
+        if(v.s_file!="") this.speechClip = Resources.Load<AudioClip>("voice/" + v.s_file.Replace(".WAV", ""));
     }
 
     public void Close()
@@ -142,4 +142,10 @@ public class Vocabulary : MonoBehaviour
         this.panel_Recording.SetActive(false);
     }
     #endregion
+
+    public void On_Back()
+    {
+        this.panel_vocabulary.SetActive(false);
+        this.app.list_vocabulary.Show();
+    }
 }

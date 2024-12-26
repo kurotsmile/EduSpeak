@@ -93,6 +93,7 @@
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Input.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Share.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\CarrotJSON.cs" />
+    <Compile Include="Assets\EduSpeak\Scripts\List_vocabulary.cs" />
     <Compile Include="Assets\EduSpeak\Scripts\Leves.cs" />
     <Compile Include="Assets\Carrot-Ads\Carrot_ads.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_lost_internet.cs" />
@@ -119,7 +120,6 @@
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Box_Item_group.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_lang_show.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Exit.cs" />
-    <Compile Include="Assets\List_vocabulary.cs" />
     <Compile Include="Assets\KKSpeechRecognizer\SpeechRecognizer.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Server.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_UI.cs" />
