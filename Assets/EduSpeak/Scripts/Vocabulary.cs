@@ -21,6 +21,10 @@ public class Vocabulary : MonoBehaviour
     public GameObject panel_vocabulary;
     public GameObject panel_vocabulary_true;
     public GameObject panel_vocabulary_false;
+    public Image Img_panel_heart;
+    public Image Img_panel_heart_border;
+    public Image Img_panel_heart_icon;
+    public Color32 color_heart_pin;
 
     [Header("Audio")]
     public AudioSource audioSource_Recording;
@@ -54,6 +58,15 @@ public class Vocabulary : MonoBehaviour
         SpeechRecognizer.StopIfRecording();
         this.panel_Recording.SetActive(false);
         if(v.s_file!="") this.speechClip = Resources.Load<AudioClip>("voice/" + v.s_file.Replace(".WAV", ""));
+        if(this.app.f.Check_key(v.s_key)){
+            this.Img_panel_heart_icon.sprite=this.app.sp_broken_heart;
+            this.Img_panel_heart.color=this.color_heart_pin;
+            this.Img_panel_heart_border.color=this.color_heart_pin;
+        }else{
+            this.Img_panel_heart_icon.sprite=this.app.sp_heart;
+            this.Img_panel_heart.color=this.app.color_menu_active;
+            this.Img_panel_heart_border.color=this.app.color_menu_active;
+        }
     }
 
     public void Close()

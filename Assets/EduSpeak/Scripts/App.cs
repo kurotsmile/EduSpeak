@@ -60,6 +60,8 @@ public class App : MonoBehaviour
     public Sprite sp_unit;
     public Sprite sp_vocabulary;
     public Sprite sp_translate;
+    public Sprite sp_heart;
+    public Sprite sp_broken_heart;
     private IList<V_item> list_v = null;
     private int index_v_view = 0;
     private int index_menu_cur = 0;

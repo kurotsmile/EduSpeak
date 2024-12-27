@@ -23,6 +23,7 @@ public class Favourite : MonoBehaviour
         this.panel_favourite.SetActive(true);
         for (int i = 0; i < this.length_favourite; i++)
         {
+            if(PlayerPrefs.GetString("f_"+i,"")=="") continue;
             IDictionary data_item=(IDictionary)Json.Deserialize(PlayerPrefs.GetString("f_"+i));
             var index=i;
             var s_Vocabulary=data_item["s_key"].ToString();
@@ -79,5 +80,15 @@ public class Favourite : MonoBehaviour
     public void Delete(int index){
         PlayerPrefs.DeleteKey("f_"+index);
         PlayerPrefs.DeleteKey("f_key_"+index);
+    }
+
+    public bool Check_key(string s_key){
+        bool is_true=false;
+        for (int i = 0; i < this.length_favourite; i++)
+        {
+            if(PlayerPrefs.GetString("f_"+i,"")=="") continue;
+            if(PlayerPrefs.GetString("f_key_"+i)==s_key) is_true=true;
+        }
+        return is_true;
     }
 }

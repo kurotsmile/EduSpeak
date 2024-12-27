@@ -1658,6 +1658,8 @@ MonoBehaviour:
   sp_unit: {fileID: 21300000, guid: ceee92f344cf2ba42a7e9ad8fc74af3b, type: 3}
   sp_vocabulary: {fileID: 21300000, guid: ea0c310c9f45333438623b5f11437670, type: 3}
   sp_translate: {fileID: 21300000, guid: a5c060be01936824ba36be667e5c238f, type: 3}
+  sp_heart: {fileID: 21300000, guid: 5b723a01e91841d499aa822abd834372, type: 3}
+  sp_broken_heart: {fileID: 21300000, guid: 89c0c0412f884c04ba5bc03d30a00d11, type: 3}
 --- !u!114 &324034492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1693,6 +1695,12 @@ MonoBehaviour:
   panel_vocabulary: {fileID: 1849285235}
   panel_vocabulary_true: {fileID: 552200651}
   panel_vocabulary_false: {fileID: 2013289003}
+  Img_panel_heart: {fileID: 1145128811}
+  Img_panel_heart_border: {fileID: 99003913}
+  Img_panel_heart_icon: {fileID: 3601955}
+  color_heart_pin:
+    serializedVersion: 2
+    rgba: 4281282499
   audioSource_Recording: {fileID: 2000764499}
   audioSource_Speech: {fileID: 1895363535}
 --- !u!114 &324034494
