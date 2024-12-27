@@ -60,11 +60,13 @@ public class App : MonoBehaviour
     public Sprite sp_unit;
     public Sprite sp_vocabulary;
     public Sprite sp_translate;
+    public Sprite sp_no_translate;
     public Sprite sp_heart;
     public Sprite sp_broken_heart;
     private IList<V_item> list_v = null;
     private int index_v_view = 0;
     private int index_menu_cur = 0;
+    public bool status_translate=true;
     public IList list_data;
 
     void Start()
@@ -141,6 +143,12 @@ public class App : MonoBehaviour
         }
         SpeechRecognizer.SetDetectionLanguage("en-US");
 
+        if(PlayerPrefs.GetInt("status_translate",1)==1)
+            this.status_translate=true;
+        else
+            this.status_translate=false;
+
+        this.Check_status_translate();
         this.Check_ui_menu(0);
         this.f.On_Load();
     }
@@ -170,6 +178,13 @@ public class App : MonoBehaviour
     {
         this.index_menu_cur = index;
         this.Check_func_menu();
+    }
+
+    private void Check_status_translate(){
+        if(this.status_translate)
+            this.v.txt_vocabulary_translate.gameObject.SetActive(true);
+        else
+            this.v.txt_vocabulary_translate.gameObject.SetActive(false);
     }
 
     public void Check_ui_menu(int index_show)
@@ -220,9 +235,27 @@ public class App : MonoBehaviour
     {
         Carrot_Box box_setting=this.carrot.Create_Setting();
         Carrot_Box_Item item_translate=box_setting.create_item_of_top("item_tr");
-        item_translate.set_icon_white(this.sp_translate);
-        item_translate.set_title("translate");
-        item_translate.set_tip("On or Off Translate");
+        if(this.status_translate)
+            item_translate.set_icon_white(this.sp_translate);
+        else
+            item_translate.set_icon_white(this.sp_no_translate);
+        item_translate.set_title("Show translation");
+        item_translate.set_tip("Turn vocabulary translation display on or off");
+        item_translate.set_act(()=>{
+            this.carrot.play_sound_click();
+            if(this.status_translate){
+                this.status_translate=false;
+                PlayerPrefs.SetInt("status_translate",0);
+                item_translate.set_icon(this.sp_no_translate);
+                item_translate.img_icon.color=Color.black;
+            }
+            else{
+                this.status_translate=true;
+                PlayerPrefs.SetInt("status_translate",1);
+                item_translate.set_icon_white(this.sp_translate);
+            }
+            this.Check_status_translate();
+        });
     }
 
     public void Btn_show_home()

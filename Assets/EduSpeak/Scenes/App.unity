@@ -1658,8 +1658,10 @@ MonoBehaviour:
   sp_unit: {fileID: 21300000, guid: ceee92f344cf2ba42a7e9ad8fc74af3b, type: 3}
   sp_vocabulary: {fileID: 21300000, guid: ea0c310c9f45333438623b5f11437670, type: 3}
   sp_translate: {fileID: 21300000, guid: a5c060be01936824ba36be667e5c238f, type: 3}
+  sp_no_translate: {fileID: 21300000, guid: f837b0f5d6719fd499d6cf7697690c3c, type: 3}
   sp_heart: {fileID: 21300000, guid: 5b723a01e91841d499aa822abd834372, type: 3}
   sp_broken_heart: {fileID: 21300000, guid: 89c0c0412f884c04ba5bc03d30a00d11, type: 3}
+  status_translate: 1
 --- !u!114 &324034492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3807,6 +3809,10 @@ PrefabInstance:
     - target: {fileID: 5170736565810424378, guid: 03a96ab3934df714c9f607eeba1302ab, type: 3}
       propertyPath: color_highlight.rgba
       value: 4287322152
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170736565810424378, guid: 03a96ab3934df714c9f607eeba1302ab, type: 3}
+      propertyPath: index_inapp_remove_ads
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5170736565810424379, guid: 03a96ab3934df714c9f607eeba1302ab, type: 3}
       propertyPath: m_LocalPosition.x
