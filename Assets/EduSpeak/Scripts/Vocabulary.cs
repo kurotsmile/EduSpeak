@@ -47,7 +47,12 @@ public class Vocabulary : MonoBehaviour
         this.app.Set_index_menu_cur(5);
         if(this.app.is_sell==false) this.app.ads.On_show_interstitial();
         this.txt_Status.text = "";
-        if (this.audioSource_Speech.isPlaying) this.audioSource_Speech.Stop();
+        if(this.app.is_sell){
+            if (this.audioSource_Speech.isPlaying) this.audioSource_Speech.Stop();
+        }else{
+            this.app.texttospeech.StopSpeak();
+        }
+        
         this.s_vocabulary = v.s_key;
         this.txt_Vocabulary.text = v.s_key;
         if(this.app.is_sell)
@@ -83,7 +88,12 @@ public class Vocabulary : MonoBehaviour
     public void On_start_check_voice()
     {
         this.txt_Status.text = "Listening...";
-        if (this.audioSource_Speech.isPlaying) this.audioSource_Speech.Stop();
+
+        if(this.app.is_sell){
+            if (this.audioSource_Speech.isPlaying) this.audioSource_Speech.Stop();
+        }else{
+            this.app.texttospeech.StopSpeak();
+        }
         SpeechRecognizer.StartRecording(true);
         this.panel_Recording.SetActive(true);
 

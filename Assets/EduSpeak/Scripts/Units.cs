@@ -11,9 +11,11 @@ public class Units : MonoBehaviour
     [Header("UI")]
     public GameObject panel_units;
     public Transform tr_all_item;
+    public ScrollRect scrollRect;
     public int index_unit=0;
 
     public void Show(){
+        this.scrollRect.verticalNormalizedPosition = 1f;
         this.app.Set_index_menu_cur(2);
         this.app.Check_ui_menu(2);
         this.panel_units.SetActive(true);

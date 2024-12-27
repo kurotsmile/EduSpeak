@@ -12,6 +12,7 @@ public class Favourite : MonoBehaviour
     [Header("UI")]
     public GameObject panel_favourite;
     public Transform tr_all_item;
+    public ScrollRect scrollRect;
     private int length_favourite=0;
 
     public void On_Load(){
@@ -26,7 +27,9 @@ public class Favourite : MonoBehaviour
     }
 
     private void Load_ui_list(){
+        this.scrollRect.verticalNormalizedPosition = 1f;
         this.app.carrot.clear_contain(this.tr_all_item);
+        int count_item=0;
         for (int i = 0; i < this.length_favourite; i++)
         {
             if(PlayerPrefs.GetString("f_"+i,"")=="") continue;
@@ -37,7 +40,7 @@ public class Favourite : MonoBehaviour
             GameObject obj = Instantiate(this.app.box_item_prefab);
             obj.transform.SetParent(this.tr_all_item);
             obj.transform.localScale = new Vector3(1, 1, 1);
-            if(i%2==0) obj.GetComponent<Image>().color=this.app.color_a;
+            if(count_item%2==0) obj.GetComponent<Image>().color=this.app.color_a;
 
             Carrot_Box_Item box_Item = obj.GetComponent<Carrot_Box_Item>();
             box_Item.set_title(s_Vocabulary);
@@ -64,6 +67,7 @@ public class Favourite : MonoBehaviour
                 this.app.carrot.play_sound_click();
                 this.Delete(index,Load_ui_list);
             });
+            count_item++;
         }
     }
 

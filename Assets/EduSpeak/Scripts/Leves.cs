@@ -11,9 +11,11 @@ public class Leves : MonoBehaviour
     [Header("UI")]
     public GameObject panel_level;
     public Transform tr_all_item;
+    public ScrollRect scrollRect;
 
     public void Show()
     {
+        this.scrollRect.verticalNormalizedPosition = 1f;
         this.app.Set_index_menu_cur(1);
         this.app.Check_ui_menu(1);
         this.panel_level.SetActive(true);

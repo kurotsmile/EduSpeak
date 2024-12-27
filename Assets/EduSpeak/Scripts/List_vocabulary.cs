@@ -11,11 +11,13 @@ public class List_vocabulary : MonoBehaviour
     [Header("UI")]
     public GameObject panel_list_vocabulary;
     public Transform tr_all_item;
+    public ScrollRect scrollRect;
 
     public int index_v_view=0;
 
     public void Show()
     {
+        this.scrollRect.verticalNormalizedPosition = 1f;
         this.app.Check_ui_menu(2);
         this.panel_list_vocabulary.SetActive(true);
         this.app.carrot.clear_contain(this.tr_all_item);

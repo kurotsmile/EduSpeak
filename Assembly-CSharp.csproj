@@ -82,7 +82,6 @@
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Msg.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_location.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_User_Login.cs" />
-    <Compile Include="Assets\EduSpeak\Scripts\Menu_Item.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Gamepad.cs" />
     <Compile Include="Assets\EduSpeak\Scripts\App.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Photoshop.cs" />
