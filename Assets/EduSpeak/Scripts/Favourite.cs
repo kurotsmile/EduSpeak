@@ -1,6 +1,7 @@
 using System.Collections;
 using Carrot;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class Favourite : MonoBehaviour
@@ -18,9 +19,14 @@ public class Favourite : MonoBehaviour
     }
 
     public void Show(){
+        this.app.Set_index_menu_cur(4);
         this.app.Check_ui_menu(3);
-        this.app.carrot.clear_contain(this.tr_all_item);
         this.panel_favourite.SetActive(true);
+        this.Load_ui_list();
+    }
+
+    private void Load_ui_list(){
+        this.app.carrot.clear_contain(this.tr_all_item);
         for (int i = 0; i < this.length_favourite; i++)
         {
             if(PlayerPrefs.GetString("f_"+i,"")=="") continue;
@@ -55,9 +61,8 @@ public class Favourite : MonoBehaviour
             btn_del.set_icon(this.app.carrot.sp_icon_del_data);
             btn_del.set_color(this.app.carrot.color_highlight);
             btn_del.set_act(()=>{
-                this.app.carrot.Show_msg("Delete "+s_Vocabulary,"Are you sure you want to remove this word from your favorites list?",()=>{
-                    this.Delete(index);
-                });
+                this.app.carrot.play_sound_click();
+                this.Delete(index,Load_ui_list);
             });
         }
     }
@@ -77,18 +82,23 @@ public class Favourite : MonoBehaviour
         this.app.carrot.Show_msg("Favourite","Add to favourite success!");
     }
 
-    public void Delete(int index){
-        PlayerPrefs.DeleteKey("f_"+index);
-        PlayerPrefs.DeleteKey("f_key_"+index);
+    public void Delete(int index,UnityAction act_done_del=null){
+        string s_key=PlayerPrefs.GetString("f_key_"+index);
+        this.app.carrot.Show_msg("Delete "+s_key,"Are you sure you want to remove this word from your favorites list?",()=>{
+            PlayerPrefs.DeleteKey("f_"+index);
+            PlayerPrefs.DeleteKey("f_key_"+index);
+            act_done_del?.Invoke();
+        });
     }
 
-    public bool Check_key(string s_key){
-        bool is_true=false;
+    public int Check_key(string s_key){
         for (int i = 0; i < this.length_favourite; i++)
         {
             if(PlayerPrefs.GetString("f_"+i,"")=="") continue;
-            if(PlayerPrefs.GetString("f_key_"+i)==s_key) is_true=true;
+            if(PlayerPrefs.GetString("f_key_"+i)==s_key){
+                return i;
+            };
         }
-        return is_true;
+        return -1;
     }
 }

@@ -31,6 +31,7 @@ public class Vocabulary : MonoBehaviour
     public AudioSource audioSource_Speech;
     private AudioClip speechClip;
     private V_item data_v_cur=null;
+    private int index_favourite_found=-1;
 
     public void On_Load()
     {
@@ -58,7 +59,12 @@ public class Vocabulary : MonoBehaviour
         SpeechRecognizer.StopIfRecording();
         this.panel_Recording.SetActive(false);
         if(v.s_file!="") this.speechClip = Resources.Load<AudioClip>("voice/" + v.s_file.Replace(".WAV", ""));
-        if(this.app.f.Check_key(v.s_key)){
+        this.Check_status_favourite();
+    }
+
+    private void Check_status_favourite(){
+        this.index_favourite_found=this.app.f.Check_key(this.data_v_cur.s_key);
+        if(this.index_favourite_found!=-1){
             this.Img_panel_heart_icon.sprite=this.app.sp_broken_heart;
             this.Img_panel_heart.color=this.color_heart_pin;
             this.Img_panel_heart_border.color=this.color_heart_pin;
@@ -176,6 +182,11 @@ public class Vocabulary : MonoBehaviour
     public void On_add_favourite()
     {
         this.app.play_sound();
-        this.app.f.Add(this.data_v_cur);
+        if(index_favourite_found==-1){
+            this.app.f.Add(this.data_v_cur);
+            Check_status_favourite();
+        }else{
+            this.app.f.Delete(this.index_favourite_found,Check_status_favourite);
+        }
     }
 }

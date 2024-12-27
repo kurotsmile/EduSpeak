@@ -38,6 +38,7 @@ public class Units : MonoBehaviour
             box_Item.set_icon_white(this.app.sp_unit);
             box_Item.check_type();
             box_Item.set_act(()=>{
+                this.app.play_sound();
                 this.index_unit=index;
                 this.app.list_vocabulary.Show();
             });
@@ -48,6 +49,7 @@ public class Units : MonoBehaviour
         if(this.app.is_sell){
             this.app.Btn_show_home();
         }else{
+            this.app.play_sound();
             this.panel_units.SetActive(false);
             this.app.l.Show();
         }

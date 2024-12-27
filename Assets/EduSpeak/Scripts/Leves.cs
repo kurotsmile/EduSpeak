@@ -33,6 +33,7 @@ public class Leves : MonoBehaviour
             box_Item.set_icon_white(this.app.sp_class);
             box_Item.check_type();
             box_Item.set_act(()=>{
+                this.app.play_sound();
                 this.panel_level.SetActive(false);
                 this.index_level = index;
                 this.app.u.Show();

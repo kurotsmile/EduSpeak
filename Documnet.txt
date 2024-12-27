@@ -1,2 +1,57 @@
 Tên App bán:TP Voice Game
 Tên App Xuất bản:EduSpeak
+
+
+Ứng dụng được build từ Unity3D không xuất bản được lên Google Play TV (Android TV) có thể do một số nguyên nhân phổ biến sau đây:
+
+### 1. **Thiếu hỗ trợ giao diện người dùng TV**
+   - Android TV yêu cầu giao diện người dùng phải tương thích với điều khiển từ xa (remote control). Nếu ứng dụng không hỗ trợ navigation bằng **D-Pad** (lên, xuống, trái, phải và chọn), Google Play TV sẽ từ chối ứng dụng.
+
+### 2. **Không đặt đúng mục tiêu nền tảng**
+   - Bạn cần đảm bảo rằng ứng dụng được build nhắm đến nền tảng **Android TV**. Điều này bao gồm việc:
+     - Sử dụng **SDK Level 21 trở lên** (Android 5.0).
+     - Có khai báo `uses-feature` với `android.software.leanback` trong tệp **AndroidManifest.xml**:
+       ```xml
+       <uses-feature android:name="android.software.leanback" android:required="true" />
+       ```
+       Tùy chọn này giúp ứng dụng hiển thị trên Play Store của Android TV.
+
+### 3. **Thiếu biểu tượng Leanback Launcher**
+   - Android TV yêu cầu ứng dụng phải cung cấp biểu tượng riêng cho Leanback Launcher:
+     - Bạn cần thêm biểu tượng TV trong tệp **res/drawable** và khai báo trong **AndroidManifest.xml**:
+       ```xml
+       <application>
+           <activity android:banner="@drawable/leanback_banner">
+               ...
+           </activity>
+       </application>
+       ```
+
+### 4. **Sử dụng API hoặc tính năng không hỗ trợ trên TV**
+   - Nếu ứng dụng sử dụng tính năng yêu cầu màn hình cảm ứng (touchscreen), Google Play TV sẽ từ chối.
+     - Thêm khai báo loại bỏ yêu cầu này trong **AndroidManifest.xml**:
+       ```xml
+       <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+       ```
+
+### 5. **Không cung cấp trải nghiệm phù hợp cho TV**
+   - Android TV yêu cầu ứng dụng phải được tối ưu hóa cho trải nghiệm trên màn hình lớn. Nếu ứng dụng không cung cấp giao diện dễ sử dụng và thân thiện với TV, nó có thể bị từ chối.
+
+### 6. **Lỗi khi build từ Unity**
+   - Một số vấn đề build Unity cần chú ý:
+     - Đảm bảo chọn đúng **Texture Compression** và **Graphics API** trong Unity Player Settings.
+     - Bật hỗ trợ **IL2CPP** và chọn định dạng ARMv7 hoặc ARM64 trong **Build Settings**.
+     - Kiểm tra việc tích hợp thư viện Android gốc (nếu có).
+
+### 7. **Chứng nhận và kiểm duyệt ứng dụng**
+   - Google có quy trình kiểm duyệt nghiêm ngặt cho ứng dụng Android TV. Nếu ứng dụng không đáp ứng tiêu chuẩn, nó sẽ không được xuất bản.
+
+---
+
+### Gợi ý khắc phục:
+- Kiểm tra và cập nhật Unity để đảm bảo hỗ trợ đầy đủ Android TV.
+- Tùy chỉnh giao diện và trải nghiệm điều khiển TV.
+- Sử dụng **Logcat** hoặc **Unity Debugging** để kiểm tra lỗi build liên quan đến Android TV.
+- Xem tài liệu chính thức của [Google Android TV](https://developer.android.com/tv) để đảm bảo tuân thủ các yêu cầu.
+
+Nếu cần hỗ trợ kỹ thuật cụ thể, bạn có thể chia sẻ thêm chi tiết về lỗi gặp phải!
