@@ -13,6 +13,7 @@ public class List_vocabulary : MonoBehaviour
     public Transform tr_all_item;
 
     public int index_v_view=0;
+
     public void Show()
     {
         this.app.Check_ui_menu(2);
@@ -27,6 +28,9 @@ public class List_vocabulary : MonoBehaviour
             var index = i;
             var s_Vocabulary= text[i].ToString();
             var s_Translate= vi[i].ToString();
+
+            IDictionary data_item=(IDictionary)list_units[i];
+
             GameObject obj = Instantiate(this.app.box_item_prefab);
             obj.transform.SetParent(this.tr_all_item);
             obj.transform.localScale = new Vector3(1, 1, 1);
@@ -41,9 +45,10 @@ public class List_vocabulary : MonoBehaviour
                 this.panel_list_vocabulary.SetActive(false);
                 V_item v_item = new();
                 v_item.s_key = s_Vocabulary;
+                v_item.index_l=int.Parse(data_item["index_l"].ToString());
                 v_item.index_week =this.app.u.index_unit;
                 v_item.index_v_in_week = index;
-                v_item.index_v = (v_item.index_week * 5) + v_item.index_v_in_week;
+                v_item.index_v = index;
                 v_item.s_Translate = s_Translate;
                 this.index_v_view = v_item.index_v;
                 this.app.play_sound();

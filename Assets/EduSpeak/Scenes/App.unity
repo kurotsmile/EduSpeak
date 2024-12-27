@@ -1657,6 +1657,7 @@ MonoBehaviour:
   sp_class: {fileID: 21300000, guid: 6c8b7fe36b660884faddf6c89d48f3c5, type: 3}
   sp_unit: {fileID: 21300000, guid: ceee92f344cf2ba42a7e9ad8fc74af3b, type: 3}
   sp_vocabulary: {fileID: 21300000, guid: ea0c310c9f45333438623b5f11437670, type: 3}
+  sp_translate: {fileID: 21300000, guid: a5c060be01936824ba36be667e5c238f, type: 3}
 --- !u!114 &324034492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3783,8 +3784,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5170736565810424378, guid: 03a96ab3934df714c9f607eeba1302ab, type: 3}
+      propertyPath: Carrotstore_AppId
+      value: com.carrotstore.tpgame
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170736565810424378, guid: 03a96ab3934df714c9f607eeba1302ab, type: 3}
       propertyPath: setting_soundtrack
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170736565810424378, guid: 03a96ab3934df714c9f607eeba1302ab, type: 3}
+      propertyPath: WindowUWP_ProductId
+      value: com.carrotstore.tpgame
       objectReference: {fileID: 0}
     - target: {fileID: 5170736565810424378, guid: 03a96ab3934df714c9f607eeba1302ab, type: 3}
       propertyPath: color_highlight.rgba
@@ -6092,10 +6101,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1849285236}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -168.3}
-  m_SizeDelta: {x: 420.265, y: 51.1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -168.30002}
+  m_SizeDelta: {x: -180, y: 51.1}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1278427239
 MonoBehaviour:
@@ -6122,8 +6131,8 @@ MonoBehaviour:
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 100
+    m_MinSize: 3
+    m_MaxSize: 35
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -9641,7 +9650,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1849285236
 RectTransform:
   m_ObjectHideFlags: 0

@@ -14,6 +14,7 @@ public class Units : MonoBehaviour
     public int index_unit=0;
 
     public void Show(){
+        this.app.Set_index_menu_cur(2);
         this.app.Check_ui_menu(2);
         this.panel_units.SetActive(true);
         this.app.carrot.clear_contain(this.tr_all_item);

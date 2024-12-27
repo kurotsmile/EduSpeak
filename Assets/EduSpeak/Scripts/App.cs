@@ -11,6 +11,7 @@ public class V_item
     public string s_key;
     public string s_file = "";
     public string s_Translate;
+    public int index_l = 0;
     public int index_v = 0;
     public int index_v_in_week = 0;
     public int index_week = 0;
@@ -58,7 +59,7 @@ public class App : MonoBehaviour
     public Sprite sp_class;
     public Sprite sp_unit;
     public Sprite sp_vocabulary;
-
+    public Sprite sp_translate;
     private IList<V_item> list_v = null;
     private int index_v_view = 0;
     private int index_menu_cur = 0;
@@ -92,6 +93,7 @@ public class App : MonoBehaviour
             int count_vocabulary = 0;
             int count_unit = 0;
             this.list_data = (IList)Json.Deserialize(jsonFile.text);
+            this.list_v = new List<V_item>();
             for (int i = 0; i < list_data.Count; i++)
             {
                 IDictionary dataLevel = (IDictionary)list_data[i];
@@ -100,9 +102,21 @@ public class App : MonoBehaviour
                 for (int k = 0; k < list_unit.Count; k++)
                 {
                     IDictionary dataUnit = (IDictionary)list_unit[k];
+                    dataUnit["index_l"]=i;
+                    dataUnit["index_week"]=k;
                     if(dataUnit["text"]!=null){
                         IList list_vocabulary = (IList)dataUnit["text"];
-                        count_vocabulary += list_vocabulary.Count;
+                        for(int j=0;j<list_vocabulary.Count;j++){
+                            V_item v_item = new();
+                            v_item.s_key = list_vocabulary[j].ToString();
+                            v_item.s_Translate = ((IList)dataUnit["vi"])[j].ToString();
+                            v_item.index_v = count_vocabulary;
+                            v_item.index_v_in_week =j;
+                            v_item.index_week = k;
+                            v_item.index_l=i;
+                            list_v.Add(v_item);
+                            count_vocabulary += list_vocabulary.Count;
+                        }
                     }
                 }
             }
@@ -130,9 +144,21 @@ public class App : MonoBehaviour
 
     private void On_check_exit_app()
     {
-        if (v.panel_vocabulary.activeInHierarchy)
+        if (index_menu_cur==1)
         {
-            v.Close();
+            this.l.On_Back();
+            this.carrot.set_no_check_exit_app();
+        }else if(index_menu_cur==2){
+            this.u.On_Back();
+            this.carrot.set_no_check_exit_app();
+        }else if(index_menu_cur==3){
+            this.list_vocabulary.On_back();
+            this.carrot.set_no_check_exit_app();
+        }else if(index_menu_cur==4){
+            this.f.On_back();
+            this.carrot.set_no_check_exit_app();
+        }else if(index_menu_cur==5){
+            this.v.Close();
             this.carrot.set_no_check_exit_app();
         }
     }
@@ -189,7 +215,11 @@ public class App : MonoBehaviour
 
     public void show_setting()
     {
-        this.carrot.Create_Setting();
+        Carrot_Box box_setting=this.carrot.Create_Setting();
+        Carrot_Box_Item item_translate=box_setting.create_item_of_top("item_tr");
+        item_translate.set_icon_white(this.sp_translate);
+        item_translate.set_title("translate");
+        item_translate.set_tip("On or Off Translate");
     }
 
     public void Btn_show_home()
@@ -199,8 +229,8 @@ public class App : MonoBehaviour
         this.l.panel_level.SetActive(false);
         this.u.panel_units.SetActive(false);
         this.list_vocabulary.panel_list_vocabulary.SetActive(false);
-        this.index_menu_cur = 0;
-        this.Check_ui_menu(this.index_menu_cur);
+        this.index_menu_cur=0;
+        this.Check_ui_menu(0);
     }
 
     public void Btn_heart()
@@ -233,5 +263,9 @@ public class App : MonoBehaviour
         this.index_v_view--;
         if (this.index_v_view < 0) this.index_v_view = this.list_v.Count - 1;
         this.v.On_Show(this.list_v[this.index_v_view]);
+    }
+
+    public void Set_index_menu_cur(int index){
+        this.index_menu_cur=index;
     }
 }

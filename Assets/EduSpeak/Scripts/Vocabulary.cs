@@ -37,12 +37,16 @@ public class Vocabulary : MonoBehaviour
 
     public void On_Show(V_item v)
     {
+        this.app.Set_index_menu_cur(5);
         if(this.app.is_sell==false) this.app.ads.On_show_interstitial();
         this.txt_Status.text = "";
         if (this.audioSource_Speech.isPlaying) this.audioSource_Speech.Stop();
         this.s_vocabulary = v.s_key;
         this.txt_Vocabulary.text = v.s_key;
-        this.txt_vocabulary_index.text = "Week " + (this.app.u.index_unit + 1)+" #"+(app.list_vocabulary.index_v_view+1);
+        if(this.app.is_sell)
+            this.txt_vocabulary_index.text = "Week " + (v.index_week + 1)+" #"+(v.index_v_in_week+1);
+        else
+            this.txt_vocabulary_index.text = "Level "+(v.index_l+1)+" - Week " + (v.index_week + 1)+" #"+(v.index_v_in_week+1);
         this.txt_vocabulary_translate.text = v.s_Translate;
         this.panel_vocabulary.SetActive(true);
         SpeechRecognizer.StopIfRecording();

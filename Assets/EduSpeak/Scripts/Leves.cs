@@ -14,6 +14,7 @@ public class Leves : MonoBehaviour
 
     public void Show()
     {
+        this.app.Set_index_menu_cur(1);
         this.app.Check_ui_menu(1);
         this.panel_level.SetActive(true);
         this.app.carrot.clear_contain(this.tr_all_item);
