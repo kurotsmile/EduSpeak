@@ -140,6 +140,7 @@ public class App : MonoBehaviour
         SpeechRecognizer.SetDetectionLanguage("en-US");
 
         this.Check_ui_menu(0);
+        this.f.On_Load();
     }
 
     private void On_check_exit_app()

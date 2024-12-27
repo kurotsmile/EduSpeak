@@ -333,7 +333,7 @@ GameObject:
   - component: {fileID: 60722934}
   - component: {fileID: 60722933}
   m_Layer: 5
-  m_Name: Panel_lesson_border
+  m_Name: Panel_Favourite_border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1757,6 +1757,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   app: {fileID: 324034490}
   panel_favourite: {fileID: 744688630}
+  tr_all_item: {fileID: 400339380}
 --- !u!1 &333447730
 GameObject:
   m_ObjectHideFlags: 0
@@ -2075,7 +2076,7 @@ GameObject:
   - component: {fileID: 400339382}
   - component: {fileID: 400339381}
   m_Layer: 5
-  m_Name: Panel_lesson_all_item
+  m_Name: Panel_Favourite_all_item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,3 +1,4 @@
+using Carrot;
 using KKSpeech;
 using System.Collections;
 using System.Threading;
@@ -25,7 +26,7 @@ public class Vocabulary : MonoBehaviour
     public AudioSource audioSource_Recording;
     public AudioSource audioSource_Speech;
     private AudioClip speechClip;
-
+    private V_item data_v_cur=null;
 
     public void On_Load()
     {
@@ -37,6 +38,7 @@ public class Vocabulary : MonoBehaviour
 
     public void On_Show(V_item v)
     {
+        this.data_v_cur=v;
         this.app.Set_index_menu_cur(5);
         if(this.app.is_sell==false) this.app.ads.On_show_interstitial();
         this.txt_Status.text = "";
@@ -161,6 +163,6 @@ public class Vocabulary : MonoBehaviour
     public void On_add_favourite()
     {
         this.app.play_sound();
-        this.app.f.Add();
+        this.app.f.Add(this.data_v_cur);
     }
 }
