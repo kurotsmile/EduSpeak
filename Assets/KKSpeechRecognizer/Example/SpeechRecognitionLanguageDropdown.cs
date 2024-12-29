@@ -13,9 +13,9 @@ namespace KKSpeech {
 		void Start () {
 			dropdown = GetComponent<Dropdown>();
 			dropdown.onValueChanged.AddListener(OnDropdownValueChanged);
-            dropdown.ClearOptions();
+			dropdown.ClearOptions();
 
-            FindAnyObjectByType<SpeechRecognizerListener>().
+			GameObject.FindObjectOfType<SpeechRecognizerListener>().
 				onSupportedLanguagesFetched.
 				AddListener(OnSupportedLanguagesFetched);
 

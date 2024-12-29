@@ -65,6 +65,7 @@
     <Analyzer Include="D:\Unity3d\Unity3dEditor\6000.0.30f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\KKSpeechRecognizer\Example\RecordingCanvas.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_camera.cs" />
     <Compile Include="Assets\EduSpeak\Scripts\SpeechToText.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Box_Item.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_tool.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Camera.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_list_app.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\AotStubs.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_shop.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_lang.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_HSBColor.cs" />
@@ -122,6 +124,7 @@
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds.iOS.dll" />
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Core.dll" />
     <None Include="Assets\GoogleMobileAds\link.xml" />
+    <None Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\link.xml" />
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds_version-9.5.0_manifest.txt" />
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Ump.Unity.dll" />
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Ump.dll" />

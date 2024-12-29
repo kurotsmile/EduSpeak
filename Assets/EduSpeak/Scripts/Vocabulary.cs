@@ -50,7 +50,7 @@ public class Vocabulary : MonoBehaviour
         if(this.app.is_sell){
             if (this.audioSource_Speech.isPlaying) this.audioSource_Speech.Stop();
         }else{
-            //this.app.texttospeech.Stop();
+            this.app.texttospeech.Stop();
         }
         
         this.s_vocabulary = v.s_key;
@@ -199,5 +199,9 @@ public class Vocabulary : MonoBehaviour
         }else{
             this.app.f.Delete(this.index_favourite_found,Check_status_favourite);
         }
+    }
+
+    public void Btn_mic2(){
+        this.app.speechtotext.StartRecording("Listening...");
     }
 }

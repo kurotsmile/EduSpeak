@@ -27,6 +27,7 @@ public class App : MonoBehaviour
     public Carrot_ads_manage ads;
     public GameObject box_item_prefab;
     public TextToSpeech texttospeech;
+    public SpeechToText speechtotext;
     public List_vocabulary list_vocabulary;
     public Vocabulary v;
     public Leves l;
@@ -144,6 +145,8 @@ public class App : MonoBehaviour
             v.txt_Status.text = "Sorry, but this device doesn't support speech recognition";
         }
         SpeechRecognizer.SetDetectionLanguage("en-US");
+
+        //this.texttospeech.On_Load();
 
         if(PlayerPrefs.GetInt("status_translate",1)==1)
             this.status_translate=true;

@@ -5,3 +5,5 @@ EduSpeak is an innovative and user-friendly app designed specifically for middle
 ![screenshot](screenshot_2.png)
 ![screenshot](screenshot_3.png)
 ![screenshot](screenshot_4.png)
+![screenshot](screenshot_5.png)
+![screenshot](screenshot_6.png)

@@ -1612,6 +1612,7 @@ MonoBehaviour:
   ads: {fileID: 2000947155}
   box_item_prefab: {fileID: 346399769378897854, guid: 5c76e0e7f1ec6f749989da9d070de244, type: 3}
   texttospeech: {fileID: 324034492}
+  speechtotext: {fileID: 0}
   list_vocabulary: {fileID: 324034496}
   v: {fileID: 324034493}
   l: {fileID: 324034494}
@@ -1674,8 +1675,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0511a7784a27c341a597e7280ed14fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pitch: 1
-  rate: 1
+  app: {fileID: 324034490}
+  audioSource: {fileID: 1895363535}
+  is_status_enable: 0
 --- !u!114 &324034493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5265,51 +5267,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!1 &1157337628
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1157337629}
-  - component: {fileID: 1157337630}
-  m_Layer: 0
-  m_Name: stt
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1157337629
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157337628}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 237.74771, y: 489.567, z: -2.3566062}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1157337630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157337628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddcd45b9401ae41438f106f2bd528032, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isShowPopupAndroid: 1
 --- !u!1 &1197925691
 GameObject:
   m_ObjectHideFlags: 0
@@ -9669,7 +9626,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1849285236
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11965,7 +11922,6 @@ SceneRoots:
   - {fileID: 367954616}
   - {fileID: 2009369675}
   - {fileID: 1058282751}
-  - {fileID: 1157337629}
   - {fileID: 403514212}
   - {fileID: 1676400586958503918}
   - {fileID: 797313127}
