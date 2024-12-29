@@ -61,6 +61,7 @@ public class List_vocabulary : MonoBehaviour
 
     public void On_back()
     {
+        this.app.play_sound();
         this.panel_list_vocabulary.SetActive(false);
         this.app.u.Show();
     }

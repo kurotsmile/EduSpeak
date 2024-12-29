@@ -73,6 +73,8 @@ public class App : MonoBehaviour
     {
         this.carrot.Load_Carrot(On_check_exit_app);
         this.carrot.color_highlight = this.color_menu_active;
+        this.carrot.shop.onCarrotPaySuccess+=onCarrotPaySuccess;
+
         if (this.is_sell == false) this.ads.On_Load();
 
         this.panel_home.SetActive(true);
@@ -176,6 +178,7 @@ public class App : MonoBehaviour
 
     public void Btn_sel_menu(int index)
     {
+        this.play_sound();
         this.index_menu_cur = index;
         this.Check_func_menu();
     }
@@ -303,5 +306,13 @@ public class App : MonoBehaviour
 
     public void Set_index_menu_cur(int index){
         this.index_menu_cur=index;
+    }
+
+    private void onCarrotPaySuccess(string id_p){
+        if(id_p==this.carrot.shop.get_id_by_index(1)){
+            this.ads.RemoveAds();
+            this.carrot.Show_msg("Remove Ads","Ad removed successfully!",Msg_Icon.Success);
+        }
+        
     }
 }

@@ -50,7 +50,7 @@ public class Vocabulary : MonoBehaviour
         if(this.app.is_sell){
             if (this.audioSource_Speech.isPlaying) this.audioSource_Speech.Stop();
         }else{
-            this.app.texttospeech.StopSpeak();
+            //this.app.texttospeech.Stop();
         }
         
         this.s_vocabulary = v.s_key;
@@ -92,7 +92,7 @@ public class Vocabulary : MonoBehaviour
         if(this.app.is_sell){
             if (this.audioSource_Speech.isPlaying) this.audioSource_Speech.Stop();
         }else{
-            this.app.texttospeech.StopSpeak();
+            this.app.texttospeech.Stop();
         }
         SpeechRecognizer.StartRecording(true);
         this.panel_Recording.SetActive(true);
@@ -129,7 +129,7 @@ public class Vocabulary : MonoBehaviour
             this.audioSource_Speech.clip = this.speechClip;
             this.audioSource_Speech.Play();
         }else{
-            this.app.texttospeech.StartSpeak(this.s_vocabulary);
+            this.app.texttospeech.Speak(this.s_vocabulary);
         }
     }
 
@@ -185,6 +185,7 @@ public class Vocabulary : MonoBehaviour
 
     public void On_Back()
     {
+        this.app.play_sound();
         this.panel_vocabulary.SetActive(false);
         this.app.list_vocabulary.Show();
     }

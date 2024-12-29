@@ -72,13 +72,13 @@ public class Favourite : MonoBehaviour
     }
 
     public void On_back(){
+        this.app.play_sound();
         this.panel_favourite.SetActive(false);
         this.app.Btn_show_home();
     }
 
     public void Add(V_item v){
         string s_data=JsonUtility.ToJson(v);
-        Debug.Log(s_data);
         PlayerPrefs.SetString("f_"+this.length_favourite,s_data);
         PlayerPrefs.SetString("f_key_"+this.length_favourite,v.s_key);
         this.length_favourite++;
