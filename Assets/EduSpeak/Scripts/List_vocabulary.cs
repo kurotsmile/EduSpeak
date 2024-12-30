@@ -50,9 +50,10 @@ public class List_vocabulary : MonoBehaviour
                 v_item.index_l=int.Parse(data_item["index_l"].ToString());
                 v_item.index_week =this.app.u.index_unit;
                 v_item.index_v_in_week = index;
-                v_item.index_v = index;
+                v_item.index_v = index+(10*int.Parse(data_item["index_week"].ToString()));
                 v_item.s_Translate = s_Translate;
                 this.index_v_view = v_item.index_v;
+                this.app.Set_index_v_view(v_item.index_v);
                 this.app.play_sound();
                 this.app.v.On_Show(v_item);
             });

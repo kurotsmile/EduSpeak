@@ -2,7 +2,6 @@ using Carrot;
 using KKSpeech;
 using System.Collections;
 using System.Collections.Generic;
-using TextSpeech;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -305,6 +304,10 @@ public class App : MonoBehaviour
         this.index_v_view--;
         if (this.index_v_view < 0) this.index_v_view = this.list_v.Count - 1;
         this.v.On_Show(this.list_v[this.index_v_view]);
+    }
+
+    public void Set_index_v_view(int index){
+        this.index_v_view=index;
     }
 
     public void Set_index_menu_cur(int index){
