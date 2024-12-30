@@ -65,55 +65,124 @@
     <Analyzer Include="D:\Unity3d\Unity3dEditor\6000.0.30f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_Purchasing_IAPListener_OnPurchaseDetailedFailedEvent.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_Purchasing_IAPButton_OnPurchaseCompletedEvent.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_Carrot_On_Action_where_online.cs" />
     <Compile Include="Assets\KKSpeechRecognizer\Example\RecordingCanvas.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_camera.cs" />
     <Compile Include="Assets\EduSpeak\Scripts\SpeechToText.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Box_Item.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Box_Btn_Item.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_Purchasing_CodelessIAPButton_OnPurchaseFailedEvent.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_TextCore_Glyph.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_TextCore_LowLevel_GlyphPairAdjustmentRecord.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Loading.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_Events_UnityEvent.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_UI_Slider_SliderEvent.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_TMPro_TMP_InputField_SubmitEvent.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Box_Btn_Panel.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_User.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Item_top_player.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_tool.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_TextCore_Text_Character.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_TextCore_GlyphMetrics.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Camera.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_list_app.cs" />
-    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\AotStubs.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_UI_FontData.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_shop.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_TMPro_MarkToBaseAdjustmentRecord.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_UI_Dropdown_DropdownEvent.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_lang.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_TextCore_Text_FontWeightPair.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_TMPro_TMP_SpriteCharacter.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_EventSystems_EventTrigger_TriggerEvent.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_UI_Toggle_ToggleEvent.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_HSBColor.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_TMPro_TMP_Style.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_ParticleSystem_MinMaxGradient.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_UI_InputField_OnChangeEvent.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_TMPro_HorizontalAlignmentOptions.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Msg.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_TMPro_TMP_InputField_OnChangeEvent.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_UI_SpriteState.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_UI_Navigation.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_TextCore_Text_SpriteGlyph.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_location.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_KKSpeech_SpeechRecognizerListener_ResultCallback.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_UI_Dropdown_OptionDataList.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_TMPro_TMP_Character.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_TMPro_TextAlignmentOptions.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_TMPro_TMP_InputField_SelectionEvent.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_User_Login.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_KKSpeech_SpeechRecognizerListener_AuthorizationCallback.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Gamepad.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_UI_ColorBlock.cs" />
     <Compile Include="Assets\EduSpeak\Scripts\App.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Photoshop.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_TMPro_TMP_Dropdown_DropdownEvent.cs" />
     <Compile Include="Assets\EduSpeak\Scripts\Favourite.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Input.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Share.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_UI_AnimationTriggers.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_UI_Scrollbar_ScrollEvent.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\CarrotJSON.cs" />
     <Compile Include="Assets\EduSpeak\Scripts\List_vocabulary.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_UI_InputField_SubmitEvent.cs" />
     <Compile Include="Assets\EduSpeak\Scripts\Leves.cs" />
     <Compile Include="Assets\Carrot-Ads\Carrot_ads.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_TMPro_TMP_InputField_TextSelectionEvent.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_Carrot_On_event_change.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_lost_internet.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_DeviceOrientationChange.cs" />
     <Compile Include="Assets\KKSpeechRecognizer\SpeechRecognizerListener.cs" />
     <Compile Include="Assets\KKSpeechRecognizer\Example\SpeechRecognitionLanguageDropdown.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Button_Item.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_Rendering_IRenderPipelineResources.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_game.cs" />
     <Compile Include="Assets\Carrot-Ads\Carrot_Admob.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_Purchasing_CodelessIAPButton_OnTransactionsRestoredEvent.cs" />
     <Compile Include="Assets\EduSpeak\Scripts\TextToSpeech.cs" />
     <Compile Include="Assets\EduSpeak\Scripts\Vocabulary.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_Events_UnityEventBase.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_Purchasing_CodelessIAPButton_OnPurchaseCompletedEvent.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_TextCore_Text_TextStyle.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_ParticleSystem_MinMaxCurve.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_TMPro_TMP_InputField_TouchScreenKeyboardEvent.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_TextCore_Text_UnicodeLineBreakingRules.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_Purchasing_CodelessIAPButton_OnProductFetchedEvent.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_TMPro_LigatureSubstitutionRecord.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_KKSpeech_SpeechRecognizerListener_SupportedLanguagesCallback.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_TMPro_VerticalAlignmentOptions.cs" />
     <Compile Include="Assets\Scripts\UnityPurchasing\generated\GooglePlayTangle.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_UI_Button_ButtonClickedEvent.cs" />
     <Compile Include="Assets\EduSpeak\Scripts\Units.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_TextCore_Text_SpriteCharacter.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_TMPro_TMP_FontWeightPair.cs" />
     <Compile Include="Assets\Carrot-Ads\Carrot_Window_Ads.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_TMPro_TMP_SpriteGlyph.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_UI_MaskableGraphic_CullStateChangedEvent.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_Purchasing_IAPListener_OnProductsFetchedEvent.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_KKSpeech_SpeechRecognizerListener_ErrorCallback.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_Rendering_RenderPipelineGraphicsSettingsCollection.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Rate.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Box.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Box_Item_group.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_Purchasing_IAPButton_OnTransactionsRestoredEvent.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_lang_show.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_TMPro_MarkToMarkAdjustmentRecord.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_TextCore_GlyphRect.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_Purchasing_IAPListener_OnPurchaseCompletedEvent.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Exit.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_TMPro_TMP_Dropdown_OptionDataList.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_Purchasing_IAPListener_OnPurchaseFailedEvent.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_UI_ScrollRect_ScrollRectEvent.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_Rendering_IRenderPipelineGraphicsSettings.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_KKSpeech_SpeechRecognizerListener_AvailabilityCallback.cs" />
     <Compile Include="Assets\KKSpeechRecognizer\SpeechRecognizer.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_Purchasing_IAPButton_OnPurchaseFailedEvent.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Server.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\Property Providers\PropertyProvider_UnityEngine_UI_InputField_EndEditEvent.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_UI.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Theme.cs" />
   </ItemGroup>
@@ -124,7 +193,6 @@
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds.iOS.dll" />
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Core.dll" />
     <None Include="Assets\GoogleMobileAds\link.xml" />
-    <None Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\link.xml" />
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds_version-9.5.0_manifest.txt" />
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Ump.Unity.dll" />
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Ump.dll" />
@@ -619,6 +687,18 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json\Runtime\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.30f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.30f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.Apple.Extensions.Common">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.30f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.Apple.Extensions.Common.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Android.Types">

@@ -69,6 +69,17 @@ public class Favourite : MonoBehaviour
             });
             count_item++;
         }
+
+        if(count_item==0){
+            GameObject obj = Instantiate(this.app.box_item_prefab);
+            obj.transform.SetParent(this.tr_all_item);
+            obj.transform.localScale = new Vector3(1, 1, 1);
+            Carrot_Box_Item box_Item = obj.GetComponent<Carrot_Box_Item>();
+            box_Item.set_title("List is empty");
+            box_Item.set_tip("No favorite words have been added yet!");
+            box_Item.set_icon_white(this.app.sp_sad);
+            box_Item.check_type();
+        }
     }
 
     public void On_back(){

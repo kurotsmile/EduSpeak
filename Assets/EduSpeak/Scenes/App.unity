@@ -1662,6 +1662,7 @@ MonoBehaviour:
   sp_no_translate: {fileID: 21300000, guid: f837b0f5d6719fd499d6cf7697690c3c, type: 3}
   sp_heart: {fileID: 21300000, guid: 5b723a01e91841d499aa822abd834372, type: 3}
   sp_broken_heart: {fileID: 21300000, guid: 89c0c0412f884c04ba5bc03d30a00d11, type: 3}
+  sp_sad: {fileID: 21300000, guid: 90bb0640a7383724ea4b8de1dbc5b3fe, type: 3}
   status_translate: 1
 --- !u!114 &324034492
 MonoBehaviour:

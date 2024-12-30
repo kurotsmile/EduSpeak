@@ -1,7 +1,6 @@
 using Carrot;
 using KKSpeech;
 using System.Collections;
-using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -199,9 +198,5 @@ public class Vocabulary : MonoBehaviour
         }else{
             this.app.f.Delete(this.index_favourite_found,Check_status_favourite);
         }
-    }
-
-    public void Btn_mic2(){
-        this.app.speechtotext.StartRecording("Listening...");
     }
 }
