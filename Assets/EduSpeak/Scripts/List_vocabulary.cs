@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using Carrot;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,8 +14,6 @@ public class List_vocabulary : MonoBehaviour
     public Transform tr_all_item;
     public ScrollRect scrollRect;
 
-    public int index_v_view=0;
-
     public void Show()
     {
         this.scrollRect.verticalNormalizedPosition = 1f;
@@ -25,6 +24,7 @@ public class List_vocabulary : MonoBehaviour
         IList list_units = (IList)data_level["units"];
         IList text = (IList)((IDictionary)list_units[this.app.u.index_unit])["text"];
         IList vi = (IList)((IDictionary)list_units[this.app.u.index_unit])["vi"];
+        IList arr_index = (IList)((IDictionary)list_units[this.app.u.index_unit])["arr_index"];
         for (int i = 0; i < text.Count; i++)
         {
             var index = i;
@@ -32,7 +32,6 @@ public class List_vocabulary : MonoBehaviour
             var s_Translate= vi[i].ToString();
 
             IDictionary data_item=(IDictionary)list_units[i];
-
             GameObject obj = Instantiate(this.app.box_item_prefab);
             obj.transform.SetParent(this.tr_all_item);
             obj.transform.localScale = new Vector3(1, 1, 1);
@@ -50,9 +49,8 @@ public class List_vocabulary : MonoBehaviour
                 v_item.index_l=int.Parse(data_item["index_l"].ToString());
                 v_item.index_week =this.app.u.index_unit;
                 v_item.index_v_in_week = index;
-                v_item.index_v = index+(10*int.Parse(data_item["index_week"].ToString()));
+                v_item.index_v = int.Parse(arr_index[index].ToString());
                 v_item.s_Translate = s_Translate;
-                this.index_v_view = v_item.index_v;
                 this.app.Set_index_v_view(v_item.index_v);
                 this.app.play_sound();
                 this.app.v.On_Show(v_item);

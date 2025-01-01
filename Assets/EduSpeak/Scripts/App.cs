@@ -110,6 +110,7 @@ public class App : MonoBehaviour
                     IDictionary dataUnit = (IDictionary)list_unit[k];
                     dataUnit["index_l"]=i;
                     dataUnit["index_week"]=k;
+                    IList<int> arr_index=new List<int>();
                     if(dataUnit["text"]!=null){
                         IList list_vocabulary = (IList)dataUnit["text"];
                         for(int j=0;j<list_vocabulary.Count;j++){
@@ -121,13 +122,19 @@ public class App : MonoBehaviour
                             v_item.index_week = k;
                             v_item.index_l=i;
                             list_v.Add(v_item);
-                            count_vocabulary += list_vocabulary.Count;
+                            arr_index.Add(count_vocabulary);
+                            count_vocabulary++;
                         }
                     }
+                    dataUnit["arr_index"]=arr_index;
+                    Debug.Log("unit:"+k+" array index:"+Json.Serialize(arr_index));
                 }
             }
             this.txt_total_level.text = list_data.Count + "\nLevel";
-            this.txt_total_lesson.text = count_unit + "\nUnit";
+            if(this.is_sell)
+                this.txt_total_lesson.text = count_unit + "\nWeek";
+            else
+                this.txt_total_lesson.text = count_unit + "\nUnit";
             this.txt_total_vocabulary.text = count_vocabulary + "\nVocabulary";
             this.txt_total_voice.text = count_vocabulary + "\nReading test";
         }
