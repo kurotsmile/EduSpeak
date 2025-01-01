@@ -1612,7 +1612,6 @@ MonoBehaviour:
   ads: {fileID: 2000947155}
   box_item_prefab: {fileID: 346399769378897854, guid: 5c76e0e7f1ec6f749989da9d070de244, type: 3}
   texttospeech: {fileID: 324034492}
-  speechtotext: {fileID: 0}
   list_vocabulary: {fileID: 324034496}
   v: {fileID: 324034493}
   l: {fileID: 324034494}
@@ -1758,7 +1757,6 @@ MonoBehaviour:
   panel_list_vocabulary: {fileID: 1306684791}
   tr_all_item: {fileID: 333447731}
   scrollRect: {fileID: 1561651587}
-  index_v_view: 0
 --- !u!114 &324034497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9627,7 +9625,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1849285236
 RectTransform:
   m_ObjectHideFlags: 0

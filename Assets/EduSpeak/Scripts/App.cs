@@ -127,7 +127,6 @@ public class App : MonoBehaviour
                         }
                     }
                     dataUnit["arr_index"]=arr_index;
-                    Debug.Log("unit:"+k+" array index:"+Json.Serialize(arr_index));
                 }
             }
             this.txt_total_level.text = list_data.Count + "\nLevel";
@@ -152,7 +151,7 @@ public class App : MonoBehaviour
         }
         SpeechRecognizer.SetDetectionLanguage("en-US");
 
-        //this.texttospeech.On_Load();
+        this.texttospeech.On_Load();
 
         if(PlayerPrefs.GetInt("status_translate",1)==1)
             this.status_translate=true;
