@@ -8,18 +8,12 @@ public class List_vocabulary : MonoBehaviour
 {
     [Header("Obj Main")]
     public App app;
-
-    [Header("UI")]
-    public GameObject panel_list_vocabulary;
-    public Transform tr_all_item;
-    public ScrollRect scrollRect;
+    public Sprite sp_banner;
 
     public void Show()
     {
-        this.scrollRect.verticalNormalizedPosition = 1f;
+        this.app.box.Show("Vocabulary", this.sp_banner);
         this.app.Check_ui_menu(2);
-        this.panel_list_vocabulary.SetActive(true);
-        this.app.carrot.clear_contain(this.tr_all_item);
         IDictionary data_level = (IDictionary)this.app.list_data[this.app.l.index_level];
         IList list_units = (IList)data_level["units"];
         IList text = (IList)((IDictionary)list_units[this.app.u.index_unit])["text"];
@@ -33,7 +27,7 @@ public class List_vocabulary : MonoBehaviour
 
             IDictionary data_item=(IDictionary)list_units[i];
             GameObject obj = Instantiate(this.app.box_item_prefab);
-            obj.transform.SetParent(this.tr_all_item);
+            obj.transform.SetParent(this.app.box.tr_all_item);
             obj.transform.localScale = new Vector3(1, 1, 1);
             if(i%2==0) obj.GetComponent<Image>().color=this.app.color_a;
 
@@ -43,7 +37,7 @@ public class List_vocabulary : MonoBehaviour
             box_Item.set_icon_white(this.app.sp_vocabulary);
             box_Item.check_type();
             box_Item.set_act(() => {
-                this.panel_list_vocabulary.SetActive(false);
+                this.app.box.Hide();
                 V_item v_item = new();
                 v_item.s_key = s_Vocabulary;
                 v_item.index_l=int.Parse(data_item["index_l"].ToString());
@@ -61,7 +55,7 @@ public class List_vocabulary : MonoBehaviour
     public void On_back()
     {
         this.app.play_sound();
-        this.panel_list_vocabulary.SetActive(false);
+        this.app.box.Hide();
         this.app.u.Show();
     }
 }

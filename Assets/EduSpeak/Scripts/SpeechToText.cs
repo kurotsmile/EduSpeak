@@ -1,219 +1,70 @@
-using System;
+using KKSpeech;
 using UnityEngine;
-
-namespace TextSpeech
+using UnityEngine.Windows.Speech;
+public class SpeechToText : MonoBehaviour
 {
-    public class SpeechToText : MonoBehaviour
+    [Header("Main Object")]
+    public App app;
+
+    private DictationRecognizer dictationRecognizer;
+    public void On_Load()
     {
+        if(this.app.carrot.os_app==Carrot.OS.Window){
+            dictationRecognizer = new DictationRecognizer();
+            dictationRecognizer.DictationResult += (text, confidence) => {
+                Debug.LogFormat("Content: {0}, level: {1}", text, confidence);
+                this.app.v.OnFinalResult(text);
+            };
 
-        #region Init
-        private static SpeechToText _instance;
-        public Action<string> onResultCallback;
-
-        public static SpeechToText Instance
-        {
-            get
+            dictationRecognizer.DictationComplete += (completionCause) => {};
+        }else{
+            if (SpeechRecognizer.ExistsOnDevice())
             {
-                if (_instance == null)
-                {
-                    //Create if it doesn't exist
-                    GameObject go = new GameObject("SpeechToText");
-                    _instance = go.AddComponent<SpeechToText>();
-                }
-                return _instance;
+                SpeechRecognizerListener listener = FindAnyObjectByType<SpeechRecognizerListener>();
+                listener.onAuthorizationStatusFetched.AddListener(this.OnAuthorizationStatusFetched);
+                listener.onFinalResults.AddListener(this.app.v.OnFinalResult);
+                SpeechRecognizer.RequestAccess();
             }
-        }
-        public bool isShowPopupAndroid = true;
-
-
-        void Awake()
-        {
-            _instance = this;
-        }
-        #endregion
-
-        
-
-        public void Setting(string _language)
-        {
-#if UNITY_EDITOR
-#elif UNITY_IPHONE
-        _TAG_SettingSpeech(_language);
-#elif UNITY_ANDROID
-        AndroidJavaClass javaUnityClass = new AndroidJavaClass("com.starseed.speechtotext.Bridge");
-        javaUnityClass.CallStatic("SettingSpeechToText", _language);
-#endif
-        }
-        public void StartRecording(string _message = "")
-        {
-#if UNITY_EDITOR
-#elif UNITY_IPHONE
-        _TAG_startRecording();
-#elif UNITY_ANDROID
-        if (isShowPopupAndroid)
-        {
-            AndroidJavaClass javaUnityClass = new AndroidJavaClass("com.starseed.speechtotext.Bridge");
-            javaUnityClass.CallStatic("OpenSpeechToText", _message);
-        }
-        else
-        {
-            AndroidJavaClass javaUnityClass = new AndroidJavaClass("com.starseed.speechtotext.Bridge");
-            javaUnityClass.CallStatic("StartRecording");
-        }
-#endif
-        }
-        public void StopRecording()
-        {
-#if UNITY_EDITOR
-#elif UNITY_IPHONE
-        _TAG_stopRecording();
-#elif UNITY_ANDROID
-        if (isShowPopupAndroid == false)
-        {
-            AndroidJavaClass javaUnityClass = new AndroidJavaClass("com.starseed.speechtotext.Bridge");
-            javaUnityClass.CallStatic("StopRecording");
-        }
-#endif
-        }
-
-#if UNITY_IPHONE
-        [DllImport("__Internal")]
-        private static extern void _TAG_startRecording();
-
-        [DllImport("__Internal")]
-        private static extern void _TAG_stopRecording();
-
-        [DllImport("__Internal")]
-        private static extern void _TAG_SettingSpeech(string _language);
-#endif
-
-        public void onMessage(string _message)
-        {
-        }
-        public void onErrorMessage(string _message)
-        {
-            Debug.LogError(_message);
-        }
-        /** Called when recognition results are ready. */
-        public void onResults(string _results)
-        {
-            if (onResultCallback != null)
-                onResultCallback(_results);
-        }
-
-        #region Android STT custom
-#if UNITY_ANDROID
-        #region Error Code
-        /** Network operation timed out. */
-        public const int ERROR_NETWORK_TIMEOUT = 1;
-        /** Other network related errors. */
-        public const int ERROR_NETWORK = 2;
-        /** Audio recording error. */
-        public const int ERROR_AUDIO = 3;
-        /** Server sends error status. */
-        public const int ERROR_SERVER = 4;
-        /** Other client side errors. */
-        public const int ERROR_CLIENT = 5;
-        /** No speech input */
-        public const int ERROR_SPEECH_TIMEOUT = 6;
-        /** No recognition result matched. */
-        public const int ERROR_NO_MATCH = 7;
-        /** RecognitionService busy. */
-        public const int ERROR_RECOGNIZER_BUSY = 8;
-        /** Insufficient permissions */
-        public const int ERROR_INSUFFICIENT_PERMISSIONS = 9;
-        /////////////////////
-        String getErrorText(int errorCode)
-        {
-            String message;
-            switch (errorCode)
+            else
             {
-                case ERROR_AUDIO:
-                    message = "Audio recording error";
-                    break;
-                case ERROR_CLIENT:
-                    message = "Client side error";
-                    break;
-                case ERROR_INSUFFICIENT_PERMISSIONS:
-                    message = "Insufficient permissions";
-                    break;
-                case ERROR_NETWORK:
-                    message = "Network error";
-                    break;
-                case ERROR_NETWORK_TIMEOUT:
-                    message = "Network timeout";
-                    break;
-                case ERROR_NO_MATCH:
-                    message = "No match";
-                    break;
-                case ERROR_RECOGNIZER_BUSY:
-                    message = "RecognitionService busy";
-                    break;
-                case ERROR_SERVER:
-                    message = "error from server";
-                    break;
-                case ERROR_SPEECH_TIMEOUT:
-                    message = "No speech input";
-                    break;
-                default:
-                    message = "Didn't understand, please try again.";
-                    break;
+                this.app.v.txt_Status.text = "Sorry, but this device doesn't support speech recognition";
             }
-            return message;
+            SpeechRecognizer.SetDetectionLanguage("en-US");
         }
-        #endregion
-
-        public Action<string> onReadyForSpeechCallback;
-        public Action onEndOfSpeechCallback;
-        public Action<float> onRmsChangedCallback;
-        public Action onBeginningOfSpeechCallback;
-        public Action<string> onErrorCallback;
-        public Action<string> onPartialResultsCallback;
-        /** Called when the endpointer is ready for the user to start speaking. */
-        public void onReadyForSpeech(string _params)
-        {
-            if (onReadyForSpeechCallback != null)
-                onReadyForSpeechCallback(_params);
-        }
-        /** Called after the user stops speaking. */
-        public void onEndOfSpeech(string _paramsNull)
-        {
-            if (onEndOfSpeechCallback != null)
-                onEndOfSpeechCallback();
-        }
-        /** The sound level in the audio stream has changed. */
-        public void onRmsChanged(string _value)
-        {
-            float _rms = float.Parse(_value);
-            if (onRmsChangedCallback != null)
-                onRmsChangedCallback(_rms);
-        }
-
-        /** The user has started to speak. */
-        public void onBeginningOfSpeech(string _paramsNull)
-        {
-            if (onBeginningOfSpeechCallback != null)
-                onBeginningOfSpeechCallback();
-        }
-
-        /** A network or recognition error occurred. */
-        public void onError(string _value)
-        {
-            int _error = int.Parse(_value);
-            string _message = getErrorText(_error);
-            Debug.Log(_message);
-
-            if (onErrorCallback != null)
-                onErrorCallback(_message);
-        }
-        /** Called when partial recognition results are available. */
-        public void onPartialResults(string _params)
-        {
-            if (onPartialResultsCallback != null)
-                onPartialResultsCallback(_params);
-        }
-
-#endif
-        #endregion
     }
+
+    public void StartRecording()
+    {
+        if(this.app.carrot.os_app==Carrot.OS.Window)
+            dictationRecognizer.Start();
+        else
+            SpeechRecognizer.StartRecording(true);
+    }
+
+    public void StopRecording()
+    {
+        if(this.app.carrot.os_app==Carrot.OS.Window){
+            if (dictationRecognizer != null)
+            {
+                dictationRecognizer.Stop();
+                //dictationRecognizer.Dispose();
+            }
+        }else{
+            SpeechRecognizer.StopIfRecording();
+        }
+    }
+
+    #region voice
+    public void OnAuthorizationStatusFetched(AuthorizationStatus status)
+    {
+        switch (status)
+        {
+            case AuthorizationStatus.Authorized:
+                break;
+            default:
+                this.app.v.txt_Status.text = "Cannot use Speech Recognition, authorization status is " + status;
+                break;
+        }
+    }
+    #endregion
 }

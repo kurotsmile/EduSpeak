@@ -1,5 +1,3 @@
-using Carrot;
-using KKSpeech;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -60,7 +58,7 @@ public class Vocabulary : MonoBehaviour
             this.txt_vocabulary_index.text = "Level "+(v.index_l+1)+" - Week " + (v.index_week + 1)+" #"+(v.index_v_in_week+1);
         this.txt_vocabulary_translate.text = v.s_Translate;
         this.panel_vocabulary.SetActive(true);
-        SpeechRecognizer.StopIfRecording();
+        this.app.speechtotext.StopRecording();
         this.panel_Recording.SetActive(false);
         if(v.s_file!="") this.speechClip = Resources.Load<AudioClip>("voice/" + v.s_file.Replace(".WAV", ""));
         this.Check_status_favourite();
@@ -93,7 +91,7 @@ public class Vocabulary : MonoBehaviour
         }else{
             this.app.texttospeech.Stop();
         }
-        SpeechRecognizer.StartRecording(true);
+        this.app.speechtotext.StartRecording();
         this.panel_Recording.SetActive(true);
 
         if (s_vocabulary.ToLower() == "gym")
@@ -106,7 +104,7 @@ public class Vocabulary : MonoBehaviour
     private IEnumerator WaitAndShowVocabularyResult(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
-        SpeechRecognizer.StopIfRecording();
+        this.app.speechtotext.StopRecording();
         if (Random.Range(0, 3) == 1)
             this.show_vocabulary_result(false);
         else
@@ -116,7 +114,7 @@ public class Vocabulary : MonoBehaviour
     public void On_stop_check_voice()
     {
         StopAllCoroutines();
-        SpeechRecognizer.StopIfRecording();
+        this.app.speechtotext.StopRecording();
         this.panel_Recording.SetActive(false);
         this.app.play_sound();
         this.txt_Status.text = "";
@@ -141,7 +139,7 @@ public class Vocabulary : MonoBehaviour
         }
         else
         {
-            this.app.play_Vibrate();
+            this.app.carrot.play_vibrate();
             this.app.play_sound(2);
             this.panel_vocabulary_false.SetActive(true);
         }
@@ -153,34 +151,6 @@ public class Vocabulary : MonoBehaviour
         this.panel_vocabulary_false.SetActive(false);
         this.panel_Recording.SetActive(false);
     }
-
-    #region voice
-    public void OnAuthorizationStatusFetched(AuthorizationStatus status)
-    {
-        switch (status)
-        {
-            case AuthorizationStatus.Authorized:
-                break;
-            default:
-                txt_Status.text = "Cannot use Speech Recognition, authorization status is " + status;
-                break;
-        }
-    }
-
-    public void OnFinalResult(string result)
-    {
-        if (result.Trim().ToLower() == s_vocabulary.ToLower())
-            this.show_vocabulary_result(true);
-        else
-            this.show_vocabulary_result(false);
-    }
-
-    public void OnEndOfSpeech(string serror)
-    {
-        this.txt_Status.text = "";
-        this.panel_Recording.SetActive(false);
-    }
-    #endregion
 
     public void On_Back()
     {
@@ -198,5 +168,24 @@ public class Vocabulary : MonoBehaviour
         }else{
             this.app.f.Delete(this.index_favourite_found,Check_status_favourite);
         }
+    }
+
+    public string Get_vocabulary()
+    {
+        return this.s_vocabulary;
+    }
+
+    public void OnFinalResult(string result)
+    {
+        if (result.Trim().ToLower() == this.app.v.s_vocabulary.ToLower())
+            this.show_vocabulary_result(true);
+        else
+            this.show_vocabulary_result(false);
+    }
+
+    public void OnEndOfSpeech(string serror)
+    {
+        this.txt_Status.text = "";
+        this.panel_Recording.SetActive(false);
     }
 }

@@ -8,11 +8,8 @@ public class Favourite : MonoBehaviour
 {
     [Header("Object Main")]
     public App app;
+    public Sprite banner;
 
-    [Header("UI")]
-    public GameObject panel_favourite;
-    public Transform tr_all_item;
-    public ScrollRect scrollRect;
     private int length_favourite=0;
 
     public void On_Load(){
@@ -22,13 +19,12 @@ public class Favourite : MonoBehaviour
     public void Show(){
         this.app.Set_index_menu_cur(4);
         this.app.Check_ui_menu(3);
-        this.panel_favourite.SetActive(true);
+        this.app.box.Show("Favourite",this.banner);
         this.Load_ui_list();
     }
 
     private void Load_ui_list(){
-        this.scrollRect.verticalNormalizedPosition = 1f;
-        this.app.carrot.clear_contain(this.tr_all_item);
+        this.app.carrot.clear_contain(this.app.box.tr_all_item);
         int count_item=0;
         for (int i = 0; i < this.length_favourite; i++)
         {
@@ -38,7 +34,7 @@ public class Favourite : MonoBehaviour
             var s_Vocabulary=data_item["s_key"].ToString();
 
             GameObject obj = Instantiate(this.app.box_item_prefab);
-            obj.transform.SetParent(this.tr_all_item);
+            obj.transform.SetParent(this.app.box.tr_all_item);
             obj.transform.localScale = new Vector3(1, 1, 1);
             if(count_item%2==0) obj.GetComponent<Image>().color=this.app.color_a;
 
@@ -50,12 +46,7 @@ public class Favourite : MonoBehaviour
             box_Item.set_act(() => {
                 V_item v_item = new();
                 v_item.s_key = s_Vocabulary;
-                //v_item.index_l=int.Parse(data_item["index_l"].ToString());
-                //v_item.index_week =this.app.u.index_unit;
-                //v_item.index_v_in_week = index;
-                //v_item.index_v = index;
                 v_item.s_Translate = data_item["s_Translate"].ToString();
-                //this.index_v_view = v_item.index_v;
                 this.app.play_sound();
                 this.app.v.On_Show(v_item);
             });
@@ -72,7 +63,7 @@ public class Favourite : MonoBehaviour
 
         if(count_item==0){
             GameObject obj = Instantiate(this.app.box_item_prefab);
-            obj.transform.SetParent(this.tr_all_item);
+            obj.transform.SetParent(this.app.box.tr_all_item);
             obj.transform.localScale = new Vector3(1, 1, 1);
             Carrot_Box_Item box_Item = obj.GetComponent<Carrot_Box_Item>();
             box_Item.set_title("List is empty");
@@ -84,7 +75,7 @@ public class Favourite : MonoBehaviour
 
     public void On_back(){
         this.app.play_sound();
-        this.panel_favourite.SetActive(false);
+        this.app.box.Hide();
         this.app.Btn_show_home();
     }
 
