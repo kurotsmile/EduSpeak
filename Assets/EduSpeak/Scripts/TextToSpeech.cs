@@ -6,52 +6,26 @@ public class TextToSpeech : MonoBehaviour
     [Header("Obj Main")]
     public App app;
     public AudioSource audioSource;
-
-    private AndroidJavaObject ttsObject;
-    private AndroidJavaObject currentActivity;
     public bool is_status_enable=false;
 
     public void On_Load()
     {
-        try{
-            AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-            currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
 
-            ttsObject = new AndroidJavaObject("android.speech.tts.TextToSpeech", currentActivity, new TextToSpeechListener());
-            this.is_status_enable=true;
-        }catch{
-            this.is_status_enable=false;
-        }
     }
 
     public void Speak(string text)
     {
-        if(this.is_status_enable){
-            if (ttsObject != null)
-            {
-                ttsObject.Call<int>("setLanguage", new AndroidJavaClass("java.util.Locale").GetStatic<AndroidJavaObject>("US"));
-                ttsObject.Call<int>("speak", text, 0, null, null);
-            }
-        }else{
-            StartCoroutine(GetAudioFromText(text));
-        }
+        StartCoroutine(GetAudioFromText(text));
     }
 
     public void Stop()
     {
-        if(this.is_status_enable) ttsObject?.Call("stop");
-        else this.audioSource.Stop();
+        this.audioSource.Stop();
     }
 
     void OnDestroy()
     {
-        if(this.is_status_enable){
-            if (ttsObject != null)
-            {
-                ttsObject.Call("stop");
-                ttsObject.Call("shutdown");
-            }
-        }
+
     }
 
     IEnumerator GetAudioFromText(string text, string language="en")
@@ -72,23 +46,6 @@ public class TextToSpeech : MonoBehaviour
             {
                 audioSource.clip = clip;
                 audioSource.Play();
-            }
-        }
-    }
-
-    public class TextToSpeechListener : AndroidJavaProxy
-    {
-        public TextToSpeechListener() : base("android.speech.tts.TextToSpeech$OnInitListener") { }
-
-        public void onInit(int status)
-        {
-            if (status == 0)
-            {
-                GameObject.Find("App").GetComponent<TextToSpeech>().is_status_enable=true;
-            }
-            else
-            {
-                GameObject.Find("App").GetComponent<TextToSpeech>().is_status_enable=false;
             }
         }
     }

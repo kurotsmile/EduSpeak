@@ -1,15 +1,19 @@
 using KKSpeech;
 using UnityEngine;
+#if !UNITY_ANDROID
 using UnityEngine.Windows.Speech;
+#endif
 public class SpeechToText : MonoBehaviour
 {
     [Header("Main Object")]
     public App app;
-
+    #if !UNITY_ANDROID
     private DictationRecognizer dictationRecognizer;
+    #endif
     public void On_Load()
     {
         if(this.app.carrot.os_app==Carrot.OS.Window){
+            #if !UNITY_ANDROID
             dictationRecognizer = new DictationRecognizer();
             dictationRecognizer.DictationResult += (text, confidence) => {
                 Debug.LogFormat("Content: {0}, level: {1}", text, confidence);
@@ -17,6 +21,7 @@ public class SpeechToText : MonoBehaviour
             };
 
             dictationRecognizer.DictationComplete += (completionCause) => {};
+            #endif
         }else{
             if (SpeechRecognizer.ExistsOnDevice())
             {
@@ -35,8 +40,11 @@ public class SpeechToText : MonoBehaviour
 
     public void StartRecording()
     {
-        if(this.app.carrot.os_app==Carrot.OS.Window)
-            dictationRecognizer.Start();
+        if(this.app.carrot.os_app==Carrot.OS.Window){
+            #if !UNITY_ANDROID
+                dictationRecognizer.Start();
+            #endif
+        }
         else
             SpeechRecognizer.StartRecording(true);
     }
@@ -44,11 +52,13 @@ public class SpeechToText : MonoBehaviour
     public void StopRecording()
     {
         if(this.app.carrot.os_app==Carrot.OS.Window){
+            #if !UNITY_ANDROID
             if (dictationRecognizer != null)
             {
                 dictationRecognizer.Stop();
                 //dictationRecognizer.Dispose();
             }
+            #endif
         }else{
             SpeechRecognizer.StopIfRecording();
         }

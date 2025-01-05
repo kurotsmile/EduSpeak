@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Services.Core", "Unit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.VisualScripting.State", "Unity.VisualScripting.State.csproj", "{C25A51DC-9147-61D3-F72F-B33C200B4704}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Mobile.AndroidLogcat.Editor", "Unity.Mobile.AndroidLogcat.Editor.csproj", "{A981C772-82B4-D844-76DA-F9FACE1B0720}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.VisualScripting.SettingsProvider.Editor", "Unity.VisualScripting.SettingsProvider.Editor.csproj", "{23B12D81-0AA8-8400-1EF3-476342AD733D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.Purchasing.AppleMacosStub", "UnityEngine.Purchasing.AppleMacosStub.csproj", "{E0E541C6-43CB-1173-06EC-2F0E9F7FDF8A}"
@@ -195,6 +197,10 @@ Global
 		{C25A51DC-9147-61D3-F72F-B33C200B4704}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C25A51DC-9147-61D3-F72F-B33C200B4704}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C25A51DC-9147-61D3-F72F-B33C200B4704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A981C772-82B4-D844-76DA-F9FACE1B0720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A981C772-82B4-D844-76DA-F9FACE1B0720}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A981C772-82B4-D844-76DA-F9FACE1B0720}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A981C772-82B4-D844-76DA-F9FACE1B0720}.Release|Any CPU.Build.0 = Release|Any CPU
 		{23B12D81-0AA8-8400-1EF3-476342AD733D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{23B12D81-0AA8-8400-1EF3-476342AD733D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23B12D81-0AA8-8400-1EF3-476342AD733D}.Release|Any CPU.ActiveCfg = Release|Any CPU

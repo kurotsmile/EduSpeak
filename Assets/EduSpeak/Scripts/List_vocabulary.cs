@@ -12,7 +12,8 @@ public class List_vocabulary : MonoBehaviour
 
     public void Show()
     {
-        this.app.box.Show("Vocabulary", this.sp_banner);
+        this.app.Set_index_menu_cur(3);
+        this.app.box.Show("Vocabulary", this.sp_banner,On_back);
         this.app.Check_ui_menu(2);
         IDictionary data_level = (IDictionary)this.app.list_data[this.app.l.index_level];
         IList list_units = (IList)data_level["units"];

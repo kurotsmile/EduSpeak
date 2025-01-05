@@ -40,6 +40,8 @@ public class Vocabulary : MonoBehaviour
 
     public void On_Show(V_item v)
     {
+        this.panel_vocabulary.SetActive(true);
+        this.panel_vocabulary.transform.SetAsLastSibling();
         this.data_v_cur=v;
         this.app.Set_index_menu_cur(5);
         if(this.app.is_sell==false) this.app.ads.On_show_interstitial();
@@ -147,6 +149,7 @@ public class Vocabulary : MonoBehaviour
 
     public void close_vocabulary_result()
     {
+        this.txt_Status.text="";
         this.panel_vocabulary_true.SetActive(false);
         this.panel_vocabulary_false.SetActive(false);
         this.panel_Recording.SetActive(false);

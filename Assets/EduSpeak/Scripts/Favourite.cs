@@ -19,7 +19,7 @@ public class Favourite : MonoBehaviour
     public void Show(){
         this.app.Set_index_menu_cur(4);
         this.app.Check_ui_menu(3);
-        this.app.box.Show("Favourite",this.banner);
+        this.app.box.Show("Favourite",this.banner,On_back);
         this.Load_ui_list();
     }
 

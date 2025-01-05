@@ -53,7 +53,6 @@ public class App : MonoBehaviour
     public Transform tr_menu;
     public Transform tr_area_start;
     public Transform tr_area_banner;
-    public Transform tr_area_info;
 
     [Header("Sound")]
     public AudioSource[] sound;
@@ -193,6 +192,7 @@ public class App : MonoBehaviour
         else if (index_menu_cur == 5)
         {
             this.v.Close();
+            this.list_vocabulary.Show();
             this.carrot.set_no_check_exit_app();
         }
     }
@@ -337,13 +337,11 @@ public class App : MonoBehaviour
 
     public void Check_Resolution_change()
     {
-        this.carrot.delay_function(1f, () =>
+        this.carrot.delay_function(0.5f, () =>
         {
-
             if (deviceOrientationChange.Get_status_portrait())
             {
                 this.tr_area_start.SetParent(this.tr_portrait);
-                this.tr_area_info.SetParent(this.tr_portrait);
                 this.tr_area_banner.SetParent(this.tr_portrait);
                 this.box.panel_box.transform.SetParent(this.tr_portrait);
                 this.tr_menu.SetParent(this.tr_portrait);
@@ -359,18 +357,12 @@ public class App : MonoBehaviour
                 RectTransform rectTransform_banner = this.tr_area_banner.GetComponent<RectTransform>();
                 rectTransform_banner.anchoredPosition = new Vector2(0, -160.35f);
 
-                RectTransform rectTransform_info = this.tr_area_info.GetComponent<RectTransform>();
-                rectTransform_info.anchorMin = new Vector2(0, 0);
-                rectTransform_info.anchorMax = new Vector2(1, 0);
-                rectTransform_info.offsetMin = new Vector2(0, 310);
-                rectTransform_info.offsetMax = new Vector2(0, 466);
             }
             else
             {
                 this.tr_area_start.SetParent(this.tr_landscape_right);
                 this.tr_menu.SetParent(this.tr_landscape_left);
                 this.tr_area_banner.SetParent(this.tr_landscape_left);
-                this.tr_area_info.SetParent(this.tr_landscape_right);
                 this.box.panel_box.transform.SetParent(this.tr_landscape_right);
 
                 RectTransform rectTransform_start = this.tr_area_start.GetComponent<RectTransform>();
@@ -381,14 +373,6 @@ public class App : MonoBehaviour
 
                 RectTransform rectTransform_banner = this.tr_area_banner.GetComponent<RectTransform>();
                 rectTransform_banner.anchoredPosition = new Vector2(0, -120f);
-
-                RectTransform rectTransform_info = this.tr_area_info.GetComponent<RectTransform>();
-
-                rectTransform_info.anchorMin = new Vector2(0, 1);
-                rectTransform_info.anchorMax = new Vector2(1, 1);
-                rectTransform_info.offsetMin = new Vector2(0, -60f);
-                rectTransform_info.offsetMax = new Vector2(0, 95.26f);
-                rectTransform_info.pivot = new Vector2(0.5f, 1);
             }
 
             RectTransform rectTransform_menu = this.tr_menu.GetComponent<RectTransform>();

@@ -11,7 +11,7 @@ public class Leves : MonoBehaviour
 
     public void Show()
     {
-        this.app.box.Show("Levels", this.sp_banner);
+        this.app.box.Show("Levels", this.sp_banner,On_Back);
         this.app.Set_index_menu_cur(1);
         this.app.Check_ui_menu(1);
         for (int i = 0; i < this.app.list_data.Count; i++)

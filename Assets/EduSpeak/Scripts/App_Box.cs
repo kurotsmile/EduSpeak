@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 public class App_Box : MonoBehaviour
 {
@@ -11,12 +12,13 @@ public class App_Box : MonoBehaviour
     public Text txt_title;
     public Transform tr_all_item;
     public ScrollRect scrollRect;
-
+    private UnityAction act_close=null;
     public void On_load(){
         this.panel_box.SetActive(false);
     }
 
-    public void Show(string title, Sprite baner){
+    public void Show(string title, Sprite baner,UnityAction act_close){
+        this.act_close=act_close;
         this.scrollRect.verticalNormalizedPosition = 1f;
         this.app.carrot.clear_contain(this.tr_all_item);
         this.panel_box.SetActive(true);
@@ -28,5 +30,9 @@ public class App_Box : MonoBehaviour
 
     public void Hide(){
         this.panel_box.SetActive(false);
+    }
+
+    public void On_Close(){
+        act_close?.Invoke();
     }
 }

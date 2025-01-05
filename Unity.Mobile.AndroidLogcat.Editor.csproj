@@ -19,7 +19,7 @@
     <RootNamespace></RootNamespace>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>UnityEngine.Purchasing.AppleMacosStub</AssemblyName>
+    <AssemblyName>Unity.Mobile.AndroidLogcat.Editor</AssemblyName>
     <TargetFramework>netstandard2.1</TargetFramework>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -28,7 +28,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_6000_0_32;UNITY_6000_0;UNITY_6000;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2023_1_OR_NEWER;UNITY_2023_2_OR_NEWER;UNITY_2023_3_OR_NEWER;UNITY_6000_0_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_MARSHALLING_TESTS;ENABLE_VIDEO;ENABLE_NAVIGATION_OFFMESHLINK_TO_NAVMESHLINK;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_ACCESSIBILITY;TEXTCORE_1_0_OR_NEWER;EDITOR_ONLY_NAVMESH_BUILDER_DEPRECATED;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_ETC_COMPRESSION;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;PLATFORM_EXTENDS_VULKAN_PIPELINE_CACHE;PLATFORM_SUPPORTS_SPLIT_GRAPHICS_JOBS;PLATFORM_HAS_ADDITIONAL_API_CHECKS;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_6000_0_32;UNITY_6000_0;UNITY_6000;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2023_1_OR_NEWER;UNITY_2023_2_OR_NEWER;UNITY_2023_3_OR_NEWER;UNITY_6000_0_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_MARSHALLING_TESTS;ENABLE_VIDEO;ENABLE_NAVIGATION_OFFMESHLINK_TO_NAVMESHLINK;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_ACCESSIBILITY;TEXTCORE_1_0_OR_NEWER;EDITOR_ONLY_NAVMESH_BUILDER_DEPRECATED;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_ETC_COMPRESSION;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;PLATFORM_EXTENDS_VULKAN_PIPELINE_CACHE;PLATFORM_SUPPORTS_SPLIT_GRAPHICS_JOBS;PLATFORM_HAS_ADDITIONAL_API_CHECKS;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_EDITOR_ONLY_COMPILATION</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169;USG0001</NoWarn>
@@ -54,7 +54,7 @@
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.22</UnityProjectGeneratorVersion>
     <UnityProjectGeneratorStyle>SDK</UnityProjectGeneratorStyle>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>6000.0.32f1</UnityVersion>
   </PropertyGroup>
@@ -65,11 +65,71 @@
     <Analyzer Include="D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.purchasing\Runtime\AppleMacosStub\OSXStoreBindings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing\Runtime\AppleMacosStub\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\UI\AndroidLogcatFastListView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatTagInformation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatTags.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatCaptureVideo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatMessagesViews.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatQueryLayout.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\UI\Splitter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatSettingsProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatAutoSelect.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatEntry.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidTools\Paths.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatExtraWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidScreenRotation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatColumnData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\UI\AndroidLogcatReordableListWithReset.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatConsoleWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatProjectSettingsProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatSendTrimMemoryUsage.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatCallbacks.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatRuntime.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatProcessInformation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatAutoScroll.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatInternalLog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatActivityManager.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatMessageProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\Tasks\AndroidLogcatDispatcher.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatInputs.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\Tasks\AndroidLogcatTaskInput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatScreenCaptureWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatDevice.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatUserSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcat.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatContextMenu.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatDeviceQuery.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\PosixSignal.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\Tasks\AndroidLogcatTaskResult.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\Tasks\AndroidLogcatConnectToDeviceTask.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatUtilities.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatCaptureScreenshot.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatIPWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidMemoryStatistics.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\UI\AndroidLogcatSymbolList.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatBuildInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidTools\Shell.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatVideoPlayer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatStacktraceWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatStatusBar.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatLayoutViewerWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatSessionSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatFilterOptions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatMemoryViewer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidKeyCode.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatManager.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidTools\AndroidTools.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\UI\AndroidLogcatReordableList.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatPriority.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidTools\AndroidBridge.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatStyles.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\AndroidLogcatDeviceSelection.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Library\PackageCache\com.unity.purchasing\Runtime\AppleMacosStub\UnityEngine.Purchasing.AppleMacosStub.asmdef" />
+    <None Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\Unity.Mobile.AndroidLogcat.Editor.asmdef" />
+    <None Include="Library\PackageCache\com.unity.mobile.android-logcat\Editor\UI\Layouts\AndroidLogcatLayoutViewer.uxml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -78,6 +138,10 @@
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AMDModule">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\Managed\UnityEngine\UnityEngine.AMDModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.ARModule">
@@ -106,6 +170,14 @@
     </Reference>
     <Reference Include="UnityEngine.ClothModule">
       <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.ContentLoadModule">
@@ -186,6 +258,10 @@
     </Reference>
     <Reference Include="UnityEngine.MultiplayerModule">
       <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\Managed\UnityEngine\UnityEngine.MultiplayerModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.NVIDIAModule">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\Managed\UnityEngine\UnityEngine.NVIDIAModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
@@ -338,6 +414,10 @@
     </Reference>
     <Reference Include="UnityEngine.VideoModule">
       <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.WindModule">
@@ -1120,6 +1200,202 @@
       <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\Microsoft.CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.ObjectPool">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\Microsoft.Extensions.ObjectPool.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Registry.AccessControl">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\Microsoft.Win32.Registry.AccessControl.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Registry">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\Microsoft.Win32.Registry.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Win32.SystemEvents">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\Microsoft.Win32.SystemEvents.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.CodeDom">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.CodeDom.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition.Registration">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.ComponentModel.Composition.Registration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Configuration.ConfigurationManager.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Data.DataSetExtensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.Odbc">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Data.Odbc.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.OleDb">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Data.OleDb.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.SqlClient">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Data.SqlClient.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Diagnostics.DiagnosticSource.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.EventLog">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Diagnostics.EventLog.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.PerformanceCounter">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Diagnostics.PerformanceCounter.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.DirectoryServices.AccountManagement">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.DirectoryServices.AccountManagement.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.DirectoryServices.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.DirectoryServices.Protocols">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.DirectoryServices.Protocols.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing.Common">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Drawing.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Formats.Asn1">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Formats.Asn1.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.AccessControl">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.IO.FileSystem.AccessControl.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.IO.Packaging.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.Pipes.AccessControl">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.IO.Pipes.AccessControl.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.Ports">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.IO.Ports.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Management">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Management.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Private.ServiceModel">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Private.ServiceModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection.Context">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Reflection.Context.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Caching">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Runtime.Caching.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.AccessControl">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Security.AccessControl.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Cng">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Security.Cryptography.Cng.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Pkcs">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Security.Cryptography.Pkcs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.ProtectedData">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Security.Cryptography.ProtectedData.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Xml">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Security.Cryptography.Xml.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Permissions">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Security.Permissions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Security.Principal.Windows.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.ServiceModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.Duplex">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.ServiceModel.Duplex.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.Http">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.ServiceModel.Http.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.NetTcp">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.ServiceModel.NetTcp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.Primitives">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.ServiceModel.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.Security">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.ServiceModel.Security.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.Syndication">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.ServiceModel.Syndication.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceProcess.ServiceController">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.ServiceProcess.ServiceController.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Speech">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Speech.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Text.Encoding.CodePages.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.AccessControl">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Threading.AccessControl.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Services.Description">
+      <HintPath>D:\Unity3d\Unity3dEditor\6000.0.32f1\Editor\Data\NetStandard\EditorExtensions\System.Web.Services.Description.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
       <Private>False</Private>
@@ -1130,8 +1406,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Purchasing.Common.csproj" />
-    <ProjectReference Include="UnityEngine.Purchasing.AppleCore.csproj" />
+    <ProjectReference Include="UnityEngine.TestRunner.csproj" />
+    <ProjectReference Include="UnityEditor.TestRunner.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>
