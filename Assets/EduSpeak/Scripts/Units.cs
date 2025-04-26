@@ -11,7 +11,13 @@ public class Units : MonoBehaviour
     public int index_unit=0;
 
     public void Show(){
-        this.app.box.Show("Units", this.sp_banner,On_Back);
+        string s_title="Units";
+        if(this.app.is_sell){
+            s_title="Select week to start";
+        }else{
+            s_title="Units";
+        }
+        this.app.box.Show(s_title, this.sp_banner,On_Back);
         this.app.Set_index_menu_cur(2);
         this.app.Check_ui_menu(2);
         IDictionary data_level= (IDictionary)this.app.list_data[this.app.l.index_level];

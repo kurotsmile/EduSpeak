@@ -1329,6 +1329,8 @@ MonoBehaviour:
   tr_menu: {fileID: 620864881}
   tr_area_start: {fileID: 1746093949}
   tr_area_banner: {fileID: 98487119}
+  btn_obj_level_menu: {fileID: 2048606162}
+  btn_obj_level_info: {fileID: 20788079}
   sound:
   - {fileID: 294536369}
   - {fileID: 874052795}

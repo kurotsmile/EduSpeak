@@ -58,82 +58,183 @@
                 "file":["4.3. buy fruit or flowers.WAV","4.3. decorate a house or tree.WAV","4.3. eat traditional food.WAV","4.3. fireworks.WAV","4.3. get lucky money,candy,or gifts.WAV","4.3. play games or music.WAV"]
             },
             {
-                "name":"Week 10"
+                "name": "Week 10",
+                "text": ["Bridge", "Cathedral", "Museum", "Opera House", "Park", "Statue"],
+                "vi": ["Cây cầu", "Nhà thờ lớn", "Viện bảo tàng", "Nhà hát lớn", "Công viên", "Tượng đài"],
+                "file": ["10.1. bridge.WAV", "10.1. cathedral.WAV", "10.1. museum.WAV", "10.1. oprea house.WAV", "10.1. park.WAV", "10.1. statue.WAV"]
+            },            
+            {
+                "name": "Week 11",
+                "text": ["Always", "Never", "Often", "Rarely", "Sometimes", "Usually", "Friendly"],
+                "vi": ["Luôn luôn", "Không bao giờ", "Thường xuyên", "Hiếm khi", "Thỉnh thoảng", "Thường thường", "Thân thiện"],
+                "file": ["Voca 11.1. always.WAV","Voca 11.2. never.WAV","Voca 11.3. often.WAV","Voca 11.4. Rarely.WAV","Voca 11.5. sometimes.WAV","Voca 11.6. usually.WAV","Voca 10.1. friendly .WAV"]
             },
             {
-                "name":"Week 11"
-            },
-            {
-                "name":"Week 12"
+                "name": "Week 12",
+                "text": ["Fashion show", "Music", "Performance", "Puppet", "Show", "Stand, talent", "Tug of war"],
+                "vi": ["Trình diễn thời trang", "Âm nhạc", "Màn biểu diễn", "Múa rối", "Buổi trình diễn", "Gian hàng, tài năng", "Kéo co"],
+                "file": ["Voca 12.1. fashion show.WAV","Voca 12.2. music.WAV","Voca 12.3. performance.WAV","Voca 12.4. puppet.WAV","Voca 12.5. show.WAV","Voca 12.6. stand, talent.WAV","Voca 12.6a. tug of war.WAV"]
             },
             {
                 "name":"Week 13"
             },
             {
-                "name":"Week 14"
+                "name": "Week 14",
+                "text": ["Buy", "Candy", "Decorate", "Fireworks", "Flower", "Fruit"],
+                "vi": ["Mua", "Kẹo", "Trang trí", "Pháo hoa", "Hoa", "Trái cây"],
+                "file": [
+                    "Voca 14.1. buy.WAV",
+                    "Voca 14.2. candy.WAV",
+                    "Voca 14.3. decorate.WAV",
+                    "Voca 14.4. fireworks.WAV",
+                    "Voca 14.5. flower.WAV",
+                    "Voca 14.6. fruit.WAV"
+                ]
             },
             {
-                "name":"Week 15"
+                "name": "Week 15",
+                "text": ["Changing room", "Customer", "Extra large", "Jeans", "Large", "Medium"],
+                "vi": ["Phòng thay đồ", "Khách hàng", "Rất lớn (XL)", "Quần jeans", "Lớn", "Vừa"],
+                "file": [
+                    "Voca 15.1. changing room.WAV",
+                    "Voca 15.2. customer.WAV",
+                    "Voca 15.3. extra large.WAV",
+                    "Voca 15.4. jeans.WAV",
+                    "Voca 15.5. large.WAV",
+                    "Voca 15.6. medium.WAV"
+                ]
+            },{
+                "name": "Week 16",
+                "text": ["Change", "Check", "Dessert", "Menu", "Order", "Tip"],
+                "vi": ["Tiền thối lại", "Hóa đơn", "Món tráng miệng", "Thực đơn", "Gọi món", "Tiền boa"],
+                "file": [
+                    "Voca 16.1. change.WAV",
+                    "Voca 16.2. check.WAV",
+                    "Voca 16.3. dessert.WAV",
+                    "Voca 16.4. menu.WAV",
+                    "Voca 16.5. order.WAV",
+                    "Voca 16.6. tip.WAV"
+                ]
+            },{
+                "name": "Week 17",
+                "text": ["Beef", "Fish sauce", "Fry", "Grill", "Herbs", "Lamb"],
+                "vi": ["Thịt bò", "Nước mắm", "Chiên", "Nướng", "Các loại rau thơm", "Thịt cừu"],
+                "file": [
+                    "Voca 17.1. beef.WAV",
+                    "Voca 17.2. fish sauce.WAV",
+                    "Voca 17.3. fry.WAV",
+                    "Voca 17.4. grill.WAV",
+                    "Voca 17.5. herbs.WAV",
+                    "Voca 17.6. lamb.WAV"
+                ]
             },
             {
-                "name":"Week 16"
+                "name": "Week 18",
+                "text": ["Bus station", "Hospital", "Library", "Police station", "Post office", "Train station"],
+                "vi": ["Bến xe buýt", "Bệnh viện", "Thư viện", "Đồn cảnh sát", "Bưu điện", "Nhà ga"],
+                "file": ["Voca 18.1. bus station.WAV","Voca 18.2. hospital.WAV","Voca 18.3. library.WAV","Voca 18.4. police station.WAV","Voca 18.5. post office.WAV","Voca 18.6. train station.WAV"]
             },
             {
-                "name":"Week 17"
+                "name": "Week 19",
+                "text": ["Bag", "Bottle", "Can", "Glass", "Jar", "Pick up"],
+                "vi": ["Túi", "Chai", "Lon", "Ly/thủy tinh", "Hũ/lọ", "Nhặt lên"],
+                "file": ["Voca 19.1. bag.WAV","Voca 19.2. bottle.WAV","Voca 19.3. can.WAV","Voca 19.4. glass.WAV","Voca 19.5. jar.WAV","Voca 19.6. pick up.WAV"]
             },
             {
-                "name":"Week 18"
+                "name": "Week 20",
+                "text": ["Plastic", "Recycle", "Reuse", "Throw away", "Trash"],
+                "vi": ["Nhựa", "Tái chế", "Tái sử dụng", "Vứt đi", "Rác thải"],
+                "file": ["Voca 20.1. plastic.WAV","Voca 20.2. recycle.WAV","Voca 20.3. reuse.WAV","Voca 20.4. throw away.WAV","Voca 20.5. trash.WAV"]
             },
             {
-                "name":"Week 19"
+                "name": "Week 21",
+                "text": ["Charity", "Donate", "Free", "Protect", "Wildlife", "Noodles"],
+                "vi": ["Từ thiện", "Quyên góp", "Miễn phí", "Bảo vệ", "Động vật hoang dã", "Mì"],
+                "file": ["Voca 21.1. charity.WAV","Voca 21.2. donate.WAV","Voca 21.3. free.WAV","Voca 21.4. protect.WAV","Voca 21.5. wildlife.WAV","Voca 21.6. noodles.WAV"]
             },
             {
-                "name":"Week 20"
+                "name": "Week 22",
+                "text": ["Action", "Animated", "Comedy", "Drama", "Horror", "Science fiction"],
+                "vi": ["Hành động", "Hoạt hình", "Hài", "Chính kịch", "Kinh dị", "Khoa học viễn tưởng"],
+                "file": ["Voca 22.1. action.WAV","Voca 22.2. animated.WAV","Voca 22.3. comedy.WAV","Voca 22.4. drama.WAV","Voca 22.5. horror.WAV","Voca 22.6. science ficition.WAV"]
             },
             {
-                "name":"Week 21"
+                "name": "Week 23",
+                "text": ["Awful", "Boring", "Exciting", "Fantastic", "Pork", "Seafood"],
+                "vi": ["Tồi tệ", "Nhàm chán", "Hấp dẫn", "Tuyệt vời", "Thịt heo", "Hải sản"],
+                "file": ["Voca 23.1. awful.WAV","Voca 23.2. boring.WAV","Voca 23.3. exciting.WAV","Voca 23.4. fantastic.WAV","Voca 23.5. pork.WAV","Voca 23.6. seafood.WAV"]
             },
             {
-                "name":"Week 22"
+                "name": "Week 24",
+                "text": ["Funny", "Great", "Sad", "Terrible", "Army", "Battle"],
+                "vi": ["Vui nhộn", "Tuyệt vời", "Buồn", "Kinh khủng", "Quân đội", "Trận chiến"],
+                "file": ["Voca 24.1. funny.WAV","Voca 24.2. great.WAV","Voca 24.3. sad.WAV","Voca 24.4. terrible.WAV","Voca 24.5. army.WAV","Voca 24.6. battle.WAV"]
             },
             {
-                "name":"Week 23"
+                "name": "Week 25",
+                "text": ["General", "King", "Queen", "Soldier", "Win", "Invaders"],
+                "vi": ["Tướng quân", "Vua", "Hoàng hậu", "Lính", "Chiến thắng", "Kẻ xâm lược"],
+                "file": ["Voca 25.1. general.WAV", "Voca 25.2. king.WAV","Voca 25.3. queen.WAV","Voca 25.4. soldier.WAV","Voca 25.5. win.WAV","Voca 25.6. invaders.WAV"]
             },
             {
-                "name":"Week 24"
+                "name": "Week 26",
+                "text": ["Campsite", "Canyon", "Cave", "Hiking", "Kayaking", "Rafting"],
+                "vi": ["Khu cắm trại", "Hẻm núi", "Hang động", "Đi bộ đường dài", "Chèo thuyền kayak", "Chèo thuyền vượt thác"],
+                "file": ["Voca 26.1. campsite.WAV","Voca 26.2. canyon.WAV","Voca 26.3. cave.WAV","Voca 26.4. hiking.WAV","Voca 26.5. kayaking.WAV","Voca 26.6. rafting.WAV"]
             },
             {
-                "name":"Week 25"
+                "name": "Week 27",
+                "text": ["Battery", "Bottled water", "Flashlight", "Pillow, towel", "Sleeping bag", "Tent"],
+                "vi": ["Pin", "Nước đóng chai", "Đèn pin", "Gối, khăn tắm", "Túi ngủ", "Lều trại"],
+                "file": ["Voca 27.1. battery.WAV","Voca 27.2. bottled water.WAV","Voca 27.3. flashlight.WAV","Voca 27.4. pilow, towel.WAV","Voca 27.5. sleeping bag.WAV","Voca 27.6. tent.WAV"]
             },
             {
-                "name":"Week 26"
+                "name": "Week 28",
+                "text": ["Bay", "Beach", "Forest", "Highland", "Island", "Mountain"],
+                "vi": ["Vịnh", "Bãi biển", "Khu rừng", "Vùng cao", "Hòn đảo", "Núi"],
+                "file": ["Voca 28.1. bay.WAV","Voca 28.2. beach.WAV","Voca 28.3. forest.WAV","Voca 28.4. highland.WAV","Voca 28.5. island.WAV","Voca 28.6. mountain.WAV"]
             },
             {
-                "name":"Week 27"
+                "name": "Week 29",
+                "text": ["Waterfall", "Earthscraper", "Eco-friendly", "Megacity", "Sea", "Smart home"],
+                "vi": ["Thác nước", "Tòa nhà chọc sâu", "Thân thiện với môi trường", "Siêu đô thị", "Biển", "Ngôi nhà thông minh"],
+                "file": ["Voca 29.1. waterfall.WAV","Voca 29.2. earthscraper.WAV","Voca 29.3. eco-friendly.WAV","Voca 29.4. megacity.WAV","Voca 29.5. sea.WAV","Voca 29.6. smart home.WAV"]
             },
             {
-                "name":"Week 28"
+                "name": "Week 30",
+                "text": ["Underground", "3D printer", "Automatic food machine", "Device", "Drone", "Robot helper"],
+                "vi": ["Dưới lòng đất", "Máy in 3D", "Máy làm thức ăn tự động", "Thiết bị", "Máy bay không người lái", "Robot trợ giúp"],
+                "file": ["Voca 30.1. underground.WAV","Voca 30.2. 3D printer.WAV","Voca 30.3. automatic food machine.WAV","Voca 30.4. device.WAV","Voca 30.5. drone.WAV","Voca 30.6. robot helper.WAV"]
             },
             {
-                "name":"Week 29"
+                "name": "Week 31",
+                "text": ["Screen", "Smart", "Astronaut", "Earth", "Float", "Gravity"],
+                "vi": ["Màn hình", "Thông minh", "Phi hành gia", "Trái Đất", "Lơ lửng", "Trọng lực"],
+                "file": ["Voca 31.1. screen.WAV", "Voca 31.2. smart.WAV","Voca 31.3. astronaut.WAV","Voca 31.4. Earth.WAV","Voca 31.5. float.WAV","Voca 31.6. gravity.WAV"]
             },
             {
-                "name":"Week 30"
+                "name": "Week 32",
+                "text": ["Lock", "The moon", "Space station", "Spacesuit", "Bridge", "Cathedral"],
+                "vi": ["Ổ khóa", "Mặt trăng", "Trạm vũ trụ", "Bộ đồ phi hành gia", "Cây cầu", "Nhà thờ lớn"],
+                "file": ["Voca 32.1. lock.WAV","Voca 32.2. the moon.WAV","Voca 32.3. space station.WAV","Voca 32.4. spacesuit.WAV","Voca 32.5. bridge.WAV","Voca 32.6. cathedral.WAV"]
             },
             {
-                "name":"Week 31"
+                "name": "Week 33",
+                "text": ["Museum", "Opera house", "Palace", "Park", "Statue", "Tower"],
+                "vi": ["Viện bảo tàng", "Nhà hát lớn", "Cung điện", "Công viên", "Tượng đài", "Tháp"],
+                "file": ["Voca 33.1. museum.WAV","Voca 33.2. oprea house.WAV","Voca 33.3. palace.WAV","Voca 33.4. park.WAV","Voca 33.5. statue.WAV","Voca 33.6. tower.WAV"]
             },
             {
-                "name":"Week 32"
+                "name": "Week 34",
+                "text": ["Amusement park", "Building", "Crowded", "Noisy, peaceful", "Modern", "Shopping mall"],
+                "vi": ["Công viên giải trí", "Tòa nhà", "Đông đúc", "Ồn ào, yên bình", "Hiện đại", "Trung tâm mua sắm"],
+                "file": ["Voca 34.1. amusement park.WAV","Voca 34.2. building.WAV","Voca 34.3. crowded.WAV","Voca 34.4.  noisy, peaceful.WAV","Voca 34.5. modern.WAV","Voca 34.6. shopping mall.WAV"]
             },
             {
-                "name":"Week 33"
-            },
-            {
-                "name":"Week 34"
-            },
-            {
-                "name":"Week 35"
+                "name": "Week 35",
+                "text": ["Cheap", "Clean", "Expensive", "Polluted", "Populated", "Temperature"],
+                "vi": ["Rẻ", "Sạch", "Đắt", "Ô nhiễm", "Đông dân", "Nhiệt độ"],
+                "file": ["Voca 35.1. cheap.WAV","Voca 35.2. clean.WAV","Voca 35.3. expensive.WAV","Voca 35.4. polluted.WAV","Voca 35.5. populated.WAV","Voca 35.6. temperature.WAV"]
             },
             {
                 "name":"Week 36"

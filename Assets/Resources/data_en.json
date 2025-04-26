@@ -266,5 +266,54 @@
                 "vi": ["cuộc thi", "vận động viên", "huy chương", "kỷ lục", "trận đấu", "giải đấu", "sân vận động", "đội", "chiến thắng", "người hâm mộ"]
             }                
         ]
+    },
+	{
+        "name":"Grade 11 high school",
+        "tip":"Click on the word to hear the pronunciation.",
+        "units":[
+            {
+                "name": "Unit 1",
+                "tip": "A long and healthy life",
+                "text": ["active","antibiotic","bacteria","balanced","blue light","diameter","disease","energy","fitness","flesh","food poisoning","germ","infection","infectious","ingredient","life expectancy","mineral","muscle","nutrient","organism","press-up","properly","recipe","regular","repetitive","spread","squat","strength","suffer","treatment","tuberculosis","virus","work out","cut down on","give off","give up","star jump"],
+                "vi": ["năng động, chủ động, hoạt bát","thuốc kháng sinh,có tính kháng sinh","vi khuẩn","cân bằng, cân đối","ánh sáng xanh","đường kính","bệnh, bệnh tật","sinh lực, nghị lực, năng lượng","sự mạnh khỏe, sự sung sức","thịt, da thịt","ngộ độc thức ăn","vi trùng","bệnh lây nhiễm, sự lây nhiễm","có tính lây nhiễm, lan truyền","thành phần","tuổi thọ","khoáng chất, khoáng sản","sức mạnh cơ bắp","chất dinh dưỡng","sinh vật, thực thể sống","động tác chống đẩy","một cách điều độ, hợp lí","cách nấu nướng, công thức chế biến","đều, đều đặn","lặp đi lặp lại, liên tục","sự truyền bá, sự lan truyền","bài tập đứng lên ngồi xuống","sức mạnh","chịu đựng","sự điều trị, cuộc điều trị, thuốc điều trị","bệnh lao","vi-rút","bài tập thể dục","cắt giảm","tỏa ra, phát ra, bốc lên","từ bỏ","động tác nhảy dang tay chân"]
+            },
+			{
+				"name": "Unit 2",
+				"tip":"The Generation Gap",
+				"text":["adapt","argument","attitude","burden","characteristic","conflict","curfew","curious","digital native","duty","elegant","experience","extended family","eyesight","financial burden","firmly","flashy","freedom","generation gap","hire","honesty","immigrant","impose","individualism","limit","mature","multi-generational","nuclear family","obey","objection","open-minded","point of view","screen time","social media","value","be on the scene","bridge the gap","follow in one’s footsteps"],
+				"vi":["làm cho hợp với, sửa cho hợp với","sự tranh luận, sự bàn cãi","thái độ","gánh nặng","đặc thù, đặc trưng, cá tính","sự mâu thuẫn, sự đối lập","lệnh giới nghiêm","ham hiểu biết; tò mò, hiếu kỳ","người được sinh ra ở thời đại công nghệ và Internet","bổn phận, trách nhiệm","thanh lịch, tao nhã","trải nghiệm","gia đình đa thế hệ, đại gia đình","tầm nhìn, thị lực","gánh nặng tài chính","chắc chắn","diện, hào nhoáng","sự tự do; quyền tự do","khoản cách giữa các thế hệ","thuê, mướn","tính trung thực, tính chân thật","dân nhập cư","áp đặt cái gì vào ai","chủ nghĩa cá nhân","giới hạn sự hạn chế, sự giới hạn, mặt hạn chế, nhược điểm","trưởng thành, chín chắn","đa thế hệ, nhiều thế hệ","gia đình hạt nhân (chỉ gồm cha mẹ và con cái)","vâng lời, tuân thủ","sự phản kháng","cởi mở","quan điểm","thời gian sử dụng thiết bị điện tử","phương tiện truyền thông mạng xã hội","giá trị, coi trọng","xuất hiện","giảm thiểu sự khác biệt","theo bước, nối nghiệp"]
+			},
+			{
+				"name":"Unit 3",
+				"tip":"Cities of the future",
+				"text":["Article","Card reader","City dweller","Cycle path","Efficiently","High-rise","Infrastructure","Interact","Liveable","Neighborhood","Operate","Pedestrian","Privacy","Roof garden","Sense of community","Sensor","Skyscraper","Smart city","Sustainable","Urban centre","Upgrade","Urban planner","Optimistic","Overcrowded","Pessimistic","Quality of life","Renewable","Inhabitant","Detect","Metropolitan","Cosmopolitan"],
+				"vi":["nhà báo","thiết bị đọc thẻ","người sống ở đô thị, cư dân thành thị","làn đường dành cho xe đạp","có năng suất","cao tầng, có nhiều tầng","cơ sở hạ tầng","tác động qua lại","đáng sống","khu dân cư","hoạt động, vận hành, chạy (máy)","người đi bộ, khách bộ hành","sự riêng tư","vườn trên sân thượng","ý thức cộng đồng","cảm biến","nhà chọc trời","thành phố thông minh","có thể chịu đựng được","khu đô thị, trung tâm đô thị","nâng cấp","chuyên gia quy hoạch đô thị","lạc quan","chật ních, đông nghẹt","bi quan","chất lượng sống","có thể tái tạo lại","cư dân, người cư trú","dò tìm, phát hiện ra","thủ đô","gồm người từ nhiều nước, gồm người tứ xứ"]
+			},{
+				"name":"Unit 4",
+				"tip":"ASEAN and Viet Nam",
+				"text":["Apply","Celebration","Community","Cultural exchange","Current","Eye-opening","Honour","Issue","Leadership skill","Live-stream","Politics","Promote","Proposal","Qualify","Region","Relation","Representative","Strengthen","Support","Volunteer","Youth","Interference","Maintain","Principle","Scholarship","Stability","Internal","Motto","Official","Sponsor","Vision","Conference","Constitution","Dispute","Block","Graceful"],
+				"vi":["xin việc, ứng cử","sự kỷ niệm, lễ kỷ niệm","cộng đồng","sự trao đổi văn hóa","hiện hành, đang lưu hành","mở mang tầm mắt","Được vinh dự, được đặc huệ","vấn đề","kĩ năng lãnh đạo","phát sóng trực tiếp","chính trị","thúc đẩy, khuyến mại, quảng bá","sự đề nghị đề xuất","đủ tiêu chuẩn, đủ khả năng","vùng, miền","mối quan hệ,mối liên quan","người đại diện","củng cố; tăng cường","ủng hộ","tình nguyện, tình nguyện viên","tuổi trẻ, tuổi thanh niên, tuổi niên thiếu,thời niên thiếu","sự can thiệp","duy trì","nguyên tắc","học bổng","sự ổn định","ở trong, bên trong","khẩu hiệu, phương châm","chính thức","nhà tài trợ","tầm nhìn","hội nghị","hiến pháp","cuộc tranh luận, cuộc tranh chấp","khối","duyên dáng, yêu kiều"]
+			},{
+				"name":"Unit 5",
+				"tip":"Global warming",
+				"text":["Global warming","Atmosphere","Balance","Carbon dioxide","Coal","Consequence","Cut down","Deforestation","Emission","Environment","Farming","Farmland","Fossil fuel","Heat-trapping","Human activity","Impact","Leaflet","Methane","Pollutant","Release","Renewable","Sea level","Soil","Soot","Temperature","Waste","Campaign","Biodiversity","Vulnerable","Habitat","Extinct","Conservation","Survive"],
+				"vi":["sự nóng lên toàn cầu","khí quyển","sự cân bằng, sự cân đối giữ (mất) thăng bằng","khí cacbonic","than đá","hậu quả","chặt, đốn (cây)","sự phá rừng; sự phát quang","sự phát ra, sự bốc ra, sự tỏa ra","môi truờng","nghề nông","đất chăn nuôi, trồng trọt","nhiên liệu hóa thạch (như than đá, dầu mỏ)","sự tác động, ảnh hưởng","tờ quảng cáo rờ","metan","chất [gây] ô nhiễm","giải thoát","có thể gia hạn được","mực nước biển","Đất trồng","bồ hóng, nhọ nồi, muội","nhiệt độ","đồ phế thải, rác bị lãng phí","chiến dịch","đa dạng sinh học","dễ bị tổn thương","môi trường sống","tuyệt chủng","sự bảo tồn","sống sót"]
+			},{
+				"name":"Unit 6",
+				"tip":"Preserving our heritage",
+				"text":["ancient","appreciate","citadel","complex","crowdfunding","festive","fine","folk","heritage","historic","historical","imperial","landscape","limestone","monument","performing arts","preserve","restore","state","temple","trending","valley"],
+				"vi":["cổ kính","hiểu rõ giá trị, đánh giá cao","thành trì","quần thể, tổ hợp","quyên góp, huy động vốn từ cộng đồng","thuộc về ngày lễ, có không khí lễ hội","tiền phạt","thuộc về dân gian","di sản","quan trọng, có giá trị lịch sử","thuộc về lịch sử, mang tính lịch sử","thuộc về hoàng tộc","phong cảnh","đá vôi","lăng mộ, đài kỷ niệm, công trình kiến trúc","lăng mộ, đài kỷ niệm, công trình kiến trúc","nghệ thuật biểu biễn","bảo tồn","khôi phục, sửa lại","hiện trạng, tình trạng","đền, miếu","theo xu hướng","thung lũng"]
+			},{
+				"name":"Unit 7",
+				"tip":"Education options for school-leavers",
+				"text":["academic","apprenticeship","bachelor’s degree","brochure","doctorate","entrance exam","formal","graduation","higher education","institution","manage","master’s degree","mechanic","professional","qualification","school-leaver","sixth-form college","vocational school"],
+				"vi":["có tính chất học thuật, liên quan tới học tập","thời gian học nghề, học việc thực tế","bằng cử nhân","ấn phẩm quảng cáo, giới thiệu","bằng tiến sĩ","kì thi đầu vào","chính quy, có hệ thống","khi tốt nghiệp, lễ tốt nghiệp","giáo dục đại học","cơ sở, viện","cố gắng","bằng thạc sĩ","thợ cơ khí","chuyên nghiệp, nhà nghề","trình độ chuyên môn, văn bằng","học sinh tốt nghiệp trung học phổ thông","trường dành cho học sinh từ 16-19 tuổi và tập trung vào các trình độ A-levels nhằm chuẩn bị cho sinh viên vào các trường đại học","trường dạy nghề"]
+			},{
+				"name":"Unit 8",
+				"tip":"Becoming independent",
+				"text":["achieve","carry out"],
+				"vi":["đạt được, giành được","tiến hành"]
+			}
+        ]
     }
 ]

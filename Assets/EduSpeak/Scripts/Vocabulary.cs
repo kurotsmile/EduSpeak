@@ -62,6 +62,7 @@ public class Vocabulary : MonoBehaviour
         this.panel_vocabulary.SetActive(true);
         this.app.speechtotext.StopRecording();
         this.panel_Recording.SetActive(false);
+        Debug.Log("v.s_file: "+v.s_file);
         if(v.s_file!="") this.speechClip = Resources.Load<AudioClip>("voice/" + v.s_file.Replace(".WAV", ""));
         this.Check_status_favourite();
     }

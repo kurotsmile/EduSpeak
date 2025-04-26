@@ -53,6 +53,8 @@ public class App : MonoBehaviour
     public Transform tr_menu;
     public Transform tr_area_start;
     public Transform tr_area_banner;
+    public GameObject btn_obj_level_menu;
+    public GameObject btn_obj_level_info;
 
     [Header("Sound")]
     public AudioSource[] sound;
@@ -96,12 +98,16 @@ public class App : MonoBehaviour
             jsonFile = Resources.Load<TextAsset>("data");
             this.img_app_title.sprite = this.sp_app_title_sell;
             this.img_logo_company.SetActive(true);
+            this.btn_obj_level_info.SetActive(false);
+            this.btn_obj_level_menu.SetActive(false);
         }
         else
         {
             jsonFile = Resources.Load<TextAsset>("data_en");
             this.img_app_title.sprite = this.sp_app_title_public;
             this.img_logo_company.SetActive(false);
+            this.btn_obj_level_info.SetActive(true);
+            this.btn_obj_level_menu.SetActive(true);
         }
 
         if (jsonFile != null) this.Load_Data_App(jsonFile.text);
@@ -146,6 +152,7 @@ public class App : MonoBehaviour
                         V_item v_item = new();
                         v_item.s_key = list_vocabulary[j].ToString();
                         v_item.s_Translate = ((IList)dataUnit["vi"])[j].ToString();
+                        if(this.is_sell)v_item.s_file= ((IList)dataUnit["file"])[j].ToString();
                         v_item.index_v = count_vocabulary;
                         v_item.index_v_in_week = j;
                         v_item.index_week = k;
@@ -279,6 +286,15 @@ public class App : MonoBehaviour
             }
             this.Check_status_translate();
         });
+
+        if(this.is_sell){
+            box_setting.area_all_item.GetChild(2).gameObject.SetActive(false);
+            box_setting.area_all_item.GetChild(4).gameObject.SetActive(false);
+            box_setting.area_all_item.GetChild(5).gameObject.SetActive(false);
+            box_setting.area_all_item.GetChild(6).gameObject.SetActive(false);
+            box_setting.area_all_item.GetChild(7).gameObject.SetActive(false);
+            box_setting.area_all_item.GetChild(8).gameObject.SetActive(false);
+        }
     }
 
     public void Btn_show_home()
