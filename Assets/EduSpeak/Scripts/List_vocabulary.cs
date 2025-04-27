@@ -38,7 +38,10 @@ public class List_vocabulary : MonoBehaviour
 
             Carrot_Box_Item box_Item = obj.GetComponent<Carrot_Box_Item>();
             box_Item.set_title(text[i].ToString());
-            box_Item.set_tip(text[i].ToString());
+            if(this.app.status_translate)
+                box_Item.set_tip(vi[i].ToString());
+            else
+                box_Item.set_tip("Vocabulary " + (i+1).ToString());
             box_Item.set_icon_white(this.app.sp_vocabulary);
             box_Item.check_type();
             box_Item.set_act(() => {

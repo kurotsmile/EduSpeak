@@ -22,7 +22,7 @@ public class App : MonoBehaviour
 
     [Header("Object Main")]
     public Carrot.Carrot carrot;
-    public Carrot_ads_manage ads;
+    public IronSourceAds ads;
     public GameObject box_item_prefab;
     public TextToSpeech texttospeech;
     public SpeechToText speechtotext;
@@ -84,8 +84,15 @@ public class App : MonoBehaviour
     void Start()
     {
         this.carrot.Load_Carrot(On_check_exit_app);
+        this.ads.On_Load();
+
         this.carrot.color_highlight = this.color_menu_active;
         this.carrot.shop.onCarrotPaySuccess += onCarrotPaySuccess;
+
+        this.ads.onRewardedSuccess=this.carrot.game.OnRewardedSuccess;
+        this.carrot.act_buy_ads_success=this.ads.RemoveAds;
+        this.carrot.game.act_click_watch_ads_in_music_bk=this.ads.ShowRewardedVideo;
+
         if(carrot.os_app!=OS.Window){
             if (this.is_sell == false) this.ads.On_Load();
         }

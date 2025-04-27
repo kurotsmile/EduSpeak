@@ -44,7 +44,7 @@ public class Vocabulary : MonoBehaviour
         this.panel_vocabulary.transform.SetAsLastSibling();
         this.data_v_cur=v;
         this.app.Set_index_menu_cur(5);
-        if(this.app.is_sell==false) this.app.ads.On_show_interstitial();
+        if(this.app.is_sell==false) this.app.ads.show_ads_Interstitial();
         this.txt_Status.text = "";
         if(this.app.is_sell){
             if (this.audioSource_Speech.isPlaying) this.audioSource_Speech.Stop();

@@ -5,9 +5,8 @@ apply from: '../shared/keepUnitySymbols.gradle'
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 // Android Resolver Dependencies Start
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4' // Assets/GoogleMobileAds/Editor/GoogleMobileAdsDependencies.xml:12
-    implementation 'com.google.android.gms:play-services-ads:23.6.0' // Assets/GoogleMobileAds/Editor/GoogleMobileAdsDependencies.xml:7
-    implementation 'com.google.android.ump:user-messaging-platform:3.1.0' // Assets/GoogleMobileAds/Editor/GoogleUmpDependencies.xml:7
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.1.0' // Assets/LevelPlay/Editor/IronSourceSDKDependencies.xml:12
+    implementation 'com.unity3d.ads-mediation:mediation-sdk:8.8.0' // Assets/LevelPlay/Editor/IronSourceSDKDependencies.xml:5
 // Android Resolver Dependencies End
 **DEPS**}
 

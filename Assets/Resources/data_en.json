@@ -268,6 +268,29 @@
         ]
     },
 	{
+		"name":"Grade 10 high school",
+		"tip":"Click on the word to hear the pronunciation.",
+		"units":[
+			{
+				"name":"Unit 1",
+				"tip":"Family Life",
+				"text":["Benefit","Bond","Breadwinner","Character","Cheer up","Damage","Gratitude","Grocery","Heavy lifting","Homemaker","Laundry","Manner","Responsibility","Routine","Rubbish","Spotlessly","Strengthen","Support"
+				,"Truthful","Value","Washing-up"],
+				"vi":["Lợi ích","Sự gắn bó, kết nối","Người trụ cột đi làm nuôi gia đình","Tính cách","Cổ vũ, làm cho (ai đó) vui lên","Phá hỏng, làm hỏng","Sự biết ơn, lòng biết ơn","Thực phẩm và tạp hoá","Mang vác nặng","Người nội trợ","Quần áo, đồ giặt là","Tác phong, cách ứng xử","Trách nhiệm","Lệ thường, công việc hằng ngày","Rác rưởi","Không tì vết","Củng cố, làm mạnh thêm","Ủng hộ, hỗ trợ","Trung thực","Giá trị","Rửa chén bát"]
+			},{
+				"name":"Unit 2",
+				"tip":"Humans And The Environment",
+				"text":["Adopt","Appliance","Awareness","Calculate","Carbon footprint","Chemical","Eco-friendly","Electrical","Emission","Encourage","Energy","Estimate","Global","Human","Issue","Lifestyle","Litter","Material","Organic","Public transport","Refillable","Resource","Sustainable"],
+				"vi":["Theo, chọn theo","Thiết bị, dụng cụ","Nhận thức","Tính toán","Dấu chân cacbon, vết cacbon","Hoá chất","Thân thiện với môi trường","Thuộc về điện","Sự thải ra, thoát ra","Khuyến khích, động viên","Năng lượng","Ước tính, ước lượng","Toàn cầu","Con người","Vấn đề","Lối sống, cách sống","Rác thải","Nguyên liệu","Hữu cơ","Giao thông công cộng","Có thể làm đầy lại","Tài nguyên","Bền vững"]
+			},{
+				"name":"Unit 3",
+				"tip":"Music",
+				"text":["Bamboo clapper","Comment","Competition","Concert","Decoration","Delay"],
+				"vi":["Phách","Lời bình luận","Cuộc tranh tài, cuộc thi","Buổi hoà nhạc","Việc trang trí","Hoãn lại"]
+			}
+		]
+	}
+	{
         "name":"Grade 11 high school",
         "tip":"Click on the word to hear the pronunciation.",
         "units":[
@@ -297,7 +320,7 @@
 				"name":"Unit 5",
 				"tip":"Global warming",
 				"text":["Global warming","Atmosphere","Balance","Carbon dioxide","Coal","Consequence","Cut down","Deforestation","Emission","Environment","Farming","Farmland","Fossil fuel","Heat-trapping","Human activity","Impact","Leaflet","Methane","Pollutant","Release","Renewable","Sea level","Soil","Soot","Temperature","Waste","Campaign","Biodiversity","Vulnerable","Habitat","Extinct","Conservation","Survive"],
-				"vi":["sự nóng lên toàn cầu","khí quyển","sự cân bằng, sự cân đối giữ (mất) thăng bằng","khí cacbonic","than đá","hậu quả","chặt, đốn (cây)","sự phá rừng; sự phát quang","sự phát ra, sự bốc ra, sự tỏa ra","môi truờng","nghề nông","đất chăn nuôi, trồng trọt","nhiên liệu hóa thạch (như than đá, dầu mỏ)","sự tác động, ảnh hưởng","tờ quảng cáo rờ","metan","chất [gây] ô nhiễm","giải thoát","có thể gia hạn được","mực nước biển","Đất trồng","bồ hóng, nhọ nồi, muội","nhiệt độ","đồ phế thải, rác bị lãng phí","chiến dịch","đa dạng sinh học","dễ bị tổn thương","môi trường sống","tuyệt chủng","sự bảo tồn","sống sót"]
+				"vi":["sự nóng lên toàn cầu","khí quyển","sự cân bằng, sự cân đối giữ (mất) thăng bằng","khí cacbonic","than đá","hậu quả","chặt, đốn (cây)","sự phá rừng; sự phát quang","sự phát ra, sự bốc ra, sự tỏa ra","môi truờng","nghề nông","đất chăn nuôi, trồng trọt","nhiên liệu hóa thạch (như than đá, dầu mỏ)","Giữ nhiệt","Hoạt động của con người","sự tác động, ảnh hưởng","tờ quảng cáo rờ","metan","chất [gây] ô nhiễm","giải thoát","có thể gia hạn được","mực nước biển","Đất trồng","bồ hóng, nhọ nồi, muội","nhiệt độ","đồ phế thải, rác bị lãng phí","chiến dịch","đa dạng sinh học","dễ bị tổn thương","môi trường sống","tuyệt chủng","sự bảo tồn","sống sót"]
 			},{
 				"name":"Unit 6",
 				"tip":"Preserving our heritage",
@@ -311,8 +334,19 @@
 			},{
 				"name":"Unit 8",
 				"tip":"Becoming independent",
-				"text":["achieve","carry out"],
-				"vi":["đạt được, giành được","tiến hành"]
+				"text":["achieve","carry out","combine","come up with","confidence","deal with","decision making skill","get around","get into the habit of","independence","independent","learner","learning goal","life skill",
+				"make use of","manage","measure","money management skill","non-stick container","remove","responsibility","responsible","rice cooker","self-motivated","self-study","time management skill"],
+				"vi":["đạt được, giành được","tiến hành","kết hợp","nghĩ ra, nảy ra","sự tự tin","giải quyết, đối phó","kĩ năng đưa ra quyết định","đi lại","tạo thói quen","sự độc lập","độc lập, không lệ thuộc","người học","mục tiêu học tập","kĩ năng sống","tận dụng","quản lí","đo","kĩ năng quản lí tiền","nồi chống dính","lấy ra, loại bỏ","sự chịu trách nhiệm, trách nhiệm","có trách nhiệm","nồi cơm điện","có động lực, năng nổ","sự tự học","kĩ năng quản lí thời gian"]
+			},{
+				"name":"Unit 9",
+				"tip":"Social issues",
+				"text":["admit","alcohol","anxiety","ashamed","awareness","body shaming","bully","campaign","crime","depression","drug","hang out","lie","make fun of","obey","offensive","overpopulation","peer pressure","physical","poverty","proposal","propose","self-confidence","skip","stand up to","struggle","the odd one out","the poverty line"],
+				"vi":["thú nhận","đồ uống có cồn","sự lo lắng","xấu hổ","nhận thức","sự chế nhạo ngoại hình của người khác","bắt nạt","chiến dịch","tội phạm","sự trầm cảm","ma tuý","đi chơi","lời nói dối","trêu chọc, chế giễu","tuân thủ","gây xúc phạm","sự quá tải dân số","áp lực từ bạn bè","về mặt thể chất","sự nghèo đói","lời / bản đề xuất","đề xuất","sự tự tin vào bản thân","trốn, bỏ","đứng lên chống lại","đấu tranh","kẻ / người khác biệt","mức nghèo đói"]
+			},{
+				"name":"Unit 10",
+				"tip":"The ecosystem",
+				"text":["biodiversity","conservation","coral reef","delta","destroy","ecosystem","endangered","fauna","flora","food chain","green","habitat","living things","mammal","national park","native","natural resources","pangolin","resource","species","tropical forest","wildlife"],
+				"vi":["đa dạng sinh học","sự bảo tồn thiên nhiên","rạn san hô","đồng bằng","phá huỷ","hệ sinh thái","bị nguy hiểm","động vật","thực vật","chuỗi thức ăn","xanh","khu vực sống","các sinh vật sống","động vật có vú","rừng quốc gia","tự nhiên","tài nguyên thiên nhiên","con tê tê","nguồn lực","loài","rừng nhiệt đới","động vật hoang dã"]
 			}
         ]
     }
