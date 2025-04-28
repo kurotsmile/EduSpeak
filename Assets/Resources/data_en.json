@@ -285,11 +285,11 @@
 			},{
 				"name":"Unit 3",
 				"tip":"Music",
-				"text":["Bamboo clapper","Comment","Competition","Concert","Decoration","Delay"],
-				"vi":["Phách","Lời bình luận","Cuộc tranh tài, cuộc thi","Buổi hoà nhạc","Việc trang trí","Hoãn lại"]
+				"text":["Bamboo clapper","Comment","Competition","Concert","Decoration","Delay","Eliminate","Judge","Live","Location","Moon-shaped lute","Musical instrument","Participant","Performance","Reach","Single","Social media","Talented","Trumpet","Upload"],
+				"vi":["Phách","Lời bình luận","Cuộc tranh tài, cuộc thi","Buổi hoà nhạc","Việc trang trí","Hoãn lại","Loại ra, loại trừ","Giám khảo","Trực tiếp","Vị trí, địa điểm","Đàn nguyệt","Nhạc cụ","Người tham dự, thí sinh","Buổi biểu diễn, buổi trình diễn","Đạt được","Đĩa đơn","Mạng xã hội","Tài năng","Kèn trumpet","Tải lên"]
 			}
 		]
-	}
+	},
 	{
         "name":"Grade 11 high school",
         "tip":"Click on the word to hear the pronunciation.",

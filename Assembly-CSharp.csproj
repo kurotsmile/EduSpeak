@@ -60,6 +60,7 @@
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_tool.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Camera.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_list_app.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\AotStubs.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_shop.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_lang.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_HSBColor.cs" />
@@ -97,6 +98,9 @@
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Server.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_UI.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Theme.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\link.xml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
