@@ -1,272 +1,271 @@
 [
     {
-        "name":"Level 1",
-        "tip":"Click on the word to hear the pronunciation.",
-        "units":[
-            {
-                "name":"Unit 1",
-                "tip":"My New School",
-                "text":["uniform","smart","pencil case","compass","calculator","rubber","notebook","bicycle","library"],
-                "vi":["đồng phục","thông minh","hộp bút","compa","máy tính bỏ túi","cục tẩy","sổ tay","xe đạp","thư viện"]
-            },{
-                "name":"Unit 2",
-                "tip":"My Home",
-                "text":["kitchen","living room","bedroom","bathroom","fridge","sink","sofa","cupboard","bed","fan"],
-                "vi":["nhà bếp","phòng khách","phòng ngủ","phòng tắm","tủ lạnh","bồn rửa","ghế sofa","tủ","giường","quạt"]
-            },{
-                "name":"Unit 3",
-                "tip":"My Friends",
-                "text":["kind","funny","clever","friendly","hard-working","talkative","shy","confident","caring"],
-                "vi":["tốt bụng","hài hước","thông minh","thân thiện","chăm chỉ","nói nhiều","nhút nhát","tự tin","biết quan tâm"]
-            },{
-                "name":"Unit 4",
-                "tip":"My Neighborhood",
-                "text":["market","hospital","post office","stadium","park","museum","school","cinema","street","noisy"],
-                "vi":["chợ","bệnh viện","bưu điện","sân vận động","công viên","bảo tàng","trường học","rạp chiếu phim","đường phố","ồn ào"]
-            },{
-                "name":"Unit 5",
-                "tip":"Natural Wonders of the World",
-                "text":["island","desert","mountain","river","forest","lake","beach","waterfall","cave","valley"],
-                "vi":["hòn đảo","sa mạc","núi","sông","rừng","hồ","bãi biển","thác nước","hang động","thung lũng"]
-            },{
-                "name": "Unit 6",
-                "tip": "Our Tet Holiday",
-                "text": ["peach blossom", "apricot blossom", "kumquat tree", "lucky money", "family reunion", "firework", "traditional food", "sticky rice cake", "calendar", "decorate"],
-                "vi": ["hoa đào", "hoa mai", "cây quất", "tiền lì xì", "sum họp gia đình", "pháo hoa", "món ăn truyền thống", "bánh chưng", "lịch", "trang trí"]
-            },{
-                "name": "Unit 7",
-                "tip": "Television",
-                "text": ["cartoon", "news", "game show", "channel", "programme", "viewer", "remote control", "screen", "TV schedule", "broadcast"],
-                "vi": ["phim hoạt hình", "tin tức", "chương trình trò chơi", "kênh", "chương trình", "khán giả", "điều khiển từ xa", "màn hình", "lịch phát sóng", "phát sóng"]
-            },{
-                "name": "Unit 8",
-                "tip": "Sports and Games",
-                "text": ["football", "badminton", "volleyball", "basketball", "swimming", "cycling", "skiing", "surfing", "exercise", "practice"],
-                "vi": ["bóng đá", "cầu lông", "bóng chuyền", "bóng rổ", "bơi lội", "đạp xe", "trượt tuyết", "lướt sóng", "tập thể dục", "luyện tập"]
-            },{
-                "name": "Unit 9",
-                "tip": "Cities of the World",
-                "text": ["capital", "country", "landmark", "tower", "palace", "square", "population", "famous", "modern", "ancient"],
-                "vi": ["thủ đô", "quốc gia", "danh thắng", "tháp", "cung điện", "quảng trường", "dân số", "nổi tiếng", "hiện đại", "cổ kính"]
-            },{
-                "name": "Unit 10",
-                "tip": "Our Houses in the Future",
-                "text": ["skyscraper", "solar panel", "appliance", "robot", "high-tech", "automatic", "comfortable", "wireless", "environment-friendly", "space"],
-                "vi": ["nhà chọc trời", "tấm năng lượng mặt trời", "thiết bị", "người máy", "công nghệ cao", "tự động", "thoải mái", "không dây", "thân thiện môi trường", "không gian"]
-            },{
-                "name": "Unit 11",
-                "tip": "Our Greener World",
-                "text": ["environment", "pollution", "recycle", "rubbish", "reuse", "save energy", "forest fire", "plastic bag", "clean up", "protect"],
-                "vi": ["môi trường", "sự ô nhiễm", "tái chế", "rác thải", "tái sử dụng", "tiết kiệm năng lượng", "cháy rừng", "túi nhựa", "dọn dẹp", "bảo vệ"]
-            },{
-                "name": "Unit 12",
-                "tip": "Robots",
-                "text": ["robot", "machine", "helpful", "inventor", "do chores", "intelligent", "dangerous", "automatic", "space exploration", "future"],
-                "vi": ["robot", "máy móc", "hữu ích", "nhà phát minh", "làm việc nhà", "thông minh", "nguy hiểm", "tự động", "khám phá không gian", "tương lai"]
-            }
-        ]
-    },
-    {
-        "name":"Level 2",
-        "tip":"Click on the word to hear the pronunciation.",
-        "units":[
-            {
-                "name":"Unit 1",
-                "tip":"My Hobbies",
-                "text":["hobby","gardening","collecting stamps","bird-watching","playing board games","arranging flowers","skating","carving","creative","unusual"],
-                "vi":["hobby","làm vườn","sưu tầm tem","ngắm chim","chơi trò chơi bàn cờ","cắm hoa","trượt băng","chạm khắc","sáng tạo","bất thường"]
-            },{
-                "name": "Unit 2",
-                "tip": "Health",
-                "text": ["health", "calories", "obesity", "sickness", "diet", "depression", "allergy", "symptom", "exercise", "avoid"],
-                "vi": ["sức khỏe", "calo", "béo phì", "bệnh tật", "chế độ ăn", "trầm cảm", "dị ứng", "triệu chứng", "tập thể dục", "tránh"]
-            },{
-                "name": "Unit 3",
-                "tip": "Community Service",
-                "text": ["volunteer", "community", "benefit", "environment", "donate", "charity", "shelter", "disabled people", "elderly people", "recycle"],
-                "vi": ["tình nguyện viên", "cộng đồng", "lợi ích", "môi trường", "quyên góp", "từ thiện", "nơi trú ẩn", "người khuyết tật", "người già", "tái chế"]
-            },{
-                "name": "Unit 4",
-                "tip": "Music and Arts",
-                "text": ["artist", "musician", "composer", "gallery", "opera", "instrument", "perform", "exhibition", "folk music", "portrait"],
-                "vi": ["nghệ sĩ", "nhạc sĩ", "nhà soạn nhạc", "phòng trưng bày", "nhạc kịch", "nhạc cụ", "biểu diễn", "triển lãm", "nhạc dân gian", "chân dung"]
-            },{
-                "name": "Unit 5",
-                "tip": "Vietnamese Food and Drink",
-                "text": ["cuisine", "spring rolls", "noodles", "pancake", "tofu", "soup", "ingredient", "recipe", "spicy", "delicious"],
-                "vi": ["ẩm thực", "nem rán/chả giò", "mì, bún", "bánh kếp", "đậu phụ", "súp", "nguyên liệu", "công thức", "cay", "ngon miệng"]
-            },{
-                "name": "Unit 6",
-                "tip": "The First University in Vietnam",
-                "text": ["university", "temple", "literature", "heritage", "emperor", "scholar", "architecture", "doctorate", "preservation", "recognition"],
-                "vi": ["đại học", "đền, miếu", "văn chương", "di sản", "hoàng đế", "học giả", "kiến trúc", "tiến sĩ", "sự bảo tồn", "sự công nhận"]
-            },{
-                "name": "Unit 7",
-                "tip": "Traffic",
-                "text": ["traffic", "vehicle", "zebra crossing", "pavement", "helmet", "road user", "obey", "accident", "public transport", "traffic jam"],
-                "vi": ["giao thông", "phương tiện", "vạch qua đường", "vỉa hè", "mũ bảo hiểm", "người tham gia giao thông", "tuân theo", "tai nạn", "phương tiện công cộng", "kẹt xe"]
-            },{
-                "name": "Unit 8",
-                "tip": "Films",
-                "text": ["film", "comedy", "action film", "documentary", "horror film", "science fiction", "director", "actor", "actress", "review"],
-                "vi": ["phim", "phim hài", "phim hành động", "phim tài liệu", "phim kinh dị", "khoa học viễn tưởng", "đạo diễn", "diễn viên nam", "diễn viên nữ", "bài đánh giá"]
-            },{
-                "name": "Unit 9",
-                "tip": "Festivals Around the World",
-                "text": ["festival", "parade", "celebrate", "fireworks", "carnival", "tradition", "thanksgiving", "religious", "cultural", "costume"],
-                "vi": ["lễ hội", "cuộc diễu hành", "tổ chức lễ kỷ niệm", "pháo hoa", "lễ hội hóa trang", "truyền thống", "lễ tạ ơn", "thuộc về tôn giáo", "thuộc về văn hóa", "trang phục"]
-            },{
-                "name": "Unit 10",
-                "tip": "Sources of Energy",
-                "text": ["energy", "solar power", "wind power", "fossil fuel", "electricity", "renewable", "non-renewable", "conserve", "alternative", "pollution"],
-                "vi": ["năng lượng", "năng lượng mặt trời", "năng lượng gió", "nhiên liệu hóa thạch", "điện", "tái tạo được", "không tái tạo được", "bảo tồn", "thay thế", "sự ô nhiễm"]
-            },{
-                "name": "Unit 11",
-                "tip": "Travelling in the Future",
-                "text": ["spaceship", "driverless car", "solar-powered", "high-speed train", "teleportation", "environmentally friendly", "modern", "convenient", "underwater", "airship"],
-                "vi": ["tàu vũ trụ", "xe không người lái", "chạy bằng năng lượng mặt trời", "tàu cao tốc", "dịch chuyển tức thời", "thân thiện với môi trường", "hiện đại", "tiện lợi", "dưới nước", "khí cầu"]
-            },{
-                "name": "Unit 12",
-                "tip": "An Overcrowded World",
-                "text": ["overcrowded", "population", "urban", "rural", "migration", "poverty", "slum", "disease", "overpopulation", "solution"],
-                "vi": ["đông đúc", "dân số", "đô thị", "nông thôn", "sự di cư", "nghèo đói", "khu ổ chuột", "bệnh tật", "bùng nổ dân số", "giải pháp"]
-            }                                                                            
-        ]
-    },
-    {
-        "name":"Level 3",
-        "tip":"Click on the word to hear the pronunciation.",
-        "units":[
-            {
-                "name": "Unit 1",
-                "tip": "Leisure Activities",
-                "text": ["leisure", "craft kit", "DIY (do it yourself)", "socialising", "window shopping", "addicted", "virtual", "relaxed", "communicate", "hang out"],
-                "vi": ["thời gian rảnh", "bộ dụng cụ thủ công", "tự làm", "giao tiếp xã hội", "ngắm đồ (không mua)", "nghiện", "ảo", "thư giãn", "giao tiếp", "đi chơi"]
-            },{
-                "name": "Unit 2",
-                "tip": "Life in the Countryside",
-                "text": ["countryside", "harvest", "herd", "nomadic", "vast", "buffalo-drawn cart", "inconvenient", "rural", "paddy field", "generous"],
-                "vi": ["nông thôn", "thu hoạch", "chăn (gia súc)", "du mục", "rộng lớn", "xe kéo trâu", "bất tiện", "thuộc nông thôn", "ruộng lúa", "hào phóng"]
-            },{
-                "name": "Unit 3",
-                "tip": "Peoples of Vietnam",
-                "text": ["ethnic group", "costume", "heritage", "tradition", "minority", "custom", "festival", "diverse", "region", "unique"],
-                "vi": ["dân tộc", "trang phục", "di sản", "truyền thống", "thiểu số", "phong tục", "lễ hội", "đa dạng", "khu vực", "độc đáo"]
-            },{
-                "name": "Unit 4",
-                "tip": "Our Customs and Traditions",
-                "text": ["custom", "tradition", "worship", "ceremony", "ancestor", "ritual", "generation", "respect", "heritage", "belief"],
-                "vi": ["phong tục", "truyền thống", "thờ cúng", "nghi lễ", "tổ tiên", "nghi thức", "thế hệ", "sự kính trọng", "di sản", "niềm tin"]
-            },{
-                "name": "Unit 5",
-                "tip": "Festivals in Vietnam",
-                "text": ["festival", "celebrate", "ritual", "parade", "incense", "lantern", "carnival", "offering", "perform", "cultural"],
-                "vi": ["lễ hội", "tổ chức lễ kỷ niệm", "nghi lễ", "cuộc diễu hành", "hương", "đèn lồng", "lễ hội hóa trang", "lễ vật", "biểu diễn", "thuộc văn hóa"]
-            },{
-                "name": "Unit 6",
-                "tip": "Folk Tales",
-                "text": ["folk tale", "fairy tale", "fable", "legend", "moral", "cunning", "brave", "wisdom", "witch", "ogre"],
-                "vi": ["truyện dân gian", "truyện cổ tích", "truyện ngụ ngôn", "truyền thuyết", "bài học đạo đức", "xảo quyệt", "dũng cảm", "trí tuệ", "phù thủy", "yêu tinh"]
-            },{
-                "name": "Unit 7",
-                "tip": "Pollution",
-                "text": ["pollution", "environment", "contaminated", "dump", "sewage", "deforestation", "emission", "solution", "poison", "hazardous"],
-                "vi": ["sự ô nhiễm", "môi trường", "bị ô nhiễm", "vứt bỏ", "nước thải", "nạn phá rừng", "khí thải", "giải pháp", "chất độc", "nguy hiểm"]
-            },{
-                "name": "Unit 8",
-                "tip": "English Speaking Countries",
-                "text": ["accent", "native speaker", "official language", "symbol", "landmark", "multicultural", "diverse", "territory", "iconic", "breathtaking"],
-                "vi": ["giọng nói", "người bản ngữ", "ngôn ngữ chính thức", "biểu tượng", "danh thắng", "đa văn hóa", "đa dạng", "lãnh thổ", "mang tính biểu tượng", "ngoạn mục"]
-            },{
-                "name": "Unit 9",
-                "tip": "Natural Disasters",
-                "text": ["earthquake", "tsunami", "volcano", "tornado", "flood", "drought", "landslide", "disaster", "evacuate", "rescue"],
-                "vi": ["động đất", "sóng thần", "núi lửa", "lốc xoáy", "lũ lụt", "hạn hán", "lở đất", "thảm họa", "sơ tán", "cứu hộ"]
-            },{
-                "name": "Unit 10",
-                "tip": "Communication",
-                "text": ["communication", "social media", "technology", "verbal", "non-verbal", "interact", "message", "website", "face-to-face", "instant"],
-                "vi": ["giao tiếp", "mạng xã hội", "công nghệ", "bằng lời nói", "không bằng lời nói", "tương tác", "tin nhắn", "trang web", "trực tiếp", "tức thì"]
-            },{
-                "name": "Unit 11",
-                "tip": "Science and Technology",
-                "text": ["invention", "experiment", "researcher", "laboratory", "equipment", "artificial intelligence", "innovation", "breakthrough", "application", "astronaut"],
-                "vi": ["phát minh", "thí nghiệm", "nhà nghiên cứu", "phòng thí nghiệm", "thiết bị", "trí tuệ nhân tạo", "sự đổi mới", "bước đột phá", "ứng dụng", "phi hành gia"]
-            },{
-                "name": "Unit 12",
-                "tip": "Life on Other Planets",
-                "text": ["planet", "alien", "UFO", "galaxy", "astronaut", "spacecraft", "solar system", "universe", "atmosphere", "space exploration"],
-                "vi": ["hành tinh", "người ngoài hành tinh", "vật thể bay không xác định", "thiên hà", "phi hành gia", "tàu vũ trụ", "hệ mặt trời", "vũ trụ", "bầu khí quyển", "thám hiểm không gian"]
-            }                                                   
-        ]
-    },
-    {
-        "name":"Level 4",
-        "tip":"Click on the word to hear the pronunciation.",
-        "units":[
-            {
-                "name": "Unit 1",
-                "tip": "A Visit from a Pen Pal",
-                "text": ["pen pal", "visit", "tour guide", "customs", "tradition", "souvenir", "folk dance", "attraction", "itinerary", "exchange"],
-                "vi": ["bạn qua thư", "thăm", "hướng dẫn viên du lịch", "phong tục", "truyền thống", "quà lưu niệm", "điệu múa dân gian", "điểm tham quan", "lịch trình", "trao đổi"]
-            },{
-                "name": "Unit 2",
-                "tip": "City Life",
-                "text": ["city", "crowded", "skyscraper", "transportation", "underground", "urban", "suburb", "traffic jam", "pedestrian", "public transport"],
-                "vi": ["thành phố", "đông đúc", "tòa nhà chọc trời", "phương tiện giao thông", "tàu điện ngầm", "đô thị", "ngoại ô", "tắc đường", "người đi bộ", "phương tiện công cộng"]
-            },{
-                "name": "Unit 3",
-                "tip": "A Party",
-                "text": ["party", "invitation", "celebration", "guest", "host", "surprise", "gift", "occasion", "decoration", "dance"],
-                "vi": ["bữa tiệc", "lời mời", "lễ kỷ niệm", "khách mời", "chủ nhà", "sự ngạc nhiên", "món quà", "dịp", "trang trí", "nhảy múa"]
-            },{
-                "name": "Unit 4",
-                "tip": "Our Past",
-                "text": ["past", "memory", "history", "ancient", "civilization", "event", "relic", "tradition", "folklore", "discovery"],
-                "vi": ["quá khứ", "ký ức", "lịch sử", "cổ đại", "nền văn minh", "sự kiện", "di tích", "truyền thống", "văn hóa dân gian", "khám phá"]
-            },{
-                "name": "Unit 5",
-                "tip": "The Media",
-                "text": ["media", "newspaper", "television", "radio", "internet", "advertisement", "program", "journalist", "article", "broadcast"],
-                "vi": ["phương tiện truyền thông", "báo", "truyền hình", "đài phát thanh", "internet", "quảng cáo", "chương trình", "nhà báo", "bài báo", "phát sóng"]
-            },{
-                "name": "Unit 6",
-                "tip": "The Environment",
-                "text": ["environment", "pollution", "recycle", "waste", "habitat", "natural resources", "climate change", "conservation", "endangered species", "deforestation"],
-                "vi": ["môi trường", "ô nhiễm", "tái chế", "rác thải", "môi trường sống", "tài nguyên thiên nhiên", "biến đổi khí hậu", "bảo tồn", "loài nguy cấp", "phá rừng"]
-            },{
-                "name": "Unit 7",
-                "tip": "Further Education",
-                "text": ["education", "university", "college", "scholarship", "major", "degree", "career", "study abroad", "research", "faculty"],
-                "vi": ["giáo dục", "đại học", "cao đẳng", "học bổng", "ngành học", "bằng cấp", "sự nghiệp", "du học", "nghiên cứu", "khoa (trong trường đại học)"]
-            },{
-                "name": "Unit 8",
-                "tip": "Future Jobs",
-                "text": ["job", "career", "employer", "employee", "qualification", "interview", "salary", "promotion", "internship", "skill"],
-                "vi": ["công việc", "nghề nghiệp", "người sử dụng lao động", "nhân viên", "trình độ chuyên môn", "phỏng vấn", "lương", "thăng chức", "thực tập", "kỹ năng"]
-            },{
-                "name": "Unit 9",
-                "tip": "Describing the Future",
-                "text": ["future", "prediction", "technology", "artificial intelligence", "robot", "climate change", "space exploration", "development", "innovation", "possibility"],
-                "vi": ["tương lai", "dự đoán", "công nghệ", "trí tuệ nhân tạo", "rô-bốt", "biến đổi khí hậu", "thám hiểm không gian", "phát triển", "đổi mới", "khả năng"]
-            },{
-                "name": "Unit 10",
-                "tip": "Conservation",
-                "text": ["conservation", "environment", "biodiversity", "endangered", "protection", "natural habitat", "awareness", "sustainable", "renewable energy", "waste management"],
-                "vi": ["bảo tồn", "môi trường", "sự đa dạng sinh học", "nguy cấp", "bảo vệ", "môi trường sống tự nhiên", "nhận thức", "bền vững", "năng lượng tái tạo", "quản lý chất thải"]
-            },{
-                "name": "Unit 11",
-                "tip": "National Parks",
-                "text": ["national park", "wildlife", "species", "conservation", "reserve", "ecosystem", "biodiversity", "endangered species", "habitat", "preservation"],
-                "vi": ["vườn quốc gia", "động vật hoang dã", "loài", "bảo tồn", "khu bảo tồn", "hệ sinh thái", "sự đa dạng sinh học", "loài nguy cấp", "môi trường sống", "sự bảo tồn"]
-            },{
-                "name": "Unit 12",
-                "tip": "The Asian Games",
-                "text": ["competition", "athlete", "medal", "record", "match", "tournament", "stadium", "team", "victory", "fan"],
-                "vi": ["cuộc thi", "vận động viên", "huy chương", "kỷ lục", "trận đấu", "giải đấu", "sân vận động", "đội", "chiến thắng", "người hâm mộ"]
-            }                
-        ]
-    },
+		"name":"Grade 6, Secondary School", 
+		"tip":"Click on the word to hear the pronunciation.",
+		"units":[
+			{
+				"name":"Unit 1",
+				"tip":"My new school",
+				"text":["activity","art","boarding school","calculator","classmate","compass","favourite","help","international","interview","knock","remember","share","smart","swimming pool"],
+				"vi":["hoạt động","nghệ thuật","trường nội trú","máy tính","bạn cùng lớp","com-pa","được yêu thích","sự giúp đỡ, giúp đỡ","quốc tế","cuộc phỏng vấn, phỏng vấn","gõ (cửa)","nhớ, ghi nhớ","chia sẻ","bảnh bao, gọn gàng","bể bơi"]
+			},{
+				"name":"Unit 2",
+				"tip":"My house",
+				"text":["between","chest of drawers","cooker","country house","crazy","cupboard","department store","dishwasher","flat","furniture","hall","in front of","next to","shelf","sink","strange","town house","wardrobe"],
+				"vi":["ở giữa","tủ có ngăn kéo","bếp","nhà ở vùng quê","kì lạ, lạ thường","tủ đựng bát đĩa, quần áo","cửa hàng, bách hoá","máy rửa bát","căn hộ","đồ đạc trong nhà","sảnh","ở đằng trước, phía trước","bên cạnh","kệ, giá","bồn rửa bát","kì lạ","nhà phố","tủ đựng quần áo"]
+			},{
+				"name":"Unit 3",
+				"tip":"My friends",
+				"text":["active","appearance","careful","caring","cheek","clever","confident","creative","friendly","funny","hard-working","kind","loving","personality","shoulder","shy","slim"],
+				"vi":["hăng hái, năng động","bề ngoài, ngoại hình","cẩn thận","chu đáo, biết quan tâm","má","lanh lợi, thông minh","tự tin","sáng tạo","thân thiện","ngộ nghĩnh, khôi hài","chăm chỉ","tốt bụng","giàu tình yêu thương","tính cách","vai","xấu hổ","mảnh khảnh, thanh mảnh"]
+			},{
+				"name":"Unit 4",
+				"tip":"My neighbourhood",
+				"text":["art gallery","busy","cathedral","cross","dislike","famous","faraway","finally","narrow","outdoor","railway station","sandy","square","suburb","turning","workshop"],
+				"vi":["phòng trưng bày các tác phẩm nghệ thuật","nhộn nhịp, náo nhiệt","nhà thờ lớn, thánh đường","đi ngang qua, qua, vượt","không thích, ghét","nổi tiếng","xa xôi, xa","cuối cùng","hẹp, chật hẹp","ngoài trời","ga tàu hỏa","có cát, phủ cát","quảng trường","khu vực ngoại ô","chỗ ngoặt, chỗ rẽ","phân xưởng (sản xuất, sửa chữa)"] 
+			},{
+				"name":"Unit 5",
+				"tip":"Natural wonders",
+				"text":["amazing","backpack","boat","compass","desert","island","join in","landscape","litter","man-made","mount","mountain range","natural wonder","plaster","rock","show","suncream","waterfall"],
+				"vi":["tuyệt vời","ba-lô","con thuyền","la bàn","sa mạc","đảo, hòn đảo","tham gia","phong cảnh","vứt rác (bừa bãi)","nhân tạo","núi, đồi, đỉnh","dãy núi","kì quan thiên nhiên","băng, gạc y tế","tản đá, phiến đá","(sự) trình diễn","kem chống nắng","thác nước"]
+			},{
+				"name":"Unit 6",
+				"tip":"Our Tet holiday",
+				"text":["behave","celebrate","cheer","decorate","family gathering","firework","fun","luck","lucky money","mochi rice cake","relative","strike","temple","throw","welcome","wish"],
+				"vi":["đối xử, cư xử","kỉ niệm","chúc mừng","trang hoàng","sum họp gia đình","pháo hoa","sự vui đùa, vui vẻ","điều may mắn","tiền lì xì","bánh gạo mochi","bà con (họ hàng)","đánh, điểm","ngôi đền","ném, vứt","chào đón","điều ước, ước, chúc"]
+			},{
+				"name":"Unit 7",
+				"tip":"Television",
+				"text":["animated","cartoon","channel","character","clever","clip","comedy","compete","cute","dolphin","educate","educational","funny","(TV) guide","live","programme","talent show","viewer"],
+				"vi":["hoạt hình","phim hoạt hình","kênh (truyền hình)","nhân vật","không ngoan, thông minh","đoạn phim ngắn","phim hài","thi đấu","xinh xắn","cá heo","giáo dục","mang tính giáo dục","buồn cười, ngộ nghĩnh","chương trình TV","(truyền) trực tiếp","chương trình (truyền hình)","cuộc thi tài năng trên truyền hình","người xem (TV)"]
+			},{
+				"name":"Unit 8",
+				"tip":"Sports and games",
+				"text":["aerobics","career","competition","congratulation","equipment","fantastic","fit","goggles","gym","karate","last","marathon","racket","score","shoot","sporty","take place","tournament"],
+				"vi":["thể dục nhịp điệu","nghề nghiệp, sự nghiệp","cuộc đua","lời chúc mừng","thiết bị, dụng cụ","tuyệt","mạnh khoẻ","kính bơi","trung tâm thể dục thể thao","môn võ ka-ra-te","kéo dài","cuộc đua ma-ra-tông","cái vợt (cầu lông ...)","ghi bàn, ghi điểm","bắn, bắn súng","khỏe mạnh, dáng thể thao","xảy ra, được tổ chức","giải đấu"]
+			},{
+				"name":"Unit 9",
+				"tip":"Cities of the world",
+				"text":["(river) bank","crowded","floating market","helpful","helmet","landmark","(city) map","palace","possessive","postcard","rent","Royal Palace","shell","stall","street food","Times Square","tower","vacation"],
+				"vi":["bờ (sông)","đông đúc","chợ nổi","sẵn sàng giúp đỡ","mũ bảo hiểm","địa điểm, công trình thu hút du khách","sơ đồ thành phố","cung điện","(tính từ) sở hữu, (đại từ) sở hữu","bưu thiếp","thuê","Cung điện Hoàng gia","vỏ sò","gian hàng","đường phố","Quảng trường Thời đại","tháp","kì nghỉ (hè)"]
+			},{
+				"name":"Unit 10",
+				"tip":"Our houses in the future",
+				"text":["appliance","cottage","dishwasher","dry","electric cooker","helicopter","hi-tech","housework","location","look after","ocean","outside","solar energy","space","super","type","UFO","washing machine","wireless"],
+				"vi":["thiết bị","nhà tranh","máy rửa bát","làm khô, sấy khô","bếp điện","máy bay lên thẳng","công nghệ cao","công việc nhà","địa điểm","trông nom, chăm sóc","đại dương","ngoài","năng lượng mặt trời","không gian vũ trụ","siêu đẳng","kiểu, loại","vật thể bay, đĩa bay không xác định","máy giặt","không dây"]
+			},{
+				"name":"Unit 11",
+				"tip":"Our greener world",
+				"text":["be in need","charity","container","do a survey","environment","exchange","fair","go green","instead of","pick up","president","recycle","recycling bin","reduce","reuse","reusable","rubbish","tip","wrap"],
+				"vi":["cần","từ thiện","đồ đựng","thực hiện khảo sát","môi trường","trao đổi","hội chợ","sống xanh (thân thiện môi trường)","thay cho","nhặt (rác), đón","chủ tịch","tái chế","thùng đựng rác tái chế","giảm","tái sử dụng","có thể dùng lại được","rác","mẹo, cách","gói, bọc"]
+			},{
+				"name":"Unit 12",
+				"tip":"Robots",
+				"text":["age","broken","choice","do the dishes","do the washing","feelings","guard","height",
+				"iron","pick","planet","price","put away","repair","robot","space station","useful","water","weight"],
+				"vi":["độ tuổi","bị hỏng, bị vỡ","sự lựa chọn","rửa bát, đĩa","giặt giũ quần áo","cảm xúc, tình cảm","bảo vệ, người canh gác","chiều cao","là, ủi (quần áo)","hái, thu hoạch (hoa, quả,…)","hành tinh","giá, số tiền mua hoặc bán","cất, dọn","sửa chữa","người máy","trạm vũ trụ","hữu ích","tưới nước","trọng lượng"]
+			}
+		]
+	},{
+		"name":"Grade 7, Secondary School",
+		"tip":"Click on the word to hear the pronunciation.",
+		"units":[
+			{
+				"name":"Unit 1",
+				"tip":"My hobbies",
+				"text":["Belong to","Benefit","Bug","Cardboard","Dollhouse","Gardening","Glue","Horse riding","Insect","Jogging","Making models","Maturity","Patient","Popular","Responsibility","Set","Stress","Take on","Unusual","Valuable","Yoga"],
+				"vi":["Thuộc về","Lợi ích","Con bọ","Bìa các tông","Nhà búp bê","Làm vườn","Keo dán/ hồ","Cưỡi ngựa","Côn trùng","Đi/ chạy bộ thư giãn","Làm mô hình","Sự trưởng thành","Kiên nhẫn","Được nhiều người ưa thích","Sự chịu trách nhiệm","(Mặt trời) lặn","Sự căng thẳng","Nhận thêm","Khác thường","Quý giá","Yoga"]
+			},{
+				"name":"Unit 2",
+				"tip":"Healthy living",
+				"text":["Acne","Affect","Avoid","Chapped","Dim","Disease","Eye drops","Fat","Fit","Health","Healthy","Indoors","Lip balm","Pimple","Pop","Protein","Skin condition","Soybean","Sunburn","Tofu","Virus","Vitamin"],
+				"vi":["Mụn trứng cá","Tác động, ảnh hưởng đến","Tránh","Bị nứt nẻ, hiện tượng nứt nẻ trên da","Lờ mờ, không đủ sáng","Bệnh","Thuốc nhỏ mắt","Mỡ","Gọn gàng, cân đối","Sức khoẻ","Khoẻ mạnh, lành mạnh","Trong nhà","Kem bôi môi (chống nẻ)","Mụn","Nặn (mụn)","Chất đạm","Tình trạng da","Đậu nành","Sự cháy nắng","Đậu phụ","(Con) vi rút","Vitamin "]
+			},{
+				"name":"Unit 3",
+				"tip":"Community service",
+				"text":["Board game","Clean-up activity","Collect","Community","Community service","Develop","Donate","Elderly","Exchange","Flooded","Homeless","Mountainous","Nursing","Nursing home","Orphanage","Plant","Proud","Provide","Rural area","Skill","Teenager","Volunteer"],
+				"vi":["Trò chơi trên bàn cờ","Hoạt động dọn rửa","Thu thập, sưu tầm","Cộng đồng","Dịch vụ cộng đồng","Phát triển","Cho, tặng","Lớn tuổi, cao tuổi","Trao đổi","Bị lũ lụt","Vô gia cư, không có gia đình","Vùng núi","Chăm sóc, điều dưỡng","Viện dưỡng lão","Trại trẻ mồ côi","Trồng cây","Tự hào","Cung cấp","Vùng nông thôn","Kĩ năng","Thanh thiếu niên","Tình nguyện viên"]
+			},{
+				"name":"Unit 4", 
+				"tip":"Music and arts",
+				"text":["Anthem","Character","Comp ose","Composer","Concert","Control","Country music","Exhibition","Folk music","Gallery","Muscial instrument","Originate","Perform","Performance","Photography","Portrait","Prefer","Puppet","Sculpture","Water puppetry"],
+				"vi":["Bài quốc ca","Nhân vật","Soạn, biên soạn","Nhà soạn nhạc, nhạc sĩ","Buổi hoà nhạc","Điều khiển","Nhạc đồng quê","Cuộc triển lãm","Nhạc dân gian, nhạc truyền thống","Phòng triển lãm tranh","Nhạc cũ","Bắt nguồn, xuất phát từ","Biểu diễn, trình diễn","Sự trình diễn, tiết mục biểu diễn, buổi biểu diễn","Nhiếp ảnh","Bức chân dung","Thích hơn","Con rối","Điêu khắc, tác phẩm điêu khắc","Múa rối nước"]
+			},{
+				"name":"Unit 5",
+				"tip":"Food and drink",
+				"text":["Beef","Butter","Dish","Eel","Flour","Fried","Green tea","Ingredient","Juice","Lemonade","Mineral water","Noodles","Omelette","Onion","Pancake","Pepper","Pie","Pork","Recipe","Roast","Salt","Sauce","Shrimp","Soup","Spring roll","Tablespoon","Teaspoon","Toast"],
+				"vi":["Thịt bò","Bơ","Món ăn","Con lươn","Bột","Được chiên/ rán","Chè xanh, trà xanh","Thành phần","Nước ép","Nước chanh","Nước khoáng","Mì, mì sợi, phở","Trứng tráng","Củ hành","Bánh kếp","Hạt tiêu","Bánh nướng, bánh hấp","Thịt lợn","Công thức làm món ăn","quay, nướng","Muối","Nước chấm, nước xốt","Con tôm","Xúp, canh, cháo","Nem rán","Khối lượng đựng trong một thìa/ muỗng xúp","Khối lượng đựng trong một thìa nhỏ dùng để quấy trà","Bánh mì nướng"]
+			},{
+				"name":"Unit 6",
+				"tip":"A visit to a school",
+				"text":["Celebrate","Entrance exam","Equipment","Extra","Facility","Gifted","Laboratory","Lower secondary school","Midterm","Outdoor","Private","Projector","Resource","Royal","Service","Share","Talented","Well-known"],
+				"vi":["Kỉ niệm, tổ chức","Kì thi đầu vào","Đồ dùng, thiết bị","Thêm","Thiết bị, tiện nghi","Năng khiếu","Phòng thí nghiệm","Trường THCS","Giữa học kì","Ngoài trời","Riêng tư","Máy chiếu","Tài nguyên","Thuộc hoàng gia","Dịch vụ","Chia sẻ","Tài năng","Nổi tiếng"]
+			},{
+				"name":"Unit 7",
+				"tip":"Traffic",
+				"text":["Bumpy","Distance","Fine","Fly","Handlebars","Lane","Obey traffic rules","Passenger","Pavement","Pedestrian","Plane","Road sign","Roof","Safety","Seat belt","Signal","Traffic jam","Traffic rule","Vehicle","Zebra crossing"],
+				"vi":["Lồi lõm, nhiều ổ gà","Khoảng cách","Phạt","Bay, lái máy bay, đi trên máy bay","Tay lái, ghi đông","Làn đường","Tuân theo luật giao thông","Hành khách","Vỉa hè","Người đi bộ","Máy bay","Biển báo giao thông","Nóc xe, mái nhà","Sự an toàn","Đai an toàn","Tín hiệu, dấu hiệu","Tắc đường","Luật giao thông","Xe cộ, phương tiện giao thông","Vạch kẻ cho người đi bộ sang đường"]
+			},{
+				"name":"Unit 8",
+				"tip":"Films",
+				"text":["Acting","Comedy","Confusing","Director","Documentary","Dull","Enjoyable","Fantasy","Frightening","Gripping","Horror film","Moving","Must-see","Poster","Review","Scary","Science fiction","Shocking","Star","Survey","Twin","Violent","Wizard"],
+				"vi":["Diễn xuất","Phim hài","Khó hiểu, gây bối rối","Đạo diễn (phim, kịch …)","Phim tài liệu","Buồn tẻ, chán ngắt","Thú vị, thích thú","Phim giả tưởng","Làm sợ hãi, rùng rợn","Hấp dẫn, thú vị","Phim kinh dị","Cảm động","Bộ phim hấp dẫn, cần xem","Áp phích quảng cáo","Bài phê bình (về một bộ phim)","Sợ hãi, rùng rợn","Thể loại phim khoa học viễn tưởng","Làng sửng sốt","Đóng vai chính","Cuộc khảo sát","Đứa trẻ sinh đôi","Có nhiều cảnh bảo lực","Phù thuỷ"]
+			},{
+				"name":"Unit 9",
+				"tip":"Festivals around the world",
+				"text":["Candy","Cannes Film Festival","Carve","Costume","Decorate","Decoration","Disappointing","Disappointment","Dutch","Easter","Feast","Feature","Fireworks display","Float","Folk dance","Mid-Autumn Festival","(the) Netherlands","Parade","Prosperity","Symbol","Take part in","Thanksgiving"],
+				"vi":["Kẹo","Liên hoan phim Cannes","Chạm, khắc","Trang phục","Trang trí","Đồ trang trí","Đáng thất vọng","Sự thất vọng","Thuộc về Hà Lan, Người Hà Lan","Lễ Phục sinh","Bữa tiệc","Trình diễn đặc biệt","Bắn pháo hoa","Xe diễu hành","Điệu nhảy/ múa dân gian","Tết Trung thu","Nước Hà Lan","Cuộc diễu hành","Sự thịnh vượng","Biểu tượng","Tham gia","Lễ Tạ ơn"]
+			},{
+				"name":"Unit 10",
+				"tip":"Energy sources",
+				"text":["Available","Electricity","Energy","Hydro","Light bulb","Limited","Non-renewable","Nuclear","Overcool","Overheat","Panel","Produce","Reduce","Renewable","Replace","Solar","Source","Syllable","Tap","Warm"]
+				"vi":["Sẵn có","Điện năng","Năng lượng","Liên quan đến nước","Bóng đèn","Bị hạn chế","Không thể tái tạo","Thuộc về hạt nhân","Làm cho quá lạnh","Làm cho quá nóng","Tấm ghép","Sản xuất","Giảm","Có thể tái tạo","Thay thế","Liên quan đến mặt trời","Nguồn","Âm tiết","Vòi","(Làm cho) ấm lên, nóng lên"]
+			},{
+				"name":"Unit 11",
+				"tip":"Travelling in the future",
+				"text":["Appear","Autopilot","Bamboo-copter","Comfortable","Convenient","Disappear","Driverless","Eco-friendly","Economical","Fume","Function","Hyperloop","Mode of travel","Pedal","Run on","Sail","SkyTran","Solar-powered","Solar-powered ship","Solowheel","Walkcar","Teleporter"],
+				"vi":["Xuất hiện","Lái tự động","Chong chóng tre","Thoải mái, đủ tiện nghi","Thuận tiện, tiện lợi","Biến mất","Không người lái","Thân thiện với môi trường","Tiết kiệm nhiên liệu","Khói","Chức năng","Hệ thống giao thông tốc độ cao","Phương thức đi lại","Đạp (xe đạp)","Chạy bằng (nhiên liệu nào)","Lướt buồm","Hệ thống tàu điện trên không","Chạy bằng năng lượng mặt trời","Tàu thuỷ chạy bằng năng lượng mặt trời","Phương tiện tự hành cá nhân một bánh","Ô tô tự hành dùng chân","Phương tiện di chuyển tức thời"]
+			},{
+				"name":"Unit 12",
+				"tip":"English speaking countries",
+				"text":["Amazement","Amazing","Ancient","Australia","Canada","Capital","Castle","Coastline","Culture","Historic","Island country","Kilt","Landscape","local","Native","New Zealand","Penguin","Shining","Sunset","Tattoo","(The) UK","(The) USA","Tower"],
+				"vi":["Sự ngạc nhiên, kinh ngạc (một cách thích thú)","Ngạc nhiên (một cách thích thú)","Cổ, lâu đời","Nước Úc","Nước Ca-na-đa","Thủ đô","Pháo đài","Đường bờ biển","Nền văn hoá","Thuộc về lịch sử","Đảo quốc","Váy truyền thống của đàn ông Xcốt-len","Phong cảnh","Thuộc về địa phương","(cái gì, con gì) nguyên thuỷ","Nước Niu-di-lân","Chim cánh cụt","Chói chang chan hoà ánh nắng","Mặt trời lặn","Hình xăm","Liên hiệp Vương quốc Anh và Bắc Ai-len","Hợp chủng quốc Hoa Kì","Tháp"]
+			}
+		]
+	},{
+		"name":"Grade 8, Secondary School",
+		"tip":"Click on the word to hear the pronunciation.",
+		"units":[
+			{
+				"name":"Unit 1",
+				"tip":"Leisure time",
+				"text":["balance","bracelet","crazy","cruel","detest","DIY","fancy","fold","fond","keen","keep in touch","kit","leisure","message","muscle","origami","outdoors","prefer","puzzle","resort","snowboarding","stay in shape"],
+				"vi":["sự thăng bằng, sự cân bằng","vòng đeo tay","rất thích, quá say mê","độc ác","căm ghét","hoạt động tự làm ra","mến, thích","gấp, gập","mến, thích","say mê, ham thích","giữ liên lạc","bộ đồ nghề","thời gian rảnh rỗi","gửi tin nhắn","cơ bắp","nghệ thuật gấp giấy Nhật Bản","ngoài trời","thích hơn","trò chơi câu đố","khu nghỉ dưỡng","trượt tuyết bằng ván","giữ dáng"]
+			},{
+				"name":"Unit 2",
+				"tip":"Life in the countryside",
+				"text":["catch","cattle","combine harvester","crop","cultivate","dry","feed","ferry","harvest","herd","hospitable","lighthouse","load","milk","orchard","paddy field","picturesque","plough","speciality","stretch","unload","vast","well-trained"],
+				"vi":["đánh được, câu được (cá)","gia súc","máy gặt đập liên hợp","vụ, mùa","trồng trọt","phơi khô, sấy khô","cho ăn","phà","vụ thu hoạch, vụ gặt, gặt hái, thu hoạch","chăn giữ vật nuôi","mến khách, hiếu khách","đèn biển, hải đăng","chất, chở","vắt sữa","vườn cây ăn quả","ruộng lúa","đẹp, hấp dẫn (phong cảnh)","cày (thửa ruộng)","đặc sản","kéo dài ra","dỡ hàng","rộng lớn, mênh mông, bao la","lành nghề, có tay nghề"]
+			},{
+				"name":"Unit 3",
+				"tip":"Teenagers",
+				"text":["account","browse","bully","bullying","concentrate","connect","craft","enjoyable","expectation","focused","forum","log","mature","media","midterm","notification","peer","pressure","schoolwork","session","stress","stressful","upload"],
+				"vi":["tài khoản","đọc lướt, tìm (trên mạng)","bắt nạt","sự bắt nạt","tập trung","kết nối","(nghề, đồ, kĩ nghệ) thủ công","thú vị, gây hứng thú","sự mong chờ, kì vọng","chuyên tâm, tập trung","diễn đàn","đăng nhập","chín chắn, trưởng thành","truyền thông","giữa kì","sự thông báo","người ngang hàng, bạn đồng lứa","áp lực","bài làm trên lớp","tiết học","căng thẳng","căng thẳng, tạo áp lực","tải lên"]
+			},{
+				"name":"Unit 4",
+				"tip":"Ethnic groups of Viet Nam",
+				"text":["communal house","costume","crop","ethnic","feature","ﬂute","folk","gong","harvest","highland","livestock","minority","overlook","post","raise","soil","staircase","statue","stilt house","terraced","weave","wooden"],
+				"vi":["nhà rông, nhà sinh hoạt cộng đồng","trang phục","vụ mùa, vụ trồng trọt","(nhóm) dân tộc","nét, đặc điểm","cái sáo","thuộc về dân gian, truyền thống","cái cồng, cái chiêng","vụ mùa","vùng cao nguyên","gia súc","dân tộc thiểu số","nhìn ra, đối diện","cột","chăn nuôi","đất trồng","cầu thang bộ","tượng","nhà sàn","có hình bậc thang","dệt, đan, kết lại","bằng gỗ"]
+			},{
+				"name":"Unit 5",
+				"tip":"Our customs and traditions",
+				"text":["acrobatics","admire","bad spirit","bamboo pole","carp","coastal","ceremony","chase away","contestant","decorative","family bonding","family reunion","festival goer","lantern","longevity","martial arts","monk","oﬀering","ornamental tree","pray","release","table manners","worship","young rice"],
+				"vi":["xiếc, các động tác nhào lộn","khâm phục, ngưỡng mộ","điều xấu xa, tà ma","cây nêu","con cá chép","thuộc miền ven biển, duyên hải","nghi thức, nghi lễ","xua đuổi","thí sinh, người thi đấu","có tính trang trí, để trang trí","sự gắn kết tình cảm gia đình","cuộc sum họp gia đình","người đi xem lễ hội","đèn lồng","sự sống lâu, tuổi thọ","võ thuật","nhà sư","đồ thờ cúng","cây cảnh","cầu nguyện, lễ bái","thả","phép tắc ăn uống","thờ phụng, tôn kính, tôn sùng","cốm"]
+			},{
+				"name":"Unit 6",
+				"tip":"Lifestyles",
+				"text":["dogsled","experience","greet","greeting","habit","hurry","igloo","impact","independent","interact","interaction","lifestyle","make craft","maintain","musher","nomadic","ofine","online","online learning","revive","serve","staple","street food","tribal"],
+				"vi":["xe trượt tuyết chó kéo","kinh nghiệm, trải nghiệm","chào, chào hỏi","lời chào","thói quen","vội vàng","lều tuyết","sự ảnh hưởng","độc lập","tương tác","sự tương tác","lối sống","làm hàng thủ công","duy trì, gìn giữ","người điều khiển xe trượt tuyết chó kéo","du mục","trực tiếp","trực tuyến","việc học trực tuyến","làm sống lại, hồi sinh","phục vụ","cơ bản, chủ yếu","thức ăn đường phố","thuộc bộ tộc, thành bộ lạc"]
+			},{
+				"name":"Unit 7",
+				"tip":"Environmental protection",
+				"text":["carbon dioxide","carbon footprint","coral","dugong","ecosystem","endangered species","extinction","habitat","oxygen","participate","product","protect","release","resident","single-use","species","substance","toxic"],
+				"vi":["đi ô xit các bon","dấu chân cacbon","san hô","con cá cúi, bò biển","hệ sinh thái","các loài động thực vật có nguy cơ bị tuyệt chủng","sự tuyệt chủng, tuyệt diệt","môi trường sống","khí ô-xi","tham gia","sản phẩm","bảo vệ","thải ra, làm thoát ra","người dân, dân cư","để sử dụng một lần","giống, loài động thực vật","chất","độc hại"]
+			},{
+				"name":"Unit 8",
+				"tip":"Shopping",
+				"text":["access","addicted","advertisement","bargain","complaint","convenience","customer","discount","display","dollar store","fair","farmers’ market","goods","home-grown","home-made","item","on sale","open-air market","price tag"],
+				"vi":["nguồn để tiếp cận, truy cập vào","say mê, nghiện","quảng cáo","mặc cả","lời phàn nàn / khiếu nại","(cửa hàng) tiện ích","khách hàng","(cửa hàng) hạ giá","sự trưng bày, bày biện, trưng bày","cửa hàng đồng giá (một đô la)","hội chợ","chợ nông sản","hàng hoá","tự trồng","tự làm","một món hàng","đang (được bán) hạ giá","chợ họp ngoài trời","nhãn ghi giá một mặt hàng"] 
+			},{
+				"name":"Unit 9",
+				"tip":"Natural disasters",
+				"text":["authority","damage","destroy","disaster","earthquake","emergency kit","erupt","Fahrenheit","funnel","landslide","liquid","predict","pretty","property","pull up","rescue worker","Richter scale","shake","storm","suddenly","tornado","tremble","tsunami","victim","volcanic","warn"],
+				"vi":["chính quyền","thiệt hại, gây tổn hại","phá huỷ","thảm hoạ","trận động đất","bộ dụng cụ dùng trong trường hợp","phun trào","độ F","cái phễu","vụ sạt lở","chất lỏng","dự đoán","khá là","của cải, nhà cửa","kéo lên, nhổ lên, lôi lên","nhân viên cứu hộ","độ rích te","rung, lắc","bão","đột nhiên, bỗng nhiên","lốc xoáy","rung lắc","trận sóng thần","nạn nhân","thuộc","cảnh báo"]
+			},{
+				"name":"Unit 10",
+				"tip":"Communication in the future ",
+				"text":["account","advanced","carrier pigeon","charge","emoji","holography","instantly","Internet connection","language barrier","live","smartphone","social network","tablet","telepathy","text","thought","translation machine","transmit","video conference","voice message","webcam","zoom (in / out)"],
+				"vi":["tài khoản","tiên tiến","bồ câu đưa thư","nạp, sạc (pin)","biểu tượng cảm xúc","hình thức giao tiếp bằng ảnh không","ngay lập tức","kết nối mạng","rào cản ngôn ngữ","trực tiếp","điện thoại thông minh","mạng xã hội","máy tính bảng","hình thức giao tiếp bằng ý nghĩ","nhắn tin, văn bản","ý nghĩ","máy dịch thuật","truyền, chuyển giao","cuộc họp trực tuyến","tin nhắn thoại","thiết bị ghi","phóng (to), thu (nhỏ)"]
+			},{
+				"name":"Unit 11",
+				"tip":"Science and technology",
+				"text":["application","attendance","biometric","breakout room","cheating","complain","contact lens","convenient","develop","digital","discover","epidemic","experiment","eye-tracking","face to face","feedback","fingerprint","invent","invention","mark","platform","recognition","scanner","science","screen","solution","technology","truancy"],
+				"vi":["ứng dụng","sự có mặt, sĩ số","thuộc về sinh trắc","phòng học chia nhỏ, chia nhóm","sự lừa dối, gian dối, gian lận","phàn nàn, khiếu nại","kính áp tròng","thuận tiện, tiện lợi","phát triển, khai triển","số, kĩ thuật số","phát hiện, khám phá","dịch bệnh","thí nghiệm","theo dõi (cử động) mắt","trực tiếp, mặt đối mặt","phản hồi, hồi đáp","(dấu) vân tay","phát minh","sự phát minh, sáng chế","chấm điểm","nền tảng","sự nhận biết, sự công nhận","máy quét","khoa học","màn hình, màn chiếu","giải pháp, đáp án","công nghệ","trốn học, nghỉ học không phép"]
+			},{
+				"name":"Unit 12",
+				"tip":"Life on other planets",
+				"text":["alien","commander","crater","creature","galaxy","gravity","habitable","Jupiter","Mars","Mercury","Mercury","oppose","possibility","promising","rocket","Saturn","telescope","trace","UFO","Uranus","Venus"],
+				"vi":["người ngoài hành tinh","người chỉ huy, người cầm đầu","miệng núi lửa","sinh vật, loài vật","thiên hà","trọng lực, lực hút trái đất","có thể ở được, phù hợp để ở","sao Mộc, Mộc tinh","sao Hỏa, Hỏa tinh","sao Thủy, Thủy tinh","sao Hải Vương, Hải Vương tinh","chiến đấu, đánh lại ai","khả năng, sự có thể","đầy hứa hẹn, nhiều triển vọng","tàu vũ trụ con thoi","sao Thổ, Thổ tinh","kính thiên văn","dấu vết, vết tích, dấu hiệu","vật thể bay không xác định","sao Thiên Vương, Thiên Vương tinh","sao Kim, Kim tinh"]
+			}
+		],
+	},
+	{
+		"name":"Grade 9, Secondary School",
+		"tip":"Click on the word to hear the pronunciation.",
+		"units":[
+			{
+				"name":"Unit 1",
+				"tip":"Local community",
+				"text":["artisan","community","community helper","craft village","cut down on","delivery person","electrician","facilities","firefighter","fragrance","function","garbage collector","get on with","hand down","handicraft","look around","original","pass down","police oﬀicer","pottery","preserve","run out of","speciality","suburb","tourist attraction"],
+				"vi":["thợ làm nghề thủ công","cộng đồng","người phục vụ cộng đồng","làng nghề thủ công","cắt giảm","nhân viên giao hàng","thợ điện","cơ sở vật chất","lính cứu hoả","hương thơm","chức năng","nhân viên dọn vệ sinh","có quan hệ tốt với","truyền lại","sản phẩm thủ công","ngắm nghía xung quanh","nguyên bản","truyền lại","công an","đồ gốm","bảo tồn","hết, cạn kiệt","đặc sản","vùng ngoại ô","điểm du lịch"]
+			},{
+				"name":"Unit 2",
+				"tip":"City life",
+				"text":["bustling","carry out","come down with","concrete jungle","congested","construction site","downtown","get around","hang out with","hygiene","itchy","leftover","liveable","metro","pricey","process","public amenities","rush hour","sky train","tram","underground"],
+				"vi":["hối hả, nhộn nhịp, náo nhiệt","tiến hành (nghiên cứu, nhiệm vụ)","bị ốm (vì bệnh gì)","rừng bê tông (dùng để miêu tả một khu vực có nhiều nhà cao tầng)","tắc nghẽn (giao thông)","công trường xây dựng","khu trung tâm thành phố, thị trấn","đi xung quanh (khu vực), di chuyển từ nơi này đến nơi khác","đi chơi (cùng ai)","vệ sinh, vấn đề vệ sinh","ngứa, gây ngứa","thức ăn thừa","(nơi, địa điểm) đáng sống","hệ thống tàu điện ngầm","đắt đỏ","xử lí","những tiện ích công cộng","giờ cao điểm","tàu điện trên không","xe điện","(hệ thống) tàu điện ngầm"]
+			},{
+				"name":"Unit 3",
+				"tip":"Healthy living for teens",
+				"text":["accomplish","additional","anxiety","appropriately","assignment","counsellor","deadline","distraction","due date","fattening","mental","minimise","mood","optimistic","physical","priority","stressed out","well-balanced"],
+				"vi":["hoàn thành, đạt được (mục đích ...)","thêm, thêm vào","nỗi lo, mối băn khoăn, sự lo lắng","phù hợp, thích đáng","nhiệm vụ, bài tập dành cho học sinh / sinh viên","cố vấn, người tư vấn","thời hạn cuối cùng, hạn cuối","điều làm sao lãng","hạn chót","gây béo phì","tinh thần","giảm đến mức tối thiểu","tâm trạng","lạc quan","cơ thể","sự ưu tiên, trường hợp ưu tiên","căng thẳng","cân bằng, đúng mực"]
+			},{
+				"name":"Unit 4",
+				"tip":"Remembering the past",
+				"text":["ancient","anniversary","barefoot","basic","castle","communal","complex","deep-rooted","face to face","fish and chips","found","generation","monument","observe","occupied","occupy","promote","recognise","religious","structure","takeaway"],
+				"vi":["cổ đại, lâu đờ","ngày kỉ niệm, lễ kỉ niệm","chân trần","cơ bản","lâu đài","dùng chung, thuộc cộng đồng","khu phức hợp, quần thể","lâu đời, ăn sâu bén rễ","trực tiếp, trực diện","món cá và khoai tây rán (món ăn truyền thống của người Anh)","thành lập","thế hệ","tượng đài","duy trì, tuân theo","có người ở","chiếm giữ","thúc đẩy","công nhận","tôn giáo","cấu trúc","đồ ăn bán sẵn"]
+			},{
+				"name":"Unit 5",
+				"tip":"Our experiences",
+				"text":["amazing","army-like","brilliant","campus","confidence","coral reef","eco-tour","embarrassing","exhilarating","experience","explore","fauna","flora","lack","learn by rote","memorable","performance","seabed","snorkelling","theme","thrilling","touching","tribal dance","unpleasant"],
+				"vi":["ngạc nhiên ở mức đáng ngưỡng mộ","như trong quân đội","rất ấn tượng, rất thông minh","khuôn viên (của một trường học)","niềm tin, sự tin tưởng, sự tự tin","rặng san hô","du lịch sinh thái","làm ai bối rối, ngượng ngùng","đầy phấn khích","sự trải nghiệm","khám phá, tìm tòi và học hỏi","tất cả động vật của một khu vực","tất cả thực vật của một khu vực","thiếu","học vẹt","đáng nhớ","buổi biểu diễn","đáy biển","môn thể thao bơi lặn dưới nước có bộ lặn và ống thở","chủ đề, đề tài","rất phấn khích và rất vui","gây xúc động, tạo cảm giác đồng cảm","điệu múa của bộ tộc","không thoải mái, không vui vẻ"]
+			},{
+				"name":"Unit 6",
+				"tip":"Vietnamses lifestyle - Then and now",
+				"text":["democratic","dependent","dye","extended","family-oriented","gap","generation","household","lifestyle","memorise","monk","nuclear","opportunity","popularity","privacy","promise","pursue","replace","take notes","trend","western"],
+				"vi":["thuộc dân chủ","lệ thuộc vào","nhuộm","nhiều thế hệ (trong một gia đình)","hướng về, coi trọng gia đình","khoảng cách","thế hệ","hộ gia đình","lối sống","ghi nhớ","nhà sư","hai thế hệ (trong một gia đình)","cơ hội","sự phổ biến","sự riêng tư","lời hứa, hứa","theo đuổi","thay thế","ghi chép","xu hướng","thuộc phương Tây"]
+			},{
+				"name":"Unit 7",
+				"tip":"Natural wonders of the world",
+				"text":["access","annual","biodiversity","coral","crazy","destination","ecosystem","feature","locate","location","majestic","occur","paradise","peak","permission","permit","possess","support","sustainable","travel destination","urgent"],
+				"vi":["tiếp cận, đến được","(xảy ra) hằng năm","sự đa dạng sinh học","san hô","thích mê","điểm đến","hệ sinh thái","đặc điểm","định vị, đặt ở","địa điểm, nơi chốn","uy nghi, tráng lệ","xảy ra","thiên đường, nơi đẹp tuyệt trần","đỉnh, đỉnh núi","sự cho phép","cho phép","có, sở hữu","ủng hộ, giúp đỡ","bền vững","điểm đến du lịch","gấp, cấp bách"]
+			},{
+				"name":"Unit 8",
+				"tip":"Tourism",
+				"text":["agency","agent","brochure","domestic tourism","estimate","fixed","food tourism","graveyard","holidaymaker","homestay","hop-on hop-oﬀ","hunt","itinerary","loft","low season","online app","package holiday","ruinous","self-guided","shopping tourism","smooth","wander","world-famous","work out"],
+				"vi":["hãng (du lịch)","nhân viên hãng","quyển quảng cáo (du lịch)","du lịch trong nước","ước tính","cố định","du lịch ẩm thực","nghĩa địa","người đi nghỉ","nhà trọ","(tour) bằng xe buýt có thể lên, xuống tại nhiều điểm","săn tìm","lịch trình","gác mái","mùa (du lịch) vắng khách","ứng dụng trên mạng","kì nghỉ trọn gói","đổ nát","tự tổ chức","du lịch mua sắm","trôi chảy","dạo chơi","nổi tiếng thế giới","soạn thảo, lên (kế hoạch)"]
+			},{
+				"name":"Unit 9",
+				"tip":"World Englishes",
+				"text":["bilingual","borrowed word","concentric","consist","copy","establish","exchange student","Expanding Circle","first language","fluent","go over","immigrant","Inner Circle","look up","mean","model","official language","Outer Circle","pick up","propose","second language","standard","translate","variety","vocabulary"],
+				"vi":["sử dụng được hai ngôn ngữ","từ mượn","đồng tâm","bao gồm","chép lại","thành lập","học sinh trao đổi","vòng tròn mở rộn","ngôn ngữ thứ nhất","trôi trảy","ôn tập lại","người nhập cư","vòng tròn bên trong","tra","nghĩa là","mô hình","ngôn ngữ chính thức","vòng tròn bên ngoài","học (ngôn ngữ tự nhiên)","đề xuất","ngôn ngữ thứ hai","chuẩn mực","dịch","biến thể","từ vựng"]
+			},{
+				"name":"Unit 10",
+				"tip":"Planet Earth",
+				"text":["aﬀect","appreciate","climate change","droppings","essential","ecological balance","fascinating","fertilizer","food chain","grassland","habitat","harm","landform","nature reserve","observe","orbit","outer space","pesticide","pole","preserve","threat","vital"],
+				"vi":["gây ảnh hưởng","đánh giá cao","biến đổi khí hậu","phân (động vật)","vô cùng quan trọng","cân bằng sinh thái","rất thú vị và hấp dẫn","phân bón","chuỗi thức ăn","khu vực đồng cỏ","môi trường sống của động thực vật","làm hại","dạng địa hình, địa mạo","khu bảo tồn thiên nhiên","quan sát, chú ý","quay quanh quỹ đạo","ngoài vũ trụ","thuốc diệt cỏ","cực (bắc / nam)","bảo tồn","nỗi đe doạ","quan trọng mức sống còn"]
+			},{
+				"name":"Unit 11",
+				"tip":"Electronic devices",
+				"text":["3D printer","aluminium","camcorder","cardboard","copper","e-reader","leaﬂet","plastic","portable","portable music player","robotic vacuum cleaner","rubber","self-portrait","smartwatch","steel","stylish","suck","touchscreen","virtual","window shade","wireless"],
+				"vi":["máy in 3D","nhôm","máy quay phim xách tay","bìa cứng, các tông","đồng","máy đọc sách điện tử","tờ rơi","chất dẻo","có thể mang theo, xách tay","máy nghe nhạc cầm tay","robot hút bụi tự động","cao su","ảnh chân dung tự chụp","đồng hồ thông minh","thép","hợp thời trang, kiểu cách","hút","màn hình cảm ứng","ảo","mành cửa sổ","không dây, vô tuyến"]
+			},{
+				"name":"Unit 12",
+				"tip":"Career choices",
+				"text":["agriculture engineering","assembly worker","bartender","career","cashier","decisive","demanding","fabric","garment worker","hand-eye coordination","hands-on","inquiring","knowledgeable","mechanic","orientation","repetitive","rewarding","sew","software engineer","surgeon","vocational","well-paid"],
+				"vi":["ngành kĩ sư nông nghiệp","công nhân dây chuyền","thợ pha chế đồ uống có cồn","sự nghiệp","thu ngân","quyết đoán","khắt khe, phức tạp","vải vóc","công nhân may","sự phối hợp tay và mắt","có tính thực tiễn, thực hành","ham học hỏi, tìm tòi","am hiểu, thông thạo","thợ sửa chữa","sự định hướng","lặp đi lặp lại","bổ ích, xứng đáng","khâu, may vá","kĩ sư phần mềm","bác sĩ phẫu thuật","thuộc về nghề nghiệp, hướng nghiệp","được trả lương cao"]
+			}
+		]
+	},
 	{
 		"name":"Grade 10 high school",
 		"tip":"Click on the word to hear the pronunciation.",
@@ -287,6 +286,41 @@
 				"tip":"Music",
 				"text":["Bamboo clapper","Comment","Competition","Concert","Decoration","Delay","Eliminate","Judge","Live","Location","Moon-shaped lute","Musical instrument","Participant","Performance","Reach","Single","Social media","Talented","Trumpet","Upload"],
 				"vi":["Phách","Lời bình luận","Cuộc tranh tài, cuộc thi","Buổi hoà nhạc","Việc trang trí","Hoãn lại","Loại ra, loại trừ","Giám khảo","Trực tiếp","Vị trí, địa điểm","Đàn nguyệt","Nhạc cụ","Người tham dự, thí sinh","Buổi biểu diễn, buổi trình diễn","Đạt được","Đĩa đơn","Mạng xã hội","Tài năng","Kèn trumpet","Tải lên"]
+			},{
+				"name":"Unit 4",
+				"tip":"For A Better Community",
+				"text":["Access","Announcement","Boost","Cheerful","Community","Community service","Confidence","Confused","Deliver","Donate","Donation","Generous","Involved","Life-saving","Non-governmental","Orphanage","Participate","Practical","Raise","Remote","Various","Volunteer"],
+				"vi":["Tiếp cận với","thông báo","Thúc đẩy, làm thăng thêm","Vui vẻ","Cộng đồng","Phục vụ cộng đồng","Sự tự tin","Bối rối","Phân phát, giao","Cho, hiến tặng","Đồ mang cho, đồ hiến tặng","Hào phóng","Tham gia","Cứu nạn, cứu sống","Phi chính phủ","Trại trẻ mồ côi","Tham gia","Thực tế, thiết thực","Quyên góp","Hẻo lánh, xa xôi","Khác nhau, đa dạng","Tình nguyện viên"]
+			},{
+				"name":"Unit 5",
+				"tip":"Inventions",
+				"text":["3D printing","AI","App","Application","Apply","Button","Charge","Communicate","Computer","Device","Display","Driverless","E-reader","Experiment","Hardware","Install","Invention","Laboratory","Laptop","Processor","RAM (Random Access Memory)","Smartphone","Software","Stain","Storage space","Store","Suitable","Valuable"],
+				"vi":["In ba chiều","Trí tuệ nhân tạo","Ứng dụng (trên điện thoại)","Ứng dụng","Áp dụng","Nút bấm","Sạc pin","Giao tiếp","Máy tính","Thiết bị","Hiển thị, trưng bày","Không người lái","Thiết bị đọc sách điện tử","Thí nghiệm","Phần cứng","Cài (phần mềm, chương trình máy tính)","Phát minh","Phòng thí nghiệm","Máy tính xách tay","Bộ xử lí (máy tính)","Bộ nhớ khả biến (máy tính)","Điện thoại thông minh","Phần mềm (máy tính)","Vết bẩn","Dung lượng lưu trữ (máy tính)","Lưu trữ","Phù hợp","Có giá tị"]
+			},{
+				"name":"Unit 6",
+				"tip":"Gender Equality",
+				"text":["Cosmonaut","Domestic violence","Equal","Equality","Eyesight","Firefighter","Kindergarten","Mental","Officer","Operation","Parachute","Parachutist","Patient","Physical","Pilot","Secretary","Shop assistant","Skillful","Soviet","Surgeon","Uneducated","Victim"],
+				"vi":["Nhà du hành vũ trụ","Bạo lực gia đình","Bằng nhau, bình đẳng","Sự bình đẳng","Thị lực","Lính cứu hoả","Trường mẫu giáo","tinh thần, tâm thần","Sĩ quan","Cuộc phẫu thuật","Nhảy dù","Người nhảy dù","Bệnh nhân","thể chất","Phi công","Thư kí","Nhân viên, người bán hàng","Lành nghề, khéo léo","Liên Xô, thuộc Liên Xô","Bác sĩ phẫu thuật","Được học ít, không được học","Nạn nhân"]
+			},{
+				"name":"Unit 7",
+				"tip":"International Organisations",
+				"text":["Aim","Commit","Competitive","Economic","Economy","Enter","Essential","Expert","Harm","Invest","Peacekeeping","Poverty","Promote","Quality","Regional","Relation","Respect","Technical","Trade","Vaccinate","Welcome"],
+				"vi":["Mục tiêu, đặt ra mục tiêu","Cam kết","Cạnh tranh","Thuộc về kinh tế","Nền kinh tế","Thâm nhập, đi vào","Cần thiết, cấp thiết","Thuộc về chuyên môn","Hiểm hoạ, sự nguy hiểm","Đầu tư","Gìn giữ hoà bình","Tình trạng đói nghèo","Quảng bá, khuếch trương","Có chất lượng","Thuộc về khu vực","Mối quan hệ","Tôn trọng, ghi nhận","Thuộc về kĩ thuật","Thương mại","Tiêm vắc-xin","Đón chào, hoan nghênh"]
+			},{
+				"name":"Unit 8",
+				"tip":"New Ways To Learn",
+				"text":["Blended learning","Communicate","Control","Digital","Distraction","Exchange","Face-to-face","Flow chart","Focus","High-speed","Immediately","Install","Online learning","Original","Real-world","Resource","Schedule","Strategy","Teamwork","Voice recorder"],
+				"vi":["Phương pháp học tập kết hợp","Giao tiếp, trao đổi","Sự kiểm soát","Kĩ thuật số","Sự xao nhãng, sự mất tập trung","Trao đổi","Trực tiếp","Lưu đồ, sơ đồ quy trình","Tập trung","Tốc độ cao","Ngay lập túc","Lắp đặt","Học trực tuyến","Sáng tạo, độc đáo","Thực tế","Nguồn lực","Lịch trình","Chiến lược","Hoạt động nhóm","Máy thu âm"]
+			},{
+				"name":"Unit 9",
+				"tip":"Protecting The Environment",
+				"text":["Balance","Biodiversity","Climate change","Consequence","Deforestation","Ecosystem","Endangered","Environmental protection","Extreme","Giant","Habitat","Heatwave","Ice melting","Issue","Panda","Practical","Respiratory","Tostoise","Trade","Upset","Wildlife"],
+				"vi":["Sự cân bằng","Đa dạng sinh học","Sự thay đổi khí hậu","Hậu quả","Nạn phá rừng","Hệ sinh thái","Bị nguy hiểm","Bảo vệ môi trường","Cực đoan, khắc nghiệt","To lớn, khổng lồ","Môi trường sống","Sóng nhiệt, đợt không khí nóng","Sự tan băng","Vấn đề","Gấu trúc","Thực tế, thiết thực","Thuộc về hô hấp","Con rùa","Buôn bán","Làm rối loạn, xáo trộn","Động vật hoang dã"]
+			},{
+				"name":"Unit 10",
+				"tip":"Ecotourism",
+				"text":["Aware","Brochure","Craft","Crowd","Culture","Damage","Ecotourism","Explore","Floating market","Follow","Host","Hunt","Impact","Local","Mass","Path","Profit","Protect","Responsible","Souvenir","Stalactite","Trail","Waste","Weave"],
+				"vi":["Có nhận thức, ý thức được","Tờ quảng cáo","Đồ thủ công","Đổ về, kéo về","Văn hoá","Làm hư hại","Du lịch ính thái","Khám phá","Chợ nổi","Đi theo","Chủ nhà","Săn bắn","Tác động","Tại địa phương","Theo số đông","Lối đi","Lợi nhuận","Bảo vệ","Có trách nhiệm","Quà lưu niệm","Nhũ đá (trong hang động)","Đường mòn","Lãng phí","Dệt"]
 			}
 		]
 	},
@@ -325,7 +359,7 @@
 				"name":"Unit 6",
 				"tip":"Preserving our heritage",
 				"text":["ancient","appreciate","citadel","complex","crowdfunding","festive","fine","folk","heritage","historic","historical","imperial","landscape","limestone","monument","performing arts","preserve","restore","state","temple","trending","valley"],
-				"vi":["cổ kính","hiểu rõ giá trị, đánh giá cao","thành trì","quần thể, tổ hợp","quyên góp, huy động vốn từ cộng đồng","thuộc về ngày lễ, có không khí lễ hội","tiền phạt","thuộc về dân gian","di sản","quan trọng, có giá trị lịch sử","thuộc về lịch sử, mang tính lịch sử","thuộc về hoàng tộc","phong cảnh","đá vôi","lăng mộ, đài kỷ niệm, công trình kiến trúc","lăng mộ, đài kỷ niệm, công trình kiến trúc","nghệ thuật biểu biễn","bảo tồn","khôi phục, sửa lại","hiện trạng, tình trạng","đền, miếu","theo xu hướng","thung lũng"]
+				"vi":["cổ kính","hiểu rõ giá trị, đánh giá cao","thành trì","quần thể, tổ hợp","quyên góp, huy động vốn từ cộng đồng","thuộc về ngày lễ, có không khí lễ hội","tiền phạt","thuộc về dân gian","di sản","quan trọng, có giá trị lịch sử","thuộc về lịch sử, mang tính lịch sử","thuộc về hoàng tộc","phong cảnh","đá vôi","lăng mộ, đài kỷ niệm, công trình kiến trúc","nghệ thuật biểu biễn","bảo tồn","khôi phục, sửa lại","hiện trạng, tình trạng","đền, miếu","theo xu hướng","thung lũng"]
 			},{
 				"name":"Unit 7",
 				"tip":"Education options for school-leavers",
@@ -349,5 +383,61 @@
 				"vi":["đa dạng sinh học","sự bảo tồn thiên nhiên","rạn san hô","đồng bằng","phá huỷ","hệ sinh thái","bị nguy hiểm","động vật","thực vật","chuỗi thức ăn","xanh","khu vực sống","các sinh vật sống","động vật có vú","rừng quốc gia","tự nhiên","tài nguyên thiên nhiên","con tê tê","nguồn lực","loài","rừng nhiệt đới","động vật hoang dã"]
 			}
         ]
-    }
+    },{
+        "name":"Grade 12 high school",
+        "tip":"Click on the word to hear the pronunciation.",
+        "units":[
+            {
+                "name": "Unit 1",
+                "tip": "Life stories we admire",
+				"text":["account","achievement","admire","adopt","animated","attack","attend","battle","biography","biological","bond","cancer","carry out","childhood","Communist Party of Viet Nam","death","defeat","devote to","drop out","enemy","genius","hero","marriage","military","on cloud nine","pancreatic","pass away","poem","poetry","resign","resistance war","rule","youth"],
+				"vi":["câu chuyện","thành tích, thành tựu","ngưỡng mộ","nhận con nuôi","hoạt hình","cuộc tấn công, tấn công","đi học","chiến trường","tiểu sử","ruột thịt","kết thân","ung thư","tiến hành","tuổi thơ","Đảng Cộng sản Việt Nam","cái chết","đánh bại","cống hiến (cho)","bỏ học","kẻ thù","thiên tài","anh hùng","cuộc hôn nhân","quân đội","rất vui sướng, hạnh phúc","liên quan tới tuyến tuỵ","qua đời","bài thơ","thơ ca","từ chức","cuộc kháng chiến","sự trị vì, trị vì","tuổi trẻ"]
+			},{
+				"name":"Unit 2",
+				"tip":"A multicultural world",
+				"text":["admire","anxiety","appreciate","bamboo dancing","captivate","celebrate","confusion","costume","cuisine","cultural","culture shock","custom","diversity","extracurricular","festivity","globalisation","identity","keep up with","lifestyle","multicultural","origin","popularity","speciality","staple","tasty","traditional","trend","tug of war"],
+				"vi":["ngắm nhìn, chiêm ngưỡng","sự bồn chồn, lo lắng","thưởng thức, trân trọng","nhảy sạp","thu hút, cuốn hút","tổ chức, mừng","sự khó hiểu, sự hỗn độn, sự rối rắm","trang phục","ẩm thực","thuộc về văn hoá","sốc văn hoá","phong tục","sự đa dạng","ngoại khoá","ngày hội","sự toàn cầu hoá","bản sắc, đặc điểm nhận dạng","bắt kịp với, theo kịp","lối sống","tính đa văn hoá","nguồn gốc","sự phổ biến, sự thông dụng","đặc sản","cơ bản, chủ yếu","ngon","truyền thống","xu hướng","trò chơi kéo co"]
+			},{
+				"name":"Unit 3",
+				"tip":"Green living",
+				"text":["carbon footprint","cardboard","clean up","compost","container","contaminated","decompose","eco-friendly","fruit peel","household waste","in the long run","in the long","landfill","layer","leftover","packaging","pile","reusable","reuse","rinse out","single-use","waste"],
+				"vi":["tổng lượng phát thải khí nhà kính","bìa cứng, làm bằng bìa cứng","dọn dẹp","phân hữu cơ","thùng, hộp, gói","nhiễm độc, nhiễm khuẩn","phân huỷ","thân thiện","vỏ hoa quả","rác thải sinh hoạt","về lâu dài","về lâu dài","bãi chôn rác","lớp","thức ăn thừa","bao bì","chồng, đống","tái sử dụng được","tái sử dụng","xối nước, rửa sạch","dùng một lần","rác thải"]
+			},{
+				"name":"Unit 4",
+				"tip":"Urbanisation",
+				"text":["afford","colonial","concern","decrease","expand","gradually","housing","leisure","proportion","rapidly","reliable","resident","rush hour","seek","unemployment","urban"],
+				"vi":["có đủ tiền, có khả năng chi trả","thuộc địa, thuộc dân","sự lo lắng","giảm, hạ xuống","mở rộng","dần dần, từ từ","nhà ở","sự giải trí, thư giãn","tỉ lệ","rất nhanh, với tốc độ cao","đáng tin cậy","người dân","giờ cao điểm","tìm kiếm","tình trạng thất nghiệp","thuộc về đô thị"]
+			},{
+				"name":"Unit 5",
+				"tip":"The world of work",
+				"text":["application letter","bonus","casual","challenging","flexible","footstep","employ","nine-to-five","on-the-job","overtime","part-time","repetitive","rewarding","shift","stressful","unpaid","wage","wait on tables","well-paid","vacancy"],
+				"vi":["thư xin việc","tiền thưởng","theo thời vụ, tạm thời","thách thức","linh hoạt","bước chân","tuyển dụng","giờ hành chính","trong công việc","ngoài giờ","bán thời gian","lặp đi lặp lại","xứng đáng","ca làm việc","áp lực, căng thẳng","không được trả lương","tiền công","phục vụ đồ ăn thức uống cho khách trong nhà hàng","được trả lương cao","vị trí công việc còn trống"]
+			},{
+				"name":"Unit 6",
+				"tip":"Artificial intelligence",
+				"text":["activate","advanced","analyse","application","artificial intelligence","capable","chatbot","data","digital","evolution","facial recognition","function","hands-on","human-like","interact","personalised","platform","portfolio","programme","robotic","upgrade","virtual reality","voice command"],
+				"vi":["kích hoạt, khởi động","tiên tiến, trình độ cao","phân tích","sự ứng dụng, sự áp dụng","trí thông minh nhân tạo","có khả năng","hộp trò chuyện","dữ liệu","thuộc kĩ thuật số","sự tiến hoá, sự phát triển","khả năng nhận diện khuôn mặt","chức năng, nhiệm vụ","thực tiễn, trực tiếp","giống con người","tương tác","được cá nhân hoá","nền tảng (công nghệ)","hồ sơ","lập trình","thuộc rô bốt","nâng cấp","thực tế ảo","ra lệnh bằng giọng nói"]
+			},{
+				"name":"Unit 7",
+				"tip":"The world of mass media",
+				"text":["accessible","account for","advert","as opposed to","audio","bias","broadcast","by contrast","credible","digital billboard","discount","distribute","fact-check","fake news","instant","interactive","loudspeaker","mass media","meanwhile","place","presence","profit-making","publicity","reliable","source","spread","the press","update","viewer","visual"],
+				"vi":["có thể tiếp cận được","chiếm (tỉ lệ)","quảng cáo","khác với, đối lập với","bằng/có âm thanh","thiên kiến, thiên vị","phát sóng","ngược lại","đáng tin cậy","bảng quảng cáo kĩ thuật số","sự hạ giá","phân phát, phân phối","kiểm chứng thông tin","tin giả, tin bịa đặt","nhanh chóng, ngay lập tức","có thể tương tác được","loa phát thanh","phương tiện truyền thông đại chúng","trong khi đó","đặt, rao, đăng","sức thu hút, sức ảnh hưởng","tạo lợi nhuận","sự quan tâm, chú ý của công chúng","xác thực","nguồn tin","lan truyền","báo chí","cập nhật","người xem","bằng/có hình ảnh"]
+			},{
+				"name":"Unit 8",
+				"tip":"Wildlife conservation",
+				"text":["body part","captivity","conservation","conserve","coral","critically endangered","debris","degrade","enclosure","endangered","extinct","forest clearance","house","mammal","marine","monitor","nursery","poach","primate","rare","release","rescue","sea turtle","sign language","spawning ground","survive","threatened","vulnerable"],
+				"vi":["bộ phận cơ thể","sự nuôi nhốt","sự bảo vệ, sự bảo tồn","bảo vệ, bảo tồn","san hô","bị đe doạ nghiêm trọng","mảnh vỡ, mảnh vụn","xuống cấp","chuồng thú","bị đe doạ, gặp nguy hiểm","tuyệt chủng","sự chặt, phá rừng","cung cấp nơi ở","động vật có vú","thuộc về biển","giám sát","vườn ươm","săn bắn bất hợp pháp","bộ (họ) linh trưởng","hiếm, quý hiếm","thả","giải cứu","rùa biển","ngôn ngữ kí hiệu","nơi đẻ trứng","tồn tại","bị đe doạ","dễ bị tổn thương"]
+			},{
+				"name":"Unit 9",
+				"tip":"Career paths",
+				"text":["automate","adapt","character","childminder","cut down on","CV (curriculum vitae)","fascinating","in demand","get on with","go in for","live up to","look down on","obsolete","passion","passionate","position","pursue","put up with","soft skills","specialty","take into account","tutor","work experience"],
+				"vi":["tự động hoá","thay đổi cho phù hợp","phẩm chất, đặc điểm tính cách","người trông trẻ","cắt giảm, giảm bớt","sơ yếu lí lịch","cực kì thú vị và hấp dẫn","có nhu cầu","hoà hợp với, có mối quan hệ tốt với","đam mê, theo đuổi một sở thích","làm theo sự mong muốn, kì vọng của ai đó","coi thường người khác, cho rằng mình hơn người","lỗi thời, không còn được sử dụng, không thịnh hành","niềm đam mê, say mê","có niềm đam mê với/dành cho","vị trí việc làm","theo đuổi","chịu đựng","các kĩ năng mềm","chuyên ngành","cân nhắc, xem xét","gia sư, giáo viên dạy kèm nhóm học sinh","kinh nghiệm làm việc"]
+			},{
+				"name":"Unit 10",
+				"tip":"Lifelong learning",
+				"text":["acquire","adult education","boost","broaden","brush up","complex","determination","distance learning","distraction","hardship","governess","imprison","informed","intelligence","learning community","maintain","martial art","Molecular Biology","night school","psychology","relevant","well-rounded","widen","wonder"],
+				"vi":["có được, đạt được","giáo dục cho người lớn","tăng cường, cải thiện","mở mang, mở rộng","ôn lại, học lại","phức tạp","sự quyết tâm","học từ xa","sự phân tâm, sự sao lãng","sự khó khăn, vất vả","gia sư, giáo viên dạy kèm tại nhà","giam cầm, cầm tù","có kiến thức về, có hiểu biết, được cung cấp đầy đủ thông tin","tình báo","cộng đồng học tập","duy trì, giữ được","võ thuật","ngành sinh học phân tử","lớp học buổi tối","ngành tâm lí học","phù hợp, thích hợp","được phát triển một cách toàn diện","mở rộng, tăng thêm","thắc mắc, băn khoăn"]
+			}
+		]
+	}
 ]
