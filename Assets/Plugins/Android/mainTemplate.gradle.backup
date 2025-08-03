@@ -1,3 +1,25 @@
+// Android Resolver Repos Start
+([rootProject] + (rootProject.subprojects as List)).each {
+    ext {
+        it.setProperty("android.useAndroidX", true)
+        it.setProperty("android.enableJetifier", true)
+    }
+}
+([rootProject] + (rootProject.subprojects as List)).each { project ->
+    project.repositories {
+        def unityProjectPath = $/file:///**DIR_UNITYPROJECT**/$.replace("\\", "/")
+        maven {
+            url "https://maven.google.com"
+        }
+        maven {
+            url "https://maven.google.com/" // Assets/LevelPlay/Editor/IronSourceSDKDependencies.xml:12, Assets/LevelPlay/Editor/ISAdMobAdapterDependencies.xml:8, Assets/LevelPlay/Editor/ISUnityAdsAdapterDependencies.xml:12
+        }
+        mavenLocal()
+        jcenter()
+        mavenCentral()
+    }
+}
+// Android Resolver Repos End
 apply plugin: 'com.android.library'
 apply from: '../shared/keepUnitySymbols.gradle'
 **APPLY_PLUGINS**
@@ -5,9 +27,12 @@ apply from: '../shared/keepUnitySymbols.gradle'
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 // Android Resolver Dependencies Start
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4' // Assets/GoogleMobileAds/Editor/GoogleMobileAdsDependencies.xml:12
-    implementation 'com.google.android.gms:play-services-ads:23.6.0' // Assets/GoogleMobileAds/Editor/GoogleMobileAdsDependencies.xml:7
-    implementation 'com.google.android.ump:user-messaging-platform:3.1.0' // Assets/GoogleMobileAds/Editor/GoogleUmpDependencies.xml:7
+    implementation 'com.google.android.gms:play-services-ads:24.4.0' // Assets/LevelPlay/Editor/ISAdMobAdapterDependencies.xml:8
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.1.0' // Assets/LevelPlay/Editor/IronSourceSDKDependencies.xml:12
+    implementation 'com.unity3d.ads:unity-ads:4.16.0' // Assets/LevelPlay/Editor/ISUnityAdsAdapterDependencies.xml:12
+    implementation 'com.unity3d.ads-mediation:admob-adapter:4.3.52' // Assets/LevelPlay/Editor/ISAdMobAdapterDependencies.xml:12
+    implementation 'com.unity3d.ads-mediation:mediation-sdk:8.10.0' // Assets/LevelPlay/Editor/IronSourceSDKDependencies.xml:5
+    implementation 'com.unity3d.ads-mediation:unityads-adapter:4.3.58' // Assets/LevelPlay/Editor/ISUnityAdsAdapterDependencies.xml:5
 // Android Resolver Dependencies End
 **DEPS**}
 

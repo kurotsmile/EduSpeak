@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Carrot Store
-  productName: EduSpeak
+  productName: TP Voice Game
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
@@ -40,6 +40,8 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos:
+  - logo: {fileID: 21300000, guid: 343eb64a0b525714ea4dd01a64dd5c1b, type: 3}
+    duration: 2
   - logo: {fileID: 21300000, guid: b4e99459a88f53f409101520a875000d, type: 3}
     duration: 2
   m_VirtualRealitySplashScreen: {fileID: 0}
@@ -142,7 +144,7 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
-  bundleVersion: 1.15
+  bundleVersion: 1.18
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -173,7 +175,7 @@ PlayerSettings:
     iPhone: 0
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
-  AndroidBundleVersionCode: 15
+  AndroidBundleVersionCode: 18
   AndroidMinSdkVersion: 23
   AndroidTargetSdkVersion: 35
   AndroidPreferredInstallLocation: 1
@@ -258,7 +260,7 @@ PlayerSettings:
   templateDefaultScene: 
   useCustomMainManifest: 1
   useCustomLauncherManifest: 0
-  useCustomMainGradleTemplate: 1
+  useCustomMainGradleTemplate: 0
   useCustomLauncherGradleManifest: 0
   useCustomBaseGradleTemplate: 0
   useCustomGradlePropertiesTemplate: 0
@@ -293,7 +295,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 6d84a12c36014234a8e39e45dd75f84c, type: 3}
+      m_Icon: {fileID: 2800000, guid: 0a6bf90d3c36baf4d9bd780f1ed37e9f, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -505,6 +507,7 @@ PlayerSettings:
     iPhone: 1
     tvOS: 1
   m_BuildTargetGroupLightmapEncodingQuality: []
+  m_BuildTargetGroupHDRCubemapEncodingQuality: []
   m_BuildTargetGroupLightmapSettings: []
   m_BuildTargetGroupLoadStoreDebugModeSettings: []
   m_BuildTargetNormalMapEncoding: []
@@ -745,7 +748,7 @@ PlayerSettings:
   ps4IncludedModules: []
   ps4attribVROutputEnabled: 0
   monoEnv: 
-  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: 0a6bf90d3c36baf4d9bd780f1ed37e9f, type: 3}
+  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: 6d84a12c36014234a8e39e45dd75f84c, type: 3}
   splashScreenBackgroundSourcePortrait: {fileID: 0}
   blurSplashScreenBackground: 1
   spritePackerPolicy: 
