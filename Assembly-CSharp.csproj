@@ -59,7 +59,6 @@
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_tool.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Window_Camera.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_list_app.cs" />
-    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\AotStubs.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_shop.cs" />
     <Compile Include="Assets\Scripts\List_vocabulary.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_lang.cs" />
@@ -97,9 +96,6 @@
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Server.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_UI.cs" />
     <Compile Include="Assets\Carrot-Framework-App\carrot_script\Carrot_Theme.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\link.xml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1114,6 +1110,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Purchasing.Common">
+      <HintPath>Library\ScriptAssemblies\Purchasing.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1124,10 +1124,6 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Purchasing.Common">
-      <HintPath>Library\ScriptAssemblies\Purchasing.Common.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">

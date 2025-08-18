@@ -83,15 +83,19 @@ public class App : MonoBehaviour
 
     void Start()
     {
+
+        #if PLATFORM_ANDROID 
+        if (!Permission.HasUserAuthorizedPermission(Permission.Microphone)) 
+        { 
+            Permission.RequestUserPermission(Permission.Microphone); 
+        }
+        #endif
+  
         this.carrot.Load_Carrot(On_check_exit_app);
 
         this.carrot.color_highlight = this.color_menu_active;
         this.carrot.shop.onCarrotPaySuccess += onCarrotPaySuccess;
 
-        if (!Permission.HasUserAuthorizedPermission(Permission.Microphone)) {
-            Permission.RequestUserPermission(Permission.Microphone);
-        }
-        
         this.v.On_Load();
         this.Check_Resolution_change();
         TextAsset jsonFile;
@@ -291,9 +295,9 @@ public class App : MonoBehaviour
 
         if(this.is_sell){
             box_setting.area_all_item.GetChild(2).gameObject.SetActive(false);
-            box_setting.area_all_item.GetChild(4).gameObject.SetActive(false);
+            //box_setting.area_all_item.GetChild(4).gameObject.SetActive(false);
             box_setting.area_all_item.GetChild(5).gameObject.SetActive(false);
-            box_setting.area_all_item.GetChild(6).gameObject.SetActive(false);
+            //box_setting.area_all_item.GetChild(6).gameObject.SetActive(false);
             box_setting.area_all_item.GetChild(7).gameObject.SetActive(false);
             box_setting.area_all_item.GetChild(8).gameObject.SetActive(false);
         }

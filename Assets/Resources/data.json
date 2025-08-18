@@ -53,9 +53,8 @@
             },
             {
                 "name":"Week 9",
-                "text":["Buy fruit or flowers","Decorate a house or tree","Rat traditional food","Fireworks","Fet lucky money, candy, or gifts","Play games or music"],
-                "vi":["Mua trái cây hoặc hoa", "Trang trí nhà cửa hoặc cây cối", "Món ăn truyền thống của chuột", "Pháo hoa", "Nhận tiền may mắn, kẹo hoặc quà tặng", "Chơi trò chơi hoặc âm nhạc"],
-                "file":["4.3. buy fruit or flowers.WAV","4.3. decorate a house or tree.WAV","4.3. eat traditional food.WAV","4.3. fireworks.WAV","4.3. get lucky money,candy,or gifts.WAV","4.3. play games or music.WAV"]
+                "text":["Buy","Candy","Decorate","Fireworks","Flower","Fruit"],
+                "vi":["Mua", "Kẹo", "Trang trí", "Pháo hoa", "Hoa", "Hoa quả"]
             },
             {
                 "name": "Week 10",
@@ -235,9 +234,6 @@
                 "text": ["Cheap", "Clean", "Expensive", "Polluted", "Populated", "Temperature"],
                 "vi": ["Rẻ", "Sạch", "Đắt", "Ô nhiễm", "Đông dân", "Nhiệt độ"],
                 "file": ["Voca 35.1. cheap.WAV","Voca 35.2. clean.WAV","Voca 35.3. expensive.WAV","Voca 35.4. polluted.WAV","Voca 35.5. populated.WAV","Voca 35.6. temperature.WAV"]
-            },
-            {
-                "name":"Week 36"
             }
         ]
     }
